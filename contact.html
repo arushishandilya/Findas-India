@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Findas India</title>
+	<meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
+	<meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
+	<meta name="author" content="tempload" />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png" />
+
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Font Awesome (for icons) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<!-- Custom CSS -->
+	<link href="assets/css/dark.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<!-- ***** Preloader Start ***** -->
+	<div id="preloader">
+		<div id="loader" class="spinner">
+			<div id="shadow"></div>
+			<div id="box"></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
+
+
+	<!-- ***** navbar Area Start ***** -->
+	<header class="header-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12">
+					<nav class="main-nav d-flex justify-content-between align-items-center">
+						<!-- ***** Logo Start ***** -->
+						<a href="index.html" class="logo me-4">
+							<img src="assets/images/logo/logo-removebg-preview.png" alt="Logo"
+								style="max-height: 40px;">
+						</a>
+						<!-- ***** Logo End ***** -->
+
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav d-flex align-items-center mb-0" style="margin-left: -10px;">
+							<li style="margin-left: -10px;"><a href="index.html"
+									style="color: #707070; font-weight: bold;">Home</a></li>
+
+							<li class="submenu" style="color: #707070;">
+								<a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
+								<ul>
+									<li><a href="about.html">About Us</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="podcast.html">Podcast</a></li>
+								</ul>
+							</li>
+
+							<li class="submenu" style="margin-left: -10px;">
+								<a href="javascript:;" style="color: #707070; font-weight: bold;">Services</a>
+								<ul>
+									<li><a href="investmentplanning.html">Investment Planning</a></li>
+									<li><a href="Corporatesolution.html">Corporate Solution</a></li>
+									<li><a href="insuranceplanning.html">Insurance Planning</a></li>
+									<li><a href="stockInvesting.html">Stock Investing</a></li>
+									<li><a href="willwriting.html">Will Writing</a></li>
+									<li><a href="futureTrading.html">Future Trading</a></li>
+									<li><a href="sipcalculator.html">SIP Calculator</a></li>
+								</ul>
+							</li>
+
+
+							<li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
+						</ul>
+
+						<!-- ***** Menu End ***** -->
+
+						<!-- ***** Header Buttons Start ***** -->
+						<ul class="header-buttons d-flex mb-0">
+							<li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
+							<li><a class="btn-nav-primary" href="contact.html">Support</a></li>
+						</ul>
+						<style>
+							.header-area .main-nav .header-buttons li .btn-nav-primary {
+								border: 1.2px solid #3c3c3c;
+								border-radius: 100px 0px 100px 100px;
+								padding: 0% 20px;
+							}
+						</style>
+
+						<!-- ***** Header Buttons End ***** -->
+						<!-- Sidebar Toggle Button -->
+						<a href="javascript:void(0);" class="sidebar-toggle-btn d-none d-lg-block ms-3">
+							<i class="fas fa-bars fs-4 " style="margin-top: 22px; color: #818080;"></i>
+						</a>
+
+						<!-- Sidebar Panel -->
+						<div id="sidebar-panel"
+							class="position-fixed top-0 end-0 bg-white shadow-lg px-4 pt-4 pb-5 rounded-start"
+							style="width: 320px; height: 100vh; z-index: 1050; display: none; overflow-y: auto;">
+
+							<!-- Header: Logo + Close -->
+							<div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
+								<a href="index.html">
+									<img src="assets/images/logo/logo-removebg-preview.png" alt="Company Logo"
+										style="height: 48px; object-fit: contain;">
+								</a>
+								<button id="close-sidebar"
+									class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center shadow"
+									style="	width: 32px; height: 32px; font-size: 20px; color: #fff; background: linear-gradient(135deg, #000000, #333333); transition: transform 0.3s ease, background 0.3s ease;">
+									&times;
+								</button>
+							</div>
+
+							<!-- Add this CSS (inline or in your stylesheet) -->
+							<style>
+								#close-sidebar:hover {
+									transform: scale(1.1) rotate(90deg);
+									background: linear-gradient(135deg);
+								}
+							</style>
+
+							<!-- About Section -->
+							<div class="mb-4 border-bottom pb-3">
+								<h6 class="fw-bold text-dark mb-2"><i
+										class="fas fa-building me-2 text-secondary"></i>About FINDAS</h6>
+								<p class="text-muted small">
+									We’ve been empowering clients in investments and insurance since 1999. We believe in
+									transparency and
+									trust. Our mission is to help you become a financially literate investor.
+								</p>
+							</div>
+
+							<!-- Office Address -->
+							<div class="mb-4 border-bottom pb-3">
+								<h6 class="fw-bold text-dark mb-2"><i
+										class="fas fa-map-marker-alt me-2 text-secondary"></i>Nashik Office</h6>
+								<p class="small text-muted mb-0">
+									Flat C-301, 3rd Floor,<br>Ishwar Pratishta 3,<br>Ravi Shankar Marg,<br>Nashik -
+									422009
+								</p>
+							</div>
+
+							<!-- Timings -->
+							<div class="mb-4 border-bottom pb-3">
+								<h6 class="fw-bold text-dark mb-2"><i class="fas fa-clock me-2 text-secondary"></i>We
+									Are Open</h6>
+								<p class="small text-muted mb-0">Mon – Sat<br>11:00 AM – 05:00 PM</p>
+							</div>
+
+							<!-- Contact -->
+
+							<div class="mb-4 border-bottom pb-3">
+								<h6 class="fw-bold text-dark mb-2"><i
+										class="fas fa-phone-alt me-2 text-secondary"></i>Get In Touch</h6>
+								<p class="small text-muted mb-1">
+									<a href="https://wa.me/918888830440" target="_blank"
+										class="text-muted text-decoration-none">
+										+91 88888 30440
+									</a>
+								</p>
+							</div>
+							<!-- email -->
+							<div class="mb-4 border-bottom pb-3">
+								<h6 class="fw-bold text-dark mt-3 mb-2"><i
+										class="fas fa-envelope me-2 text-secondary"></i>Quick Email</h6>
+								<p class="small text-muted">
+									<a href="mailto:support@findas.in"
+										class="text-muted text-decoration-none">support@findas.in</a>
+								</p>
+							</div>
+
+							<!-- Social Media -->
+							<div class="mt-4">
+								<h6 class="fw-bold text-dark mb-3"><i
+										class="fas fa-share-alt me-2 text-secondary"></i>Follow Us</h6>
+								<div class="d-flex gap-3">
+									<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
+										aria-label="LinkedIn">
+										<i class="fab fa-linkedin fs-5 text-primary"></i>
+									</a>
+									<a href="https://www.instagram.com/findasindia/" target="_blank"
+										aria-label="Instagram">
+										<i class="fab fa-instagram fs-5 text-danger"></i>
+									</a>
+									<a href="https://x.com/findas_india" target="_blank" aria-label="Twitter">
+										<i class="fab fa-twitter fs-5 text-info"></i>
+									</a>
+									<a href="https://www.facebook.com/Financiallybindaas" target="_blank"
+										aria-label="Facebook">
+										<i class="fab fa-facebook-f fs-5 text-primary"></i>
+									</a>
+									<a href="https://www.youtube.com/@FindasMarathi" target="_blank"
+										aria-label="YouTube">
+										<i class="fab fa-youtube fs-5 text-danger"></i>
+									</a>
+
+								</div>
+							</div>
+						</div>
+						<script>
+							document.querySelector('.sidebar-toggle-btn')?.addEventListener('click', function () {
+								document.getElementById('sidebar-panel').style.display = 'block';
+							});
+
+							document.getElementById('close-sidebar')?.addEventListener('click', function () {
+								document.getElementById('sidebar-panel').style.display = 'none';
+							});
+						</script>
+						<!-- Mobile Menu Trigger -->
+						<a class="menu-trigger d-lg-none d-block">
+							<span>Menu</span>
+						</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- ***** navbar Area End ***** -->
+
+
+	<section class="page">
+		<!-- ***** Page Top Start ***** -->
+		<div class="cover" data-image="assets/images/photos/parallax-counter.jpg">
+			<div class="page-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>Get In Touch</h1>
+						</div>
+						<div class="col-lg-12">
+							<ol class="breadcrumb">
+								<li><a href="index.html">Home</a></li>
+								<li class="active">Get In Touch</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Top End ***** -->
+
+
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom">
+			<div class="container">
+				<div class="row">
+					<!-- Google Map -->
+					<div class="col-12">
+						<div class="contact">
+							<div class="map-wrapper mb-5">
+								<!-- ***** Google Maps Start ***** -->
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.891913344802!2d73.80054097435757!3d19.97104732326697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb9e8b3f0e07%3A0x9f2d1d11b212373c!2sFINDAS!5e0!3m2!1sen!2sin!4v1752303117886!5m2!1sen!2sin"
+									width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+									referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<!-- ***** Google Maps End ***** -->
+							</div>
+							<!-- Contact Info -->
+							<div class="contact-info mb-5">
+								<div class="row text-center">
+									<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+										<div class="item">
+											<i class="fa fa-location-arrow"></i>
+											<div class="txt">
+												<span>Flat C-301, 3rd Floor, Ishwar Pratishta 3, Ravi Shankar Marg,
+													Nashik - 422009</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+										<div class="item">
+											<i class="fa fa-phone"></i>
+											<div class="txt">
+												<span>+91- 88888-30440</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+										<div class="item">
+											<i class="fa fa-envelope"></i>
+											<div class="txt">
+												<span><a href="mailto:support@findas.in">support@findas.in</a></span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Contact Bottom Section start-->
+							<div class="container contact-section" style="padding: 60px 0;">
+								<div class="row g-5">
+									<!-- Contact Details -->
+									<div class="col-lg-5">
+										<div class="contact-card shadow-sm p-4 h-100 bg-white rounded text-center">
+
+											<!-- Company Logo -->
+											<img src="assets/images/logo/footer-removebg-preview.png" alt="Findas Logo"
+												class="mb-3 contact-logo" style="max-width: 140px; height: auto;">
+
+											<h3 class="contact-title">Contact Details</h3>
+											<ul class="contact-info-list text-start">
+												<li><i class="fa fa-map-marker"></i> Flat no. C-301, 3rd floor Ishwar
+													Pratishta 3,<br>
+													Ravi Shankar Marg, Nashik, Pin code 422009</li>
+												<li><i class="fa fa-phone"></i> +91-88888-30440</li>
+												<li><i class="fa fa-envelope"></i> <a
+														href="mailto:info@findas.in">info@findas.in</a></li>
+											</ul>
+											<hr>
+											<p class="contact-note">Feel free to call or drop us a message. We aim to
+												respond within 24 hours on business days.</p>
+											<p class="contact-note"><strong>Business Hours:</strong> 11:00 AM – 5:00 PM
+												(Mon – Fri)</p>
+										</div>
+									</div>
+
+
+									<!-- Contact Form -->
+									<div class="col-lg-7">
+										<div class="contact-card shadow-sm p-4 bg-white rounded">
+											<h3 class="contact-title mb-4">Send Us a Message</h3>
+											<form class="contact-form">
+												<div class="row g-3">
+													<div class="col-md-6">
+														<input type="text" placeholder="Full Name" class="form-control">
+													</div>
+													<div class="col-md-6">
+														<input type="email" placeholder="Email Address"
+															class="form-control">
+													</div>
+													<div class="col-md-6">
+														<input type="text" placeholder="Phone Number"
+															class="form-control">
+													</div>
+													<div class="col-md-6">
+														<input type="text" placeholder="City" class="form-control">
+													</div>
+													<div class="col-12">
+														<input type="text" placeholder="Subject" class="form-control">
+													</div>
+													<div class="col-12">
+														<textarea placeholder="Your Message" rows="5"
+															class="form-control"></textarea>
+													</div>
+													<div class="col-12">
+														<a href="clientlogin.html" class="btn-primary-line">Send Message</a>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- End Contact Bottom -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+
+		<style>
+			.contact-title {
+				font-size: 22px;
+				font-weight: 600;
+				color: #333;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+
+			.contact-info-list {
+				list-style: none;
+				padding: 0;
+				margin-bottom: 20px;
+			}
+
+			.contact-info-list li {
+				font-size: 15px;
+				margin-bottom: 12px;
+				color: #555;
+				line-height: 1.6;
+				display: flex;
+				align-items: flex-start;
+			}
+
+			.contact-info-list li i {
+				color: #000000;
+				margin-right: 12px;
+				font-size: 16px;
+				margin-top: 3px;
+				min-width: 20px;
+			}
+
+			.contact-info-list a {
+				color: #000000;
+				text-decoration: none;
+			}
+
+			.contact-info-list a:hover {
+				text-decoration: underline;
+			}
+
+			.contact-note {
+				font-size: 14px;
+				color: #666;
+				line-height: 1.7;
+				margin-bottom: 10px;
+			}
+
+			.contact-form .form-control {
+				border-radius: 6px;
+				border: 1px solid #ccc;
+				padding: 10px 14px;
+				font-size: 14px;
+				transition: border-color 0.3s;
+				background-color: #f9f9f9;
+			}
+
+			.contact-form .form-control:focus {
+				border-color: #000000;
+				box-shadow: none;
+				background-color: #fff;
+			}
+
+			.contact-form .btn-primary {
+				background-color: #000000;
+				border-radius: 6px;
+				border: none;
+				padding: 12px;
+				font-weight: 600;
+				font-size: 15px;
+				border-radius: 6px;
+				transition: background-color 0.3s;
+			}
+
+			.contact-form .btn-primary:hover {
+				background-color: #414141;
+			}
+
+			.contact-card {
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+			}
+		</style>
+
+		<!-- ***** Footer Start ***** -->
+ <footer style="
+	background: linear-gradient(to right, #bfbfbf, #cfcece, #e6e6e6);
+	padding: 80px 0 40px 0;
+	font-family: 'Segoe UI', sans-serif;
+	border-top-left-radius: 90px;
+	border-top-right-radius: 90px;
+	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.1);
+	transition: background 0.5s ease, box-shadow 0.3s ease;
+">
+	<div class="container">
+		<div class="row gy-5">
+			<!-- Logo & About -->
+			<div class="col-lg-5 col-md-12 text-center text-lg-start">
+				<img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo" style="max-width: 150px;">
+				<p class="text-dark" style="font-size: 15px; line-height: 1.8;">
+					Empowering clients in investments and insurance since 1999, we prioritize transparency, trust, and personalized guidance, with a mission to help you become a confident, knowledgeable, and financially informed investor.
+				</p>
+			</div>
+
+			<!-- Helpful Links -->
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
+				<ul class="list-unstyled footer-nav">
+					<li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+					<li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
+					<li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
+					<li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
+					<li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
+				</ul>
+			</div>
+
+			<!-- Support -->
+			<div class="col-lg-2 col-md-4 col-sm-6 col-6">
+				<h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
+				<ul class="list-unstyled footer-nav">
+					<li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a></li>
+					<li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a></li>
+					<li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
+					<li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
+				</ul>
+			</div>
+
+			<!-- Contact Info & Social -->
+			<div class="col-lg-3 col-md-4 col-sm-12">
+				<h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
+				<p class="small mb-1 text-dark">
+					Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
+				</p>
+				<p class="small mb-1 text-dark">
+					Mon – Fri<br>11:00 AM – 05:00 PM</p>
+				<p class="mb-1"><a href="https://wa.me/918888830440" class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
+				<p><a href="mailto:support@findas.in" class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
+
+				<div class="d-flex gap-3 mt-3">
+					<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank" class="footer-icon" aria-label="LinkedIn">
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon" aria-label="Instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="https://x.com/findas_india" target="_blank" class="footer-icon" aria-label="Twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon" aria-label="Facebook">
+						<i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon" aria-label="YouTube">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="row mt-4">
+			<div class="col-lg-12 text-center">
+				<hr class="my-3" style="border-color: #999;">
+				<p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- ***** Footer End ***** -->
+
+<!-- Footer Styles -->
+<style>
+	.footer-nav li {
+		margin-bottom: 10px;
+	}
+
+	.footer-nav li a {
+		color: #333;
+		font-size: 14px;
+		text-decoration: none;
+		transition: all 0.3s ease;
+	}
+
+	.footer-nav li a:hover {
+		color: #000;
+		font-weight: 500;
+		text-decoration: underline;
+	}
+
+	.footer-icon {
+		font-size: 18px;
+		color: #444;
+		transition: transform 0.3s ease, color 0.3s ease;
+	}
+
+	.footer-icon:hover {
+		color: #000;
+		transform: scale(1.2);
+	}
+</style>
+
+		<!-- Back to Top Button -->
+		<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+			<i class="fas fa-arrow-up"></i>
+		</a>
+
+		<style>
+			.back-to-top {
+				position: fixed;
+				bottom: 30px;
+				right: 30px;
+				width: 55px;
+				height: 55px;
+				background: rgba(0, 0, 0, 0.6);
+				backdrop-filter: blur(8px);
+				color: #ffffff;
+				border-radius: 50%;
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+				z-index: 9999;
+				display: none;
+				transition: all 0.4s ease;
+				border: 1px solid rgba(255, 255, 255, 0.1);
+			}
+
+			.back-to-top i {
+				font-size: 22px;
+				transition: transform 0.4s ease, color 0.4s ease;
+			}
+
+			.back-to-top:hover {
+				transform: scale(1.2) rotate(15deg);
+				background: rgba(255, 255, 255, 0.15);
+				box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+				border: 1px solid rgba(255, 255, 255, 0.3);
+			}
+
+			.back-to-top:hover i {
+				transform: translateY(-4px);
+				color: #000000;
+				/* Gold accent on hover */
+			}
+		</style>
+
+		<script>
+			const backToTop = document.querySelector('.back-to-top');
+
+			window.addEventListener('scroll', () => {
+				if (window.scrollY > 300) {
+					backToTop.style.display = 'flex';
+				} else {
+					backToTop.style.display = 'none';
+				}
+			});
+
+			backToTop.addEventListener('click', (e) => {
+				e.preventDefault();
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+			});
+		</script>
+
+
+
+
+		<!-- jQuery -->
+		<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="assets/js/popper.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- Plugins -->
+		<script src="assets/js/scrollreveal.min.js"></script>
+		<script src="assets/js/parallax.min.js"></script>
+		<script src="assets/js/waypoints.min.js"></script>
+		<script src="assets/js/jquery.counterup.min.js"></script>
+		<script src="assets/js/imgfix.min.js"></script>
+		<script src="http://maps.google.com/maps/api/js?key=AIzaSyAthC_2x5GtKhiH7rUumkMbwvp31qyFyA8"></script>
+		<script src="assets/js/map-script.js"></script>
+
+		<!-- Global Init -->
+		<script src="assets/js/custom.js"></script>
+</body>
+
+</html>

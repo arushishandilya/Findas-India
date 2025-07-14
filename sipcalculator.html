@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Findas India</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #fdfbfb, #ebedee);
+            padding: 40px 20px;
+        }
+
+        .fc-tabs {
+            border-bottom: none;
+        }
+
+        .fc-tabs .fc-tab-btn {
+            background: #fff;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+            border-radius: 30px;
+            color: #333;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .fc-tabs .fc-tab-btn.active {
+            background: linear-gradient(135deg, #0a0b0b, #545454);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .fc-title {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .fc-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fc-img-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .fc-img-container img {            
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .fc-form {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            padding: 30px;
+            backdrop-filter: blur(5px);
+        }
+
+        .fc-form input,
+        .fc-form select {
+            border-radius: 10px;
+            transition: 0.3s ease;
+        }
+
+        .fc-form input:focus {
+            box-shadow: 0 0 0 0.2rem rgba(9, 10, 10, 0.25);
+            border-color: #121213;
+        }
+
+        .fc-btn {
+            background: linear-gradient(135deg, #0a0b0b, #545454) !important;
+            color: #ffffff !important;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-weight: 600;
+            font-size: 16px;
+            border: none;
+            text-align: center;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .fc-btn:hover {
+            background: linear-gradient(135deg, #313131, #424242) !important;
+            color: #fff !important;
+            text-decoration: none;
+        }
+
+
+        .fc-result {
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+            color: #000000;
+        }
+
+        .fc-form input[type="radio"] {
+            margin-right: 8px;
+            accent-color: #030304;
+        }
+
+
+        @media (max-width: 768px) {
+            .fc-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
+    <meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
+    <meta name="author" content="tempload" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png" />
+
+    <!-- Bootstrap & Plugins CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link href="assets/css/dark.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: white;">
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div id="loader" class="spinner">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Topbar Start -->
+<div class="topbar">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <!-- Left: Social Icons -->
+        <div class="social-icons">
+            <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="contact-info d-flex align-items-center gap-3">
+            <a href="tel:+918888830440" class="text-light d-flex align-items-center gap-2">
+                <i class="fas fa-phone-alt"></i> +91 88888 30440
+            </a>
+            <a href="mailto:support@findas.in" class="text-light d-flex align-items-center gap-2">
+                <i class="fas fa-envelope"></i> support@findas.in
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .topbar {
+        background-color: #1f1f1f;
+        padding: 8px 20px;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 14px;
+    }
+
+    .topbar .social-icons a {
+        color: #ffffff;
+        margin-right: 15px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .topbar .social-icons a:hover {
+        color: #00bcd4;
+    }
+
+    .topbar .contact-info a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .topbar .contact-info a:hover {
+        color: #00bcd4;
+    }
+</style>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+    <!-- ***** navbar Area Start ***** -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <nav class="main-nav d-flex justify-content-between align-items-center">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo me-4">
+                            <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo"
+                                style="max-height: 40px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav d-flex align-items-center mb-0" style="margin-left: -10px;">
+                            <li style="margin-left: -10px;"><a href="index.html"
+                                    style="color: #707070; font-weight: bold;">Home</a></li>
+
+                            <li class="submenu" style="color: #707070;">
+                                <a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="podcast.html">Podcast</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="submenu" style="margin-left: -10px;">
+                                <a href="javascript:;" style="color: #707070; font-weight: bold;">Solution</a>
+                                <ul>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="sipcalculator.html">SIP Calculator</a></li>
+                                    <li><a href="courses.html">Our Courses</a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
+                        </ul>
+
+                        <!-- ***** Menu End ***** -->
+
+                        <!-- ***** Header Buttons Start ***** -->
+                        <ul class="header-buttons d-flex mb-0">
+                            <li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
+                            <li><a class="btn-nav-primary" href="contact.html">Support</a></li>
+                        </ul>
+                        <style>
+                            .header-area .main-nav .header-buttons li .btn-nav-primary {
+                                border: 1.2px solid #3c3c3c;
+                                border-radius: 100px 0px 100px 100px;
+                                padding: 0% 20px;
+                            }
+
+                            .header-area {
+                                margin-top: 25px;
+                                /* Adjust the value as needed */
+                            }
+                        </style>
+
+                        <!-- ***** Header Buttons End ***** -->
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** navbar Area End ***** -->
+
+
+    <!-- ***** Header Area End ***** -->
+    <section class="page">
+        <!-- ***** Page Top Start ***** -->
+        <div class="cover"
+            style="background: url('assets/images/banner/banner5.png') no-repeat center center / cover; padding: 100px 0; color: #fff;">
+            <div class="page-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12" style="text-align: center;padding-top: 0%;">
+                            <h1>Investment Calculator</h1> <!-- fixed typo from 'Servies' -->
+                        </div>
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="active">SIP Calculator</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .cover {
+            margin-bottom: 40px;
+        }
+    </style>
+
+    <!-- ***** Page Top End ***** -->
+
+    <!-- sip section start -->
+    <!-- Navigation Tabs -->
+    <section class="fc-section-wrapper">
+        <ul class="nav fc-tabs justify-content-center mb-4" id="calcTabs" role="tablist">
+            <li class="nav-item"><button class="nav-link fc-tab-btn active" data-bs-toggle="tab"
+                    data-bs-target="#sip">SIP Calculator</button></li>
+            <li class="nav-item"><button class="nav-link fc-tab-btn" data-bs-toggle="tab"
+                    data-bs-target="#retirement">Retirement Corpus</button></li>
+            <li class="nav-item"><button class="nav-link fc-tab-btn" data-bs-toggle="tab" data-bs-target="#car">Car
+                    Purchase</button></li>
+            <li class="nav-item"><button class="nav-link fc-tab-btn" data-bs-toggle="tab" data-bs-target="#house">House
+                    Purchase</button></li>
+            <li class="nav-item"><button class="nav-link fc-tab-btn" data-bs-toggle="tab"
+                    data-bs-target="#marriage">Marriage Loan</button></li>
+            <li class="nav-item"><button class="nav-link fc-tab-btn" data-bs-toggle="tab" data-bs-target="#stepup">SIP
+                    Top Up</button></li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content">
+
+            <!-- SIP Calculator -->
+            <div class="tab-pane fade show active" id="sip">
+                <h4 class="text-center fc-title">SIP Calculator</h4>
+                <div class="fc-section">
+                    <div class="fc-img-container"><img src="assets/images/index/about.png" alt="SIP"></div>
+                    <div class="fc-form">
+                        <div class="mb-3">
+                            <label class="me-3"><input type="radio" name="mode" checked> SIP</label>
+                            <label><input type="radio" name="mode"> LumpSum</label>
+                        </div>
+                        <input type="text" placeholder="Total Investment" class="form-control mb-3">
+                        <input type="text" placeholder="Expected return rate (p.a)" class="form-control mb-3">
+                        <input type="text" placeholder="Time period (years)" class="form-control mb-3">
+                        <div class="col-12">
+                            <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+
+                        </div>
+
+                        <div class="mt-4">
+                            <p class="fc-result">Invested Amount: ₹</p>
+                            <p class="fc-result">Estimated Returns: ₹</p>
+                            <p class="fc-result">Total Value: ₹</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Retirement Corpus -->
+            <div class="tab-pane fade" id="retirement">
+                <h4 class="text-center fc-title">Retirement Corpus</h4>
+                <div class="fc-section">
+                    <div class="fc-img-container"><img src="assets/images/calculators/retirement.jpg" alt="Retirement">
+                    </div>
+                    <div class="fc-form">
+                        <input type="text" placeholder="Initial Savings" class="form-control mb-3">
+                        <input type="text" placeholder="Investment Period Before Retirement" class="form-control mb-3">
+                        <input type="text" placeholder="New Savings Per Period" class="form-control mb-3">
+                        <input type="text" placeholder="Investment Period After Retirement" class="form-control mb-3">
+                        <input type="text" placeholder="Retirement Income Desired per Period" class="form-control mb-3">
+                        <div class="col-12">
+                            <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car Purchase -->
+            <div class="tab-pane fade" id="car">
+                <h4 class="text-center fc-title">Car Purchase</h4>
+                <div class="fc-section">
+                    <div class="fc-img-container"><img src="assets/images/calculators/car.jpg" alt="Car"></div>
+                    <div class="fc-form">
+                        <input type="text" placeholder="Car Price" class="form-control mb-3">
+                        <input type="text" placeholder="Down Payment" class="form-control mb-3">
+                        <input type="text" placeholder="Trade-In Value" class="form-control mb-3">
+                        <input type="text" placeholder="Interest Rate (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Loan Term (months)" class="form-control mb-3">
+                        <div class="col-12">
+                            <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- House Purchase -->
+            <div class="tab-pane fade" id="house">
+                <h4 class="text-center fc-title">House Purchase</h4>
+                <div class="fc-section">
+                    <div class="fc-img-container"><img src="assets/images/calculators/house.jpg" alt="House"></div>
+                    <div class="fc-form">
+                        <input type="text" placeholder="Loan Amount" class="form-control mb-3">
+                        <input type="text" placeholder="Interest Rate (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Loan Period (months)" class="form-control mb-3">
+                        <div class="col-12">
+                            <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marriage Loan -->
+            <div class="tab-pane fade" id="marriage">
+                <h4 class="text-center fc-title">Marriage Loan</h4>
+                <div class="fc-section">
+                    <div class="fc-img-container"><img src="assets/images/calculators/marriage.jpg" alt="Marriage">
+                    </div>
+                    <div class="fc-form">
+                        <input type="text" placeholder="Loan Amount" class="form-control mb-3">
+                        <input type="text" placeholder="Interest Rate (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Tenure (months)" class="form-control mb-3">
+                        <input type="text" placeholder="EMI Amount" class="form-control mb-3" disabled>
+                        <div class="col-12">
+                            <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIP Top Up -->
+            <div class="tab-pane fade" id="stepup">
+                <h4 class="text-center fc-title">SIP Top Up Calculator</h4>
+                <div class="fc-section">
+                    <div class="fc-img-container"><img src="assets/images/index/about.png" alt="Step Up" style="height: 380px; width: 100%;"></div>
+                    <div class="fc-form">
+                        <input type="text" placeholder="Total Invested Amount" class="form-control mb-3">
+                        <input type="text" placeholder="Monthly SIP Amount" class="form-control mb-3">
+                        <input type="text" placeholder="SIP Duration (months)" class="form-control mb-3">
+                        <input type="text" placeholder="Expected Rate of Return (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Annual SIP Increase (%)" class="form-control mb-3">
+                        <div class="col-12">
+                            <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <style>
+        .fc-section-wrapper {
+            margin-bottom: 80px;
+            /* Adjust spacing as needed */
+        }
+    </style>
+
+    <script>
+        document.getElementById("stepup-calc-btn").addEventListener("click", function () {
+            const sipAmount = parseFloat(document.querySelector('#stepup input[placeholder="Monthly SIP Amount"]').value);
+            const duration = parseInt(document.querySelector('#stepup input[placeholder="SIP Duration (months)"]').value);
+            const returnRate = parseFloat(document.querySelector('#stepup input[placeholder="Expected Rate of Return (%)"]').value);
+            const annualIncrease = parseFloat(document.querySelector('#stepup input[placeholder="Annual SIP Increase (%)"]').value);
+
+            if (isNaN(sipAmount) || isNaN(duration) || isNaN(returnRate) || isNaN(annualIncrease)) {
+                alert("Please fill in all fields with valid numbers.");
+                return;
+            }
+
+            const r = returnRate / 12 / 100;
+            let totalValue = 0;
+            let months = duration;
+            let currentSIP = sipAmount;
+
+            for (let year = 0; months > 0; year++) {
+                let monthsInYear = Math.min(12, months);
+                for (let m = 0; m < monthsInYear; m++) {
+                    totalValue = (totalValue + currentSIP) * (1 + r);
+                }
+                months -= monthsInYear;
+                currentSIP *= 1 + (annualIncrease / 100);
+            }
+
+            // Display result below the form
+            let resultBlock = document.querySelector('#stepup .fc-result-container');
+            if (!resultBlock) {
+                resultBlock = document.createElement("div");
+                resultBlock.className = "mt-4 fc-result-container";
+                document.querySelector("#stepup .fc-form").appendChild(resultBlock);
+            }
+
+            resultBlock.innerHTML = `
+      <p class="fc-result">Future Value: ₹${totalValue.toLocaleString('en-IN', { maximumFractionDigits: 2 })}</p>
+    `;
+        });
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- sip section end -->
+
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer style="
+	background: linear-gradient(to right, #bfbfbf, #cfcece, #e6e6e6);
+	padding: 80px 0 40px 0;
+	font-family: 'Segoe UI', sans-serif;
+	border-top-left-radius: 90px;
+	border-top-right-radius: 90px;
+	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.1);
+	transition: background 0.5s ease, box-shadow 0.3s ease;
+">
+        <div class="container">
+            <div class="row gy-5">
+                <!-- Logo & About -->
+                <div class="col-lg-5 col-md-12 text-center text-lg-start">
+                    <img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
+                        style="max-width: 150px;">
+                    <p class="text-dark" style="font-size: 15px; line-height: 1.8;">
+                        Empowering clients in investments and insurance since 1999, we prioritize transparency, trust,
+                        and personalized guidance, with a mission to help you become a confident, knowledgeable, and
+                        financially informed investor.
+                    </p>
+                </div>
+
+                <!-- Helpful Links -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
+                    <ul class="list-unstyled footer-nav">
+                        <li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+                        <li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
+                        <li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
+                        <li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
+                        <li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
+                    </ul>
+                </div>
+
+                <!-- Support -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                    <h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
+                    <ul class="list-unstyled footer-nav">
+                        <li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a></li>
+                        <li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a></li>
+                        <li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
+                        <li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info & Social -->
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                    <h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
+                    <p class="small mb-1 text-dark">
+                        Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
+                    </p>
+                    <p class="small mb-1 text-dark">
+                        Mon – Fri<br>11:00 AM – 05:00 PM</p>
+                    <p class="mb-1"><a href="https://wa.me/918888830440"
+                            class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
+                    <p><a href="mailto:support@findas.in"
+                            class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
+
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
+                            class="footer-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/findas_india" target="_blank" class="footer-icon" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row mt-4">
+                <div class="col-lg-12 text-center">
+                    <hr class="my-3" style="border-color: #999;">
+                    <p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ***** Footer End ***** -->
+
+    <!-- Footer Styles -->
+    <style>
+        .footer-nav li {
+            margin-bottom: 10px;
+        }
+
+        .footer-nav li a {
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-nav li a:hover {
+            color: #000;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        .footer-icon {
+            font-size: 18px;
+            color: #444;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .footer-icon:hover {
+            color: #000;
+            transform: scale(1.2);
+        }
+    </style>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 55px;
+            height: 55px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            z-index: 9999;
+            display: none;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .back-to-top i {
+            font-size: 22px;
+            transition: transform 0.4s ease, color 0.4s ease;
+        }
+
+        .back-to-top:hover {
+            transform: scale(1.2) rotate(15deg);
+            background: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .back-to-top:hover i {
+            transform: translateY(-4px);
+            color: #000000;
+            /* Gold accent on hover */
+        }
+    </style>
+
+    <script>
+        const backToTop = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.style.display = 'flex';
+            } else {
+                backToTop.style.display = 'none';
+            }
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/parallax.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
