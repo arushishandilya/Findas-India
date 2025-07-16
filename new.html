@@ -1,292 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Findas India</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Turing - IT Solutions and Corporate Template</title>
+	<meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
+	<meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
+	<meta name="author" content="tempload"/>
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="assets/images/favicon/favicon.png" />
+
+	<!-- Bootstrap & Plugins CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
+
+	<!-- Custom CSS -->
+	<link href="assets/css/dark.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<!-- ***** Preloader Start ***** -->
+	<div id="preloader">
+		<div id="loader" class="spinner">
+			<div id="shadow"></div>
+			<div id="box"></div>
+		</div>
+	</div>
+	<!-- ***** Preloader End ***** -->
+
+	
+	<!-- Topbar Start -->
+    <div class="topbar">
+        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
+            <!-- Left: Social Icons -->
+            <div class="social-icons d-flex flex-wrap align-items-center mb-2 mb-md-0">
+                <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <!-- Right: Contact Info -->
+            <div class="contact-info d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
+                <a href="tel:+918888830440" class="text-light d-flex align-items-center gap-2">
+                    <i class="fas fa-phone-alt"></i> <span>+91 88888 30440</span>
+                </a>
+                <a href="mailto:support@findas.in" class="text-light d-flex align-items-center gap-2">
+                    <i class="fas fa-envelope"></i> <span>support@findas.in</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <style>
-        /* navbar sidebar menu */
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-        }
-
-        .service-section {
-            margin: 60px 0;
-        }
-
-        .service-container {
-            display: flex;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Sidebar */
-        .service-sidebar {
-            width: 220px;
-            background-color: #ffffff;
-            border-right: 1px solid #e0e0e0;
-            padding: 20px 0;
-        }
-
-        .service-sidebar ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .service-sidebar li {
-            padding: 12px 24px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .service-sidebar li:hover {
-            background-color: #f5f5f5;
-        }
-
-        .service-sidebar li.active {
-            background-color: #111;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        /* Content */
-        .service-content {
-            position: relative;
-            flex: 1;
-            background: url('assets/images/services.jpg') no-repeat center center / cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px;
-        }
-
-        .overlay {
-            position: absolute;
+        .topbar {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
-            background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(245, 245, 245, 0.85));
-            z-index: 1;
-        }
-
-        .service-box {
-            position: relative;
-            z-index: 2;
-            background-color: rgba(255, 255, 255, 0.96);
-            padding: 30px;
-            max-height: 340px;
-            width: 100%;
-            max-width: 650px;
-            overflow-y: auto;
-            border-radius: 10px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease;
-        }
-
-        .service-box:hover {
-            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Service Heading with icon */
-        .service-heading {
-            font-size: 24px;
-            color: #222;
-            padding-left: 36px;
-            background-repeat: no-repeat;
-            background-position: left center;
-            background-size: 24px 24px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-
-        /* Sample: Insurance Planning icon */
-        .service-heading.insurance {
-            background-image: url('assets/icons/insurance.png');
-        }
-
-        /* Add more icons for other headings */
-        .service-heading.investment {
-            background-image: url('assets/icons/investment.png');
-        }
-
-        .service-heading.corporate {
-            background-image: url('assets/icons/corporate.png');
-        }
-
-        .service-box p {
-            font-size: 15px;
-            line-height: 1.7;
-            color: #333;
-        }
-
-        .read-toggle {
+            z-index: 1050;
+            background-color: #1f1f1f;
+            padding: 10px 20px;
+            font-family: 'Segoe UI', sans-serif;
             font-size: 14px;
-            font-weight: bold;
-            color: #007BFF;
-            cursor: pointer;
-            display: inline-block;
-            margin-top: 12px;
+        }
+
+        .topbar .social-icons a {
+            color: #ffffff;
+            margin-right: 15px;
+            text-decoration: none;
             transition: color 0.3s ease;
+            font-size: 16px;
         }
 
-        .read-toggle:hover {
-            color: #0056b3;
+        .topbar .social-icons a:hover {
+            color: #00bcd4;
         }
 
-        .more-text {
-            display: none;
+        .topbar .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
         }
 
-        .scroll-style::-webkit-scrollbar {
-            width: 6px;
+        .topbar .contact-info a:hover {
+            color: #00bcd4;
         }
 
-        .scroll-style::-webkit-scrollbar-thumb {
-            background-color: rgba(0, 0, 0, 0.15);
-            border-radius: 3px;
-        }
-
-        @media (max-width: 768px) {
-            .service-container {
-                flex-direction: column;
+        /* Responsive Spacing */
+        @media (max-width: 576px) {
+            .topbar {
+                text-align: center;
+                padding: 12px;
             }
 
-            .service-sidebar {
+            .topbar .social-icons {
+                justify-content: center;
+                margin-bottom: 8px;
                 width: 100%;
-                border-right: none;
-                border-bottom: 1px solid #ccc;
             }
 
-            .service-content {
-                padding: 20px;
+            .topbar .contact-info {
+                justify-content: center;
+                text-align: center;
+                width: 100%;
             }
 
-            .service-box {
-                max-height: none;
+            .topbar .contact-info a {
+                justify-content: center;
             }
         }
     </style>
-
-    <meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
-    <meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
-    <meta name="author" content="tempload" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png" />
-
-    <!-- Bootstrap & Plugins CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Font Awesome (for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link href="assets/css/dark.css" rel="stylesheet" type="text/css">
-</head>
-
-<body style="background-color: white;">
-
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div id="loader" class="spinner">
-            <div id="shadow"></div>
-            <div id="box"></div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
-    <!-- Topbar Start -->
-    <div class="topbar">
-  <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
-    <!-- Left: Social Icons -->
-    <div class="social-icons d-flex flex-wrap align-items-center mb-2 mb-md-0">
-      <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    </div>
-
-    <!-- Right: Contact Info -->
-    <div class="contact-info d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-      <a href="tel:+918888830440" class="text-light d-flex align-items-center gap-2">
-        <i class="fas fa-phone-alt"></i> <span>+91 88888 30440</span>
-      </a>
-      <a href="mailto:support@findas.in" class="text-light d-flex align-items-center gap-2">
-        <i class="fas fa-envelope"></i> <span>support@findas.in</span>
-      </a>
-    </div>
-  </div>
-</div>
-
-<style>
-  .topbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1050;
-    background-color: #1f1f1f;
-    padding: 10px 20px;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 14px;
-  }
-
-  .topbar .social-icons a {
-    color: #ffffff;
-    margin-right: 15px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 16px;
-  }
-
-  .topbar .social-icons a:hover {
-    color: #00bcd4;
-  }
-
-  .topbar .contact-info a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 14px;
-  }
-
-  .topbar .contact-info a:hover {
-    color: #00bcd4;
-  }
-
-  /* Responsive Spacing */
-  @media (max-width: 576px) {
-    .topbar {
-      text-align: center;
-      padding: 12px;
-    }
-
-    .topbar .social-icons {
-      justify-content: center;
-      margin-bottom: 8px;
-      width: 100%;
-    }
-
-    .topbar .contact-info {
-      justify-content: center;
-      text-align: center;
-      width: 100%;
-    }
-
-    .topbar .contact-info a {
-      justify-content: center;
-    }
-  }
-</style>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -351,13 +180,13 @@
                                 margin-top: 25px;
                                 /* Adjust the value as needed */
                             }
+
                             .main-nav {
-    margin-top: 5px; /* Adjust to height of topbar */
-}
+                                margin-top: 5px;
+                                /* Adjust to height of topbar */
+                            }
 
-/* nav responsive */
-        
-
+                            /* nav responsive */
                         </style>
 
                         <!-- ***** Header Buttons End ***** -->
@@ -368,403 +197,232 @@
         </div>
     </header>
     <div class="content">
-    <p style="padding-top: 25px;"></p>
-</div>
+        <p style="padding-top: 25px;"></p>
+    </div>
 
     <!-- ***** navbar Area End ***** -->
 
 
-    <!-- ***** Header Area End ***** -->
-    <section class="page">
+	<!-- ***** Header Area start ***** -->
+	<section class="page">
         <!-- ***** Page Top Start ***** -->
         <div class="cover"
             style="background: url('assets/images/banner/banner5.png') no-repeat center center / cover; padding: 100px 0; color: #fff;">
             <div class="page-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12" style="text-align: center;padding-top: 0%;">
-                            <h1>Services</h1> <!-- fixed typo from 'Servies' -->
-                        </div>
-                        <div class="col-lg-12">
-                            <ol class="breadcrumb">
-                                <li><a href="index.html">Home</a></li>
-                                <li class="active">Our Services</li>
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ***** Page Top End ***** -->
-
-    <!-- services start -->
-    <section class="section padding-bottom-80 colored" id="about-us" style="padding-top: 40px;">
-        <div class="container">
-            <div class="row">
-
-                <!-- Image Section -->
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="about-img-wrapper">
-                        <img src="assets/images/Services/service2.png" class="img-fluid d-block mx-auto" alt="About Us"
-                            style="border-radius: 2%; max-width: 100%; height: 450px;">
-                    </div>
-                </div>
-
-                <!-- Text Section -->
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title">What We Do</h2>
-                    </div>
-                    <div class="left-text">
-                        <p>
-                            At <strong>Findas</strong>Our goal is to empower our clients to make informed financial
-                            decisions, and we believe that education is the key to achieving this. We also offer
-                            investment & insurance services, where we create tailormade strategies plans for our
-                            clients based on their goals, risk appetite, and financial situation. This includes
-                            retirement planning, tax planning, estate planning, and more. At every step of the way,
-                            we prioritize transparency, honesty, and integrity in our dealings with clients. Our
-                            mission is to build long-term relationships with our clients based on trust, mutual
-                            respect, and a shared commitment to achieving their financial goals. We believe that
-                            financial education is a critical component of achieving financial success. That's why
-                            we place a great emphasis on educating our clients on various aspects of personal
-                            finance.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-1"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- list of services start -->
-    <section class="service-section">
-        <div class="service-container">
-            <!-- Sidebar -->
-            <div class="service-sidemenu">
-                <ul id="serviceList">
-                    <li class="active" onclick="showService('insurance')">Insurance Planning</li>
-                    <li onclick="showService('investment')">Investment Planning</li>
-                    <li onclick="showService('corporate')">Corporate Solutions</li>
-                    <li onclick="showService('stock')">Stock Investing</li>
-                    <li onclick="showService('will')">WILL Writing</li>
-                    <li onclick="showService('futures')">Futures Trading</li>
-                </ul>
-            </div>
-            <style>
-                .service-sidemenu {
-                    margin-left: 70px;
-                    /* Shift right */
-                }
-            </style>
-
-            <!-- Content -->
-            <div class="service-content">
-                <div class="overlay"
-                    style="background: url('assets/images/Services/finance.avif') no-repeat center center / cover;">
-                </div>
-
-                <div class="service-box scroll-style" id="textBox">
-                    <style>
-                        .service-section {
-                            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('assets/images/bg-services.jpg') no-repeat center center/cover;
-                            padding: 80px 0;
-                            color: #fff;
-                            font-family: 'Segoe UI', sans-serif;
-                        }
-
-                        .service-container {
-                            display: flex;
-                            max-width: 1200px;
-                            margin: auto;
-                            background: rgba(255, 255, 255, 0.05);
-                            backdrop-filter: blur(10px);
-                            border-radius: 20px;
-                            overflow: hidden;
-                            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-                        }
-
-                        .service-sidemenu {
-                            width: 250px;
-                            background: rgba(255, 255, 255, 0.08);
-                            padding: 40px 20px;
-                            border-right: 1px solid rgba(255, 255, 255, 0.1);
-                        }
-
-                        .service-sidemenu ul {
-                            list-style: none;
-                            padding: 0;
-                            margin: 0;
-                        }
-
-                        .service-sidemenu li {
-                            padding: 15px 20px;
-                            margin-bottom: 10px;
-                            background: transparent;
-                            border-radius: 10px;
-                            cursor: pointer;
-                            transition: all 0.3s ease;
-                            color: #fff;
-                            font-weight: 500;
-                        }
-
-                        .service-sidemenu li:hover {
-                            background: rgba(255, 255, 255, 0.15);
-                            transform: translateX(5px);
-                        }
-
-                        .service-sidemenu li.active {
-                            background: #000000;
-                            color: #fff;
-                            font-weight: 600;
-                        }
-
-                        .service-content {
-                            position: relative;
-                            flex: 1;
-                            padding: 40px;
-                            min-height: 500px;
-                            /* ensures space for absolute box */
-                        }
-
-                        .service-box {
-                            position: absolute;
-                            bottom: 20px;
-                            left: 20px;
-                            width: 90%;
-                            max-height: 250px;
-                            overflow-y: auto;
-                            background: rgb(223, 222, 222);
-                            border-radius: 10px;
-                            padding: 20px;
-                            backdrop-filter: blur(8px);
-                            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-                        }
-
-                        .scroll-style::-webkit-scrollbar {
-                            width: 6px;
-                        }
-
-                        .scroll-style::-webkit-scrollbar-thumb {
-                            background-color: #03090a;
-                            border-radius: 10px;
-                        }
-
-                        .service-item {
-                            animation: fadeIn 0.5s ease;
-                        }
-
-                        @keyframes fadeIn {
-                            from {
-                                opacity: 0;
-                                transform: translateY(10px);
-                            }
-
-                            to {
-                                opacity: 1;
-                                transform: translateY(0);
-                            }
-                        }
-
-                        .service-heading {
-                            font-size: 28px;
-                            margin-bottom: 20px;
-                            color: #020707;
-                        }
-
-                        .read-toggle {
-                            display: inline-block;
-                            margin-top: 10px;
-                            cursor: pointer;
-                            color: #040708;
-                            font-weight: bold;
-                            transition: color 0.3s;
-                        }
-
-                        .read-toggle:hover {
-                            color: #0b0707;
-                        }
-
-                        .more-text {
-                            display: none;
-                        }
-
-                        .d-none {
-                            display: none !important;
-                        }
-
-                        @media (max-width: 768px) {
-                            .service-container {
-                                flex-direction: column;
-                            }
-
-                            .service-sidemenu {
-                                width: 100%;
-                                border-right: none;
-                                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                            }
-
-                            .service-content {
-                                padding: 20px;
-                            }
-
-                            .service-box {
-                                position: static;
-                                width: 100%;
-                                margin-top: 20px;
-                            }
-                        }
-                    </style>
-                    <!-- Insurance Planning (default visible) -->
-                    <div class="service-item" id="insurance">
-                        <h2 class="service-heading insurance">Insurance Planning</h2>
-                        <p>
-                            We understand that insurance plays a critical role in protecting our clients' financial
-                            well-being. That's why we offer a wide range of insurance products to meet our clients'
-                            diverse needs. We work with all major insurance companies to provide our clients with a
-                            comprehensive product portfolio, including both life insurance and general insurance
-                            products.
-                            <span class="more-text">Our offerings include health, accident, critical illness, term,
-                                vehicle, property, and commercial insurance. We assist clients through every step —
-                                from selection to claims. With decades of trust, we provide unmatched protection and
-                                peace of mind.</span>
-                        </p>
-                        <span class="read-toggle" onclick="toggleText(this)">Read More</span>
-                    </div>
-
-                    <!-- Investment Planning -->
-                    <div class="service-item d-none" id="investment">
-                        <h2 class="service-heading investment">Investment Planning</h2>
-                        <p>
-                            Our Investment Planning services are designed to align with your financial goals, risk
-                            profile, and time horizon. We create customized strategies that balance growth and
-                            security. Whether you seek long-term wealth creation or short-term returns, our expert
-                            team ensures informed decisions through diversification, asset allocation, and regular
-                            reviews to keep your investments on track and future-ready.
-                            <span class="more-text">
-                                Our investment options include mutual funds, SIPs, stocks, bonds, and retirement
-                                plans. We guide clients at every stage—from planning to portfolio management. With
-                                proven strategies, we help you grow wealth steadily while managing risk and
-                                achieving financial goals.
-                            </span>
-                        </p>
-                        <span class="read-toggle" onclick="toggleText(this)">Read More</span>
-                    </div>
-
-                    <!-- Corporate Solutions -->
-                    <div class="service-item d-none" id="corporate">
-                        <h2 class="service-heading corporate">Corporate Solutions</h2>
-                        <p>
-                            Our Corporate Solutions are designed to enhance employee financial well-being and reduce
-                            organizational risk. We offer group insurance plans, structured investment schemes, and
-                            tailored financial workshops. By aligning with your company’s goals, we create programs
-                            that improve retention, support succession planning, and optimize tax benefits—ensuring
-                            long-term value for both employers, results-driven
-                            financial strategies.
-                            <span class="more-text">
-                                We provide tailored corporate solutions including group insurance, employee
-                                investment benefits, and succession planning. Our services ensure financial
-                                security, tax-efficient structures, and long-term stability for organizations. From
-                                strategy to implementation, we help businesses thrive with confidence and expert
-                                guidance.
-                            </span>
-
-                        </p>
-                        <span class="read-toggle" onclick="toggleText(this)">Read More</span>
-                    </div>
-
-                    <!-- Stock Investing -->
-                    <div class="service-item d-none" id="stock">
-                        <h2 class="service-heading">Stock Investing</h2>
-                        <p>
-                            Stock investing allows you to build long-term wealth by owning shares of quality
-                            companies. Our expert advisors guide you in selecting the right stocks based on your
-                            financial goals, market trends, and risk appetite. We offer personalized strategies,
-                            research-backed insights, and continuous support to help you confidently invest in
-                            equities and grow your portfolio over time.
-                        </p>
-
-                        <span class="more-text">Our services include equity research, portfolio building, and risk
-                            analysis. We guide clients in selecting quality stocks, understanding market trends, and
-                            optimizing returns. With expert insights, we help you make informed decisions and build
-                            long-term wealth through smart stock investments.</span>
-
-                        </p>
-                        <span class="read-toggle" onclick="toggleText(this)">Read More</span>
-                    </div>
-
-                    <!-- WILL Writing -->
-                    <div class="service-item d-none" id="will">
-                        <h2 class="service-heading">Will Writing</h2>
-                        <p>
-                            Our Will Writing service ensures your assets are distributed according to your wishes
-                            with legal clarity and precision. We assist in drafting comprehensive wills that reflect
-                            your intentions, minimize disputes, and provide peace of mind for your loved ones. With
-                            professional guidance, we help you plan your legacy, secure your family’s future, and
-                            ensure a smooth transition of wealth.
-                            <span class="more-text">
-                                We offer professional Will Writing services to ensure your assets are distributed
-                                according to your wishes. Our process includes legal clarity, personalized guidance,
-                                and structured documentation, giving your family peace of mind and reducing future
-                                disputes or complications in estate planning.
-                            </span>
-
-                        </p>
-                        <span class="read-toggle" onclick="toggleText(this)">Read More</span>
-                    </div>
-
-                    <!-- Futures Trading -->
-                    <div class="service-item d-none" id="futures">
-                        <h2 class="service-heading">Futures Trading</h2>
-                        <p>
-                            Futures Trading offers opportunities to amplify returns through leveraged positions. Our
-                            expert-driven strategies are crafted for risk-aware investors aiming to capitalize on
-                            market trends. We guide you through advanced techniques including hedging, speculation,
-                            and portfolio diversification. With real-time insights and disciplined risk management,
-                            we help you navigate the complexities of futures to maximize potential gains with
-                            confidence.
-                            <span class="more-text">Our services include futures contracts in equities, commodities,
-                                and indices. We assist clients with trade execution, margin management, and
-                                strategic planning. With expert insights and disciplined risk control, we help you
-                                navigate volatility and seize opportunities in dynamic futures markets.</span>
-
-                        </p>
-                        <span class="read-toggle" onclick="toggleText(this)">Read More</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        function showService(id) {
-            document.querySelectorAll('#serviceList li').forEach(li => li.classList.remove('active'));
-            document.querySelectorAll('.service-item').forEach(item => item.classList.add('d-none'));
-            document.getElementById(id).classList.remove('d-none');
-
-            const index = ['insurance', 'investment', 'corporate', 'stock', 'will', 'futures'].indexOf(id);
-            document.querySelectorAll('#serviceList li')[index].classList.add('active');
-        }
-
-        function toggleText(elem) {
-            const moreText = elem.previousElementSibling.querySelector('.more-text');
-            if (moreText.style.display === 'inline') {
-                moreText.style.display = 'none';
-                elem.innerText = 'Read More';
-            } else {
-                moreText.style.display = 'inline';
-                elem.innerText = 'Read Less';
-            }
-        }
-    </script>
-    <!-- list of services end -->
+					<div class="row">
+						<div class="col-lg-12">
+							<h1>Blog</h1>
+						</div>
+						<div class="col-lg-12">
+							<ol class="breadcrumb">
+								<li><a href="dark-index.html">Home</a></li>
+								<li class="active">Blog</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Top End ***** -->
 
 
+		<!-- ***** Page Content Start ***** -->
+		<div class="page-bottom">
+			<div class="container">
+				<div class="row">
+					<!-- ***** Page Content Start ***** -->
+					<div class="col-lg-8 col-md-12 col-sm-12">
+						<div class="blog-list">
+							<div class="row">
+								<!-- ***** Blog Post Big Start ***** -->
+								<div class="col-lg-12">
+									<div class="blog-post-thumb big">
+										<div class="img">
+											<img src="assets/images/photos/blog/1.jpg" alt="">
+											<div class="date">
+												<strong>APR</strong>
+												<span>09</span>
+											</div>
+										</div>
+										<ul class="post-meta">
+											<li><a href="#"><span class="icon fa fa-user"></span>by Turing</a></li>
+											<li><a href="#"><span class="icon fa fa-comment-o"></span>3 Comments </a></li>
+										</ul>
+										<h3>
+											<a href="dark-blog-single.html">Turing Expands the Leadership Team with David Lin, Controller</a>
+										</h3>
+										<div class="text">
+											Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae purus tempus dignissim. Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. Morbi auctor tortor eu risus condimentum.
+										</div>
+										<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+									</div>
+								</div>
+								<!-- ***** Blog Post Big End ***** -->
+
+								<!-- ***** Blog Post Standard Start ***** -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="blog-post-thumb">
+										<div class="img">
+											<img src="assets/images/photos/blog/2.jpg" alt="">
+											<div class="date">
+												<strong>APR</strong>
+												<span>09</span>
+											</div>
+										</div>
+										<ul class="post-meta">
+											<li><a href="#"><span class="icon fa fa-user"></span>by Turing</a></li>
+											<li><a href="#"><span class="icon fa fa-comment-o"></span>3 Comments </a></li>
+										</ul>
+										<h3>
+											<a href="dark-blog-single.html">Turing Partners with Velocloud to Deliver Managed SD-WAN</a>
+										</h3>
+										<div class="text">
+											Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+										</div>
+										<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+									</div>
+								</div>
+								<!-- ***** Blog Post Standard End ***** -->
+
+								<!-- ***** Blog Post Standard Start ***** -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="blog-post-thumb">
+										<div class="img">
+											<img src="assets/images/photos/blog/3.jpg" alt="">
+											<div class="date">
+												<strong>APR</strong>
+												<span>09</span>
+											</div>
+										</div>
+										<ul class="post-meta">
+											<li><a href="#"><span class="icon fa fa-user"></span>by Turing</a></li>
+											<li><a href="#"><span class="icon fa fa-comment-o"></span>3 Comments </a></li>
+										</ul>
+										<h3>
+											<a href="dark-blog-single.html">Corporate IT Solutions Adds Neva Senior Account Executive</a>
+										</h3>
+										<div class="text">
+											Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. Morbi auctor.
+										</div>
+										<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+									</div>
+								</div>
+								<!-- ***** Blog Post Standard End ***** -->
+
+								<!-- ***** Blog Post Standard Start ***** -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="blog-post-thumb">
+										<div class="img">
+											<img src="assets/images/photos/blog/1.jpg" alt="">
+											<div class="date">
+												<strong>APR</strong>
+												<span>09</span>
+											</div>
+										</div>
+										<ul class="post-meta">
+											<li><a href="#"><span class="icon fa fa-user"></span>by Turing</a></li>
+											<li><a href="#"><span class="icon fa fa-comment-o"></span>3 Comments </a></li>
+										</ul>
+										<h3>
+											<a href="dark-blog-single.html">Turing Expands the Leadership Team with David Lin, Controller</a>
+										</h3>
+										<div class="text">
+											Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+										</div>
+										<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+									</div>
+								</div>
+								<!-- ***** Blog Post Standard End ***** -->
+
+								<!-- ***** Blog Post Standard Start ***** -->
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="blog-post-thumb">
+										<div class="img">
+											<img src="assets/images/photos/about/1.jpg" alt="">
+											<div class="date">
+												<strong>APR</strong>
+												<span>09</span>
+											</div>
+										</div>
+										<ul class="post-meta">
+											<li><a href="#"><span class="icon fa fa-user"></span>by Turing</a></li>
+											<li><a href="#"><span class="icon fa fa-comment-o"></span>3 Comments </a></li>
+										</ul>
+										<h3>
+											<a href="dark-blog-single.html">Turing Partners with Velocloud to Deliver Managed SD-WAN</a>
+										</h3>
+										<div class="text">
+											Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor malesuada. Morbi auctor.
+										</div>
+										<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
+									</div>
+								</div>
+								<!-- ***** Blog Post Standard End ***** -->
+							</div>
+						</div>
+
+						<!-- ***** Pagination Start ***** -->
+						<nav>
+							<ul class="pagination justify-content-center">
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+										<span class="sr-only">Previous</span>
+									</a>
+								</li>
+								<li class="page-item"><a class="page-link" href="#">1</a></li>
+								<li class="page-item"><a class="page-link" href="#">2</a></li>
+								<li class="page-item"><a class="page-link" href="#">3</a></li>
+								<li class="page-item">
+									<a class="page-link" href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+										<span class="sr-only">Next</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<!-- ***** Pagination End ***** -->
+					</div>
+					<!-- ***** Page Content End ***** -->
+
+					<!-- ***** Aside Start ***** -->
+					<div class="col-lg-4 col-md-12 col-sm-12">
+						<aside class="default-aside">
+							<div class="sidebar">
+								<div class="search-widget">
+									<div class="search">
+										<form>
+											<input type="text" placeholder="Search">
+											<button type="submit"><i class="fa fa-search"></i></button>
+										</form>
+									</div>
+								</div>
+								<ul>
+									<li><a href="#">Cloud PMS <span>23</span></a></li>
+									<li><a href="#">Desktop PMS <span>12</span></a></li>
+									<li><a href="#">Hotel Software <span>153</span></a></li>
+									<li><a href="#">Social Media <span>9</span></a></li>
+									<li><a href="#">General <span>95</span></a></li>
+									<li><a href="#">Marketing <span>32</span></a></li>
+									<li><a href="#">Mobile Future <span>76</span></a></li>
+								</ul>
+
+								
+							</div>
+						</aside>
+					</div>
+					<!-- ***** Aside End ***** -->
+				</div>
+			</div>
+		</div>
+		<!-- ***** Page Content End ***** -->
+
+	</section>
 
 
-    <!-- ***** Footer Start ***** -->
+	
+	<!-- ***** Footer Start ***** -->
     <footer style="
 	background: linear-gradient(to right, #bfbfbf, #cfcece, #e6e6e6);
 	padding: 80px 0 40px 0;
@@ -781,9 +439,9 @@
                     <img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
                         style="max-width: 150px;">
                     <p class="text-dark" style="font-size: 15px; line-height: 1.8;">
-                        Empowering clients in investments and insurance since 1999, we prioritize transparency,
-                        trust, and personalized guidance, with a mission to help you become a confident,
-                        knowledgeable, and financially informed investor.
+                        Empowering clients in investments and insurance since 1999, we prioritize transparency, trust,
+                        and personalized guidance, with a mission to help you become a confident, knowledgeable, and
+                        financially informed investor.
                     </p>
                 </div>
 
@@ -792,9 +450,7 @@
                     <h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
                     <ul class="list-unstyled footer-nav">
                         <li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
-                        <li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services
-
-                            </a></li>
+                        <li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
                         <li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
                         <li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
                         <li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
@@ -805,10 +461,8 @@
                 <div class="col-lg-2 col-md-4 col-sm-6 col-6">
                     <h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
                     <ul class="list-unstyled footer-nav">
-                        <li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a>
-                        </li>
-                        <li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a>
-                        </li>
+                        <li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a></li>
+                        <li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a></li>
                         <li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
                         <li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
                     </ul>
