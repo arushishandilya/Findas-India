@@ -389,7 +389,8 @@
             <div class="tab-pane fade show active" id="sip">
                 <h4 class="text-center fc-title">SIP Calculator</h4>
                 <div class="fc-section">
-                    <div class="fc-img-container"><img src="assets/images/index/about.png" alt="SIP"></div>
+                    <div class="fc-img-container"><img src="assets/images/sip/1.png" alt="SIP" style="height: 430px;">
+                    </div>
                     <div class="fc-form">
                         <div class="mb-3">
                             <label class="me-3"><input type="radio" name="mode" checked> SIP</label>
@@ -416,14 +417,28 @@
             <div class="tab-pane fade" id="retirement">
                 <h4 class="text-center fc-title">Retirement Corpus</h4>
                 <div class="fc-section">
-                    <div class="fc-img-container"><img src="assets/images/calculators/retirement.jpg" alt="Retirement">
+                    <div class="fc-img-container"><img src="assets/images/sip/2.png" alt="Retirement"
+                            style="height: 690px;">
                     </div>
                     <div class="fc-form">
                         <input type="text" placeholder="Initial Savings" class="form-control mb-3">
-                        <input type="text" placeholder="Investment Period Before Retirement" class="form-control mb-3">
+                        <input type="text" placeholder="Investment Period Before Retirement (Years)"
+                            class="form-control mb-3">
                         <input type="text" placeholder="New Savings Per Period" class="form-control mb-3">
-                        <input type="text" placeholder="Investment Period After Retirement" class="form-control mb-3">
+                        <input type="text" placeholder="Investment Period After Retirement (Years)"
+                            class="form-control mb-3">
                         <input type="text" placeholder="Retirement Income Desired per Period" class="form-control mb-3">
+
+                        <!-- Additional Inputs -->
+                        <input type="text" placeholder="Expected Return Rate Before Retirement (%)"
+                            class="form-control mb-3">
+                        <input type="text" placeholder="Expected Return Rate After Retirement (%)"
+                            class="form-control mb-3">
+                        <input type="text" placeholder="Inflation Rate (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Current Age" class="form-control mb-3">
+                        <input type="text" placeholder="Retirement Age" class="form-control mb-3">
+                        <input type="text" placeholder="Life Expectancy (Years)" class="form-control mb-3">
+
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
 
@@ -436,13 +451,21 @@
             <div class="tab-pane fade" id="car">
                 <h4 class="text-center fc-title">Car Purchase</h4>
                 <div class="fc-section">
-                    <div class="fc-img-container"><img src="assets/images/calculators/car.jpg" alt="Car"></div>
+                    <div class="fc-img-container"><img src="assets/images/sip/3.png" alt="Car" style="height: 630px;">
+                    </div>
                     <div class="fc-form">
                         <input type="text" placeholder="Car Price" class="form-control mb-3">
                         <input type="text" placeholder="Down Payment" class="form-control mb-3">
                         <input type="text" placeholder="Trade-In Value" class="form-control mb-3">
                         <input type="text" placeholder="Interest Rate (%)" class="form-control mb-3">
                         <input type="text" placeholder="Loan Term (months)" class="form-control mb-3">
+
+                        <!-- Additional input options -->
+                        <input type="text" placeholder="Sales Tax Rate (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Registration Fees" class="form-control mb-3">
+                        <input type="text" placeholder="Dealer Fees" class="form-control mb-3">
+                        <input type="text" placeholder="Other Charges (Optional)" class="form-control mb-3">
+                        <input type="text" placeholder="Insurance Cost (Optional)" class="form-control mb-3">
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
 
@@ -455,11 +478,16 @@
             <div class="tab-pane fade" id="house">
                 <h4 class="text-center fc-title">House Purchase</h4>
                 <div class="fc-section">
-                    <div class="fc-img-container"><img src="assets/images/calculators/house.jpg" alt="House"></div>
+                    <div class="fc-img-container"><img src="assets/images/sip/4.png" alt="House" style="height: 470px;">
+                    </div>
                     <div class="fc-form">
+                        <input type="text" placeholder="Property Value" class="form-control mb-3">
+                        <input type="text" placeholder="Down Payment" class="form-control mb-3">
                         <input type="text" placeholder="Loan Amount" class="form-control mb-3">
                         <input type="text" placeholder="Interest Rate (%)" class="form-control mb-3">
                         <input type="text" placeholder="Loan Period (months)" class="form-control mb-3">
+                        <input type="text" placeholder="Loan Tenure (years)" class="form-control mb-3">
+                        <input type="date" placeholder="EMI Start Date" class="form-control mb-3">
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
 
@@ -472,13 +500,21 @@
             <div class="tab-pane fade" id="marriage">
                 <h4 class="text-center fc-title">Marriage Loan</h4>
                 <div class="fc-section">
-                    <div class="fc-img-container"><img src="assets/images/calculators/marriage.jpg" alt="Marriage">
+                    <div class="fc-img-container"><img src="assets/images/sip/5.png" alt="Marriage"
+                            style="height: 530px;">
                     </div>
                     <div class="fc-form">
                         <input type="text" placeholder="Loan Amount" class="form-control mb-3">
                         <input type="text" placeholder="Interest Rate (%)" class="form-control mb-3">
                         <input type="text" placeholder="Tenure (months)" class="form-control mb-3">
-                        <input type="text" placeholder="EMI Amount" class="form-control mb-3" disabled>
+                        <input type="text" placeholder="EMI Amount" class="form-control mb-3">
+
+                        <!-- Additional fields -->
+                        <input type="text" placeholder="Processing Fee (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Down Payment (if any)" class="form-control mb-3">
+                        <input type="text" placeholder="Start Date of Loan (MM/YYYY)" class="form-control mb-3">
+                        <input type="text" placeholder="Prepayment Amount (Optional)" class="form-control mb-3">
+
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
 
@@ -492,13 +528,23 @@
                 <h4 class="text-center fc-title">SIP Top Up Calculator</h4>
                 <div class="fc-section">
                     <div class="fc-img-container"><img src="assets/images/index/about.png" alt="Step Up"
-                            style="height: 380px; width: 100%;"></div>
+                            style="height: 630px; width: 100%;"></div>
                     <div class="fc-form">
                         <input type="text" placeholder="Total Invested Amount" class="form-control mb-3">
                         <input type="text" placeholder="Monthly SIP Amount" class="form-control mb-3">
                         <input type="text" placeholder="SIP Duration (months)" class="form-control mb-3">
                         <input type="text" placeholder="Expected Rate of Return (%)" class="form-control mb-3">
                         <input type="text" placeholder="Annual SIP Increase (%)" class="form-control mb-3">
+
+                        <!-- Additional Inputs -->
+                        <input type="text" placeholder="Start Year" class="form-control mb-3">
+                        <input type="text" placeholder="Investment Frequency (e.g., Monthly, Quarterly)"
+                            class="form-control mb-3">
+                        <input type="text" placeholder="Inflation Rate (%)" class="form-control mb-3">
+                        <input type="text" placeholder="Target Amount" class="form-control mb-3">
+                        <input type="text" placeholder="Risk Profile (e.g., Conservative, Aggressive)"
+                            class="form-control mb-3">
+
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
 
