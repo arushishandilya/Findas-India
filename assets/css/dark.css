@@ -1387,6 +1387,21 @@ parallax
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.parallax {
+  background-image: url('assets/images/parallex/parallex.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1; /* Make sure it's below the :before overlay */
+}
+.parallax:before {
+  background-color: rgba(41, 50, 60, 0.6); /* fallback solid */
+  background-image: none; /* or keep it very light */
+  opacity: 0.6;
+}
+
+
 .parallax:before {
   content: "";
   position: absolute;
