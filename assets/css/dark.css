@@ -989,6 +989,65 @@ header
     display: flex !important;
   }
 }
+
+
+/* add some css  in header navigation */
+@media (max-width: 991.98px) {
+  .header-area .main-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav .nav {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    z-index: 999;
+  }
+
+  .main-nav .nav.show {
+    display: flex;
+  }
+
+  .main-nav .nav li {
+    padding: 10px 20px;
+  }
+
+  .main-nav .submenu ul {
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    display: none;
+    padding-left: 15px;
+  }
+
+  .main-nav .submenu:hover ul {
+    display: block;
+  }
+
+  .header-buttons {
+    display: none;
+  }
+
+  .menu-trigger {
+    display: block !important;
+    cursor: pointer;
+    font-weight: bold;
+    color: #707070;
+    padding: 10px 0;
+  }
+
+  .menu-trigger span {
+    font-size: 18px;
+  }
+}
+
 /* 
 ---------------------------------------------
 welcome
