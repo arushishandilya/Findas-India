@@ -36,6 +36,202 @@
 		</div>
 	</div>
 	<!-- ***** Preloader End ***** -->
+<!-- mob responsive for and any mob  -->
+ <!-- START: Header -->
+<header class="header-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <nav class="main-nav d-flex justify-content-between align-items-center">
+                    <!-- Logo -->
+                    <a href="index.html" class="logo me-4">
+                        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" style="max-height: 50px;">
+                    </a>
+
+                    <!-- Menu -->
+                    <ul class="nav d-flex align-items-center mb-0 desktop-menu" style="margin-left: -10px;">
+                        <li style="margin-left: -10px;"><a href="index.html"
+                                style="color: #707070; font-weight: bold;">Home</a></li>
+                        <li class="submenu" style="color: #707070;">
+                            <a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="podcast.html">Podcast</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu" style="margin-left: -10px;">
+                            <a href="javascript:;" style="color: #707070; font-weight: bold;">Services</a>
+                            <ul>
+                                <li><a href="investmentplanning.html">Investment Planning</a></li>
+                                <li><a href="Corporatesolution.html">Corporate Solution</a></li>
+                                <li><a href="insuranceplanning.html">Insurance Planning</a></li>
+                                <li><a href="stockInvesting.html">Stock Investing</a></li>
+                                <li><a href="willwriting.html">Will Writing</a></li>
+                                <li><a href="futureTrading.html">Future Trading</a></li>
+                                <li><a href="sipcalculator.html">SIP Calculator</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
+                    </ul>
+
+                    <!-- Header Buttons -->
+                    <ul class="header-buttons d-flex mb-0 desktop-menu">
+                        <li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
+                        <li><a class="btn-nav-primary" href="contact.html">Support</a></li>
+                    </ul>
+
+                    <!-- Sidebar Toggle Button -->
+                    <a href="javascript:void(0);" class="sidebar-toggle-btn d-none d-lg-block ms-3">
+                        <i class="fas fa-bars fs-4 " style="margin-top: 22px; color: #707070;"></i>
+                    </a>
+
+                    <!-- Sidebar Panel -->
+                    <!-- ... your sidebar code stays unchanged ... -->
+
+                    <!-- Mobile Menu Trigger -->
+                    <a class="menu-trigger d-lg-none d-block" onclick="toggleMobileMenu()">
+                        <span style="font-weight: bold; font-size: 16px;">Menu</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu -->
+                <div class="mobile-menu d-lg-none" id="mobileMenu">
+                    <ul class="nav flex-column text-start ps-3">
+                        <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                        <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+                        <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
+                        <li><a href="podcast.html" class="py-2 d-block">Podcast</a></li>
+                        <li><a href="investmentplanning.html" class="py-2 d-block">Investment Planning</a></li>
+                        <li><a href="Corporatesolution.html" class="py-2 d-block">Corporate Solution</a></li>
+                        <li><a href="insuranceplanning.html" class="py-2 d-block">Insurance Planning</a></li>
+                        <li><a href="stockInvesting.html" class="py-2 d-block">Stock Investing</a></li>
+                        <li><a href="willwriting.html" class="py-2 d-block">Will Writing</a></li>
+                        <li><a href="futureTrading.html" class="py-2 d-block">Future Trading</a></li>
+                        <li><a href="sipcalculator.html" class="py-2 d-block">SIP Calculator</a></li>
+                        <li><a href="clientlogin.html" class="py-2 d-block">Client Login</a></li>
+                        <li><a href="contact.html" class="py-2 d-block">Support</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- END: Header -->
+
+<!-- Add CSS -->
+<style>
+    /* Hide on mobile by default */
+    .desktop-menu {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: none;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    @media (max-width: 991.98px) {
+        .desktop-menu {
+            display: none !important;
+        }
+
+        .mobile-menu {
+            display: none;
+        }
+
+        .mobile-menu.show {
+            display: block;
+        }
+
+        .menu-trigger {
+            display: block;
+            cursor: pointer;
+        }
+    }
+</style>
+
+<style>
+@media (max-width: 991px) {
+  .main-nav > .nav,
+  .main-nav > .header-buttons {
+    display: none !important;
+  }
+
+  .menu-trigger {
+    display: block !important;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .main-nav.mobile-active > .nav,
+  .main-nav.mobile-active > .header-buttons {
+    display: flex !important;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 15px 20px;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .main-nav.mobile-active > .nav li,
+  .main-nav.mobile-active > .header-buttons li {
+    margin-bottom: 10px;
+  }
+
+  .main-nav.mobile-active > .nav li a,
+  .main-nav.mobile-active > .header-buttons li a {
+    color: #333 !important;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .submenu ul {
+    display: none;
+    padding-left: 15px;
+  }
+
+  .submenu:hover ul {
+    display: block;
+  }
+
+  .sidebar-toggle-btn {
+    display: none !important;
+  }
+}
+</style>
+
+
+<script>
+  document.querySelector('.menu-trigger')?.addEventListener('click', function () {
+    document.querySelector('.main-nav').classList.toggle('mobile-active');
+  });
+</script>
+
+
+
+<!-- Add JS -->
+<script>
+    function toggleMobileMenu() {
+        var menu = document.getElementById("mobileMenu");
+        menu.classList.toggle("show");
+    }
+</script>
+
 
 
 	<!-- ***** navbar Area Start ***** -->
@@ -249,6 +445,21 @@
     }
   });
 </script>
+<script>
+  document.querySelector('.sidebar-toggle-btn')?.addEventListener('click', function () {
+    document.getElementById('sidebar-panel').style.display = 'block';
+  });
+
+  document.getElementById('close-sidebar')?.addEventListener('click', function () {
+    document.getElementById('sidebar-panel').style.display = 'none';
+  });
+
+  // Show sidebar when mobile trigger is clicked
+  document.querySelector('.menu-trigger')?.addEventListener('click', function () {
+    document.getElementById('sidebar-panel').style.display = 'block';
+  });
+</script>
+
 
 	<!-- ***** navbar Area End ***** -->
 

@@ -1048,6 +1048,48 @@ header
   }
 }
 
+
+  /* Hide main nav and header buttons on mobile */
+  @media (max-width: 991px) {
+    .main-nav .nav,
+    .header-buttons,
+    .sidebar-toggle-btn {
+      display: none !important;
+    }
+
+    /* Show mobile menu trigger */
+    .menu-trigger {
+      display: block !important;
+      cursor: pointer;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .menu-trigger span {
+      background: #333;
+      padding: 8px 12px;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    /* Show the sidebar in full width for mobile */
+    #sidebar-panel {
+      width: 100% !important;
+      max-width: 100%;
+      border-radius: 0 !important;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  /* Hide mobile trigger on desktop */
+  @media (min-width: 992px) {
+    .menu-trigger {
+      display: none !important;
+    }
+  }
+
+
 /* 
 ---------------------------------------------
 welcome
