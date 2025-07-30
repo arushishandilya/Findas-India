@@ -28,1378 +28,358 @@
 
 <body>
 
-	<!-- ***** Preloader Start ***** -->
-	<div id="preloader">
-		<div id="loader" class="spinner">
-			<div id="shadow"></div>
-			<div id="box"></div>
-		</div>
-	</div>
-	<!-- ***** Preloader End ***** -->
-<!-- mob responsive for and any mob  -->
- <!-- START: Header -->
-<header class="header-area">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12">
-                <nav class="main-nav d-flex justify-content-between align-items-center">
-                    <!-- Logo -->
-                    <a href="index.html" class="logo me-4">
-                        <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo" style="max-height: 50px;">
-                    </a>
+	
 
-                    <!-- Menu -->
-                    <ul class="nav d-flex align-items-center mb-0 desktop-menu" style="margin-left: -10px;">
-                        <li style="margin-left: -10px;"><a href="index.html"
-                                style="color: #707070; font-weight: bold;">Home</a></li>
-                        <li class="submenu" style="color: #707070;">
-                            <a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
-                            <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="podcast.html">Podcast</a></li>
-                            </ul>
-                        </li>
-                        <li class="submenu" style="margin-left: -10px;">
-                            <a href="javascript:;" style="color: #707070; font-weight: bold;">Services</a>
-                            <ul>
-                                <li><a href="investmentplanning.html">Investment Planning</a></li>
-                                <li><a href="Corporatesolution.html">Corporate Solution</a></li>
-                                <li><a href="insuranceplanning.html">Insurance Planning</a></li>
-                                <li><a href="stockInvesting.html">Stock Investing</a></li>
-                                <li><a href="willwriting.html">Will Writing</a></li>
-                                <li><a href="futureTrading.html">Future Trading</a></li>
-                                <li><a href="sipcalculator.html">SIP Calculator</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
-                    </ul>
 
-                    <!-- Header Buttons -->
-                    <ul class="header-buttons d-flex mb-0 desktop-menu">
-                        <li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
-                        <li><a class="btn-nav-primary" href="contact.html">Support</a></li>
-                    </ul>
 
-                    <!-- Sidebar Toggle Button -->
-                    <a href="javascript:void(0);" class="sidebar-toggle-btn d-none d-lg-block ms-3">
-                        <i class="fas fa-bars fs-4 " style="margin-top: 22px; color: #707070;"></i>
-                    </a>
 
-                    <!-- Sidebar Panel -->
-                    <!-- ... your sidebar code stays unchanged ... -->
 
-                    <!-- Mobile Menu Trigger -->
-                    <a class="menu-trigger d-lg-none d-block" onclick="toggleMobileMenu()">
-                        <span style="font-weight: bold; font-size: 16px;">Menu</span>
-                    </a>
-                </nav>
+ <!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-                <!-- Mobile Menu -->
-                <div class="mobile-menu d-lg-none" id="mobileMenu">
-                    <ul class="nav flex-column text-start ps-3">
-                        <li><a href="index.html" class="py-2 d-block">Home</a></li>
-                        <li><a href="about.html" class="py-2 d-block">About Us</a></li>
-                        <li><a href="blog.html" class="py-2 d-block">Blog</a></li>
-                        <li><a href="podcast.html" class="py-2 d-block">Podcast</a></li>
-                        <li><a href="investmentplanning.html" class="py-2 d-block">Investment Planning</a></li>
-                        <li><a href="Corporatesolution.html" class="py-2 d-block">Corporate Solution</a></li>
-                        <li><a href="insuranceplanning.html" class="py-2 d-block">Insurance Planning</a></li>
-                        <li><a href="stockInvesting.html" class="py-2 d-block">Stock Investing</a></li>
-                        <li><a href="willwriting.html" class="py-2 d-block">Will Writing</a></li>
-                        <li><a href="futureTrading.html" class="py-2 d-block">Future Trading</a></li>
-                        <li><a href="sipcalculator.html" class="py-2 d-block">SIP Calculator</a></li>
-                        <li><a href="clientlogin.html" class="py-2 d-block">Client Login</a></li>
-                        <li><a href="contact.html" class="py-2 d-block">Support</a></li>
-                    </ul>
-                </div>
+<!-- Partners With Section Start -->
+<section class="partner-section" style="position: relative; overflow: hidden; background: linear-gradient(to bottom, #ced3d6, #adadad); padding-top: 100px; padding-bottom: 100px;">
 
-            </div>
-        </div>
+  <!-- Top Wave -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; z-index: 0;">
+    <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <!-- Content Container -->
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="left-heading text-center">
+      <h2 class="section-title underline">Our Trusted Partners</h2>
+      <p class="partner-subtitle">We proudly collaborate with industry leaders</p>
     </div>
-</header>
-<!-- END: Header -->
 
-<!-- Add CSS -->
-<style>
-    /* Hide on mobile by default */
-    .desktop-menu {
-        display: flex;
-    }
-
-    .mobile-menu {
-        display: none;
-        background: #fff;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        left: 0;
-        z-index: 999;
-    }
-
-    @media (max-width: 991.98px) {
-        .desktop-menu {
-            display: none !important;
-        }
-
-        .mobile-menu {
-            display: none;
-        }
-
-        .mobile-menu.show {
-            display: block;
-        }
-
-        .menu-trigger {
-            display: block;
-            cursor: pointer;
-        }
-    }
-</style>
-
-<style>
-@media (max-width: 991px) {
-  .main-nav > .nav,
-  .main-nav > .header-buttons {
-    display: none !important;
-  }
-
-  .menu-trigger {
-    display: block !important;
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: bold;
-    font-size: 16px;
-  }
-
-  .main-nav.mobile-active > .nav,
-  .main-nav.mobile-active > .header-buttons {
-    display: flex !important;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    right: 0;
-    padding: 15px 20px;
-    z-index: 999;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  }
-
-  .main-nav.mobile-active > .nav li,
-  .main-nav.mobile-active > .header-buttons li {
-    margin-bottom: 10px;
-  }
-
-  .main-nav.mobile-active > .nav li a,
-  .main-nav.mobile-active > .header-buttons li a {
-    color: #333 !important;
-    font-weight: 500;
-    text-decoration: none;
-  }
-
-  .submenu ul {
-    display: none;
-    padding-left: 15px;
-  }
-
-  .submenu:hover ul {
-    display: block;
-  }
-
-  .sidebar-toggle-btn {
-    display: none !important;
-  }
-}
-</style>
-
-
-<script>
-  document.querySelector('.menu-trigger')?.addEventListener('click', function () {
-    document.querySelector('.main-nav').classList.toggle('mobile-active');
-  });
-</script>
-
-
-
-<!-- Add JS -->
-<script>
-    function toggleMobileMenu() {
-        var menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("show");
-    }
-</script>
-
-
-
-	<!-- ***** navbar Area Start ***** -->
-	<header class="header-area">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12">
-					<nav class="main-nav d-flex justify-content-between align-items-center">
-						<!-- ***** Logo Start ***** -->
-						<a href="index.html" class="logo me-4">
-							<img src="assets/images/logo/logo-removebg-preview.png" alt="Logo"
-								style="max-height: 50px;">
-						</a>
-						<!-- ***** Logo End ***** -->
-
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav d-flex align-items-center mb-0" style="margin-left: -10px;">
-							<li style="margin-left: -10px;"><a href="index.html"
-									style="color: #707070; font-weight: bold;">Home</a></li>
-
-							<li class="submenu" style="color: #707070;">
-								<a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
-								<ul>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="podcast.html">Podcast</a></li>
-								</ul>
-							</li>
-
-							<li class="submenu" style="margin-left: -10px;">
-								<a href="javascript:;" style="color: #707070; font-weight: bold;">Services</a>
-								<ul>
-									<li><a href="investmentplanning.html">Investment Planning</a></li>
-									<li><a href="Corporatesolution.html">Corporate Solution</a></li>
-									<li><a href="insuranceplanning.html">Insurance Planning</a></li>
-									<li><a href="stockInvesting.html">Stock Investing</a></li>
-									<li><a href="willwriting.html">Will Writing</a></li>
-									<li><a href="futureTrading.html">Future Trading</a></li>
-									<li><a href="sipcalculator.html">SIP Calculator</a></li>
-								</ul>
-							</li>
-
-
-							<li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
-						</ul>
-
-						<!-- ***** Menu End ***** -->
-
-						<!-- ***** Header Buttons Start ***** -->
-						<ul class="header-buttons d-flex mb-0">
-							<li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
-							<li><a class="btn-nav-primary" href="contact.html">Support</a></li>
-						</ul>
-						<!-- ***** Header Buttons End ***** -->
-						<!-- Sidebar Toggle Button -->
-						<a href="javascript:void(0);" class="sidebar-toggle-btn d-none d-lg-block ms-3">
-							<i class="fas fa-bars fs-4 " style="margin-top: 22px; color: #707070;"></i>
-						</a>
-
-						<!-- Sidebar Panel -->
-						<div id="sidebar-panel"
-							class="position-fixed top-0 end-0 bg-white shadow-lg px-4 pt-4 pb-5 rounded-start"
-							style="width: 320px; height: 100vh; z-index: 1050; display: none; overflow-y: auto;">
-
-							<!-- Header: Logo + Close -->
-							<div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
-								<a href="index.html">
-									<img src="assets/images/logo/logo-removebg-preview.png" alt="Company Logo"
-										style="height: 48px; object-fit: contain;">
-								</a>
-								<button id="close-sidebar"
-									class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center shadow"
-									style="	width: 32px; height: 32px; font-size: 20px; color: #fff; background: linear-gradient(135deg, #000000, #333333); transition: transform 0.3s ease, background 0.3s ease;">
-									&times;
-								</button>
-							</div>
-
-							<!-- Add this CSS (inline or in your stylesheet) -->
-							<style>
-								#close-sidebar:hover {
-									transform: scale(1.1) rotate(90deg);
-									background: linear-gradient(135deg);
-								}
-							</style>
-
-							<!-- About Section -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i
-										class="fas fa-building me-2 text-secondary"></i>About FINDAS</h6>
-								<p class="text-muted small">
-									We’ve been empowering clients in investments and insurance since 1999. We believe in
-									transparency and
-									trust. Our mission is to help you become a financially literate investor.
-								</p>
-							</div>
-
-							<!-- Office Address -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i
-										class="fas fa-map-marker-alt me-2 text-secondary"></i>Nashik Office</h6>
-								<p class="small text-muted mb-0">
-									Flat C-301, 3rd Floor,<br>Ishwar Pratishta 3,<br>Ravi Shankar Marg,<br>Nashik -
-									422009
-								</p>
-							</div>
-
-							<!-- Timings -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i class="fas fa-clock me-2 text-secondary"></i>We
-									Are Open</h6>
-								<p class="small text-muted mb-0">Mon – Sat<br>11:00 AM – 05:00 PM</p>
-							</div>
-
-							<!-- Contact -->
-
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i
-										class="fas fa-phone-alt me-2 text-secondary"></i>Get In Touch</h6>
-								<p class="small text-muted mb-1">
-									<a href="https://wa.me/918888830440" target="_blank"
-										class="text-muted text-decoration-none">
-										+91 88888 30440
-									</a>
-								</p>
-							</div>
-							<!-- email -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mt-3 mb-2"><i
-										class="fas fa-envelope me-2 text-secondary"></i>Quick Email</h6>
-								<p class="small text-muted">
-									<a href="mailto:support@findas.in"
-										class="text-muted text-decoration-none">support@findas.in</a>
-								</p>
-							</div>
-
-							<!-- Social Media -->
-							<div class="mt-4">
-								<h6 class="fw-bold text-dark mb-3"><i
-										class="fas fa-share-alt me-2 text-secondary"></i>Follow Us</h6>
-								<div class="d-flex gap-3">
-									<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
-										aria-label="LinkedIn">
-										<i class="fab fa-linkedin fs-5 text-primary"></i>
-									</a>
-									<a href="https://www.instagram.com/findasindia/" target="_blank"
-										aria-label="Instagram">
-										<i class="fab fa-instagram fs-5 text-danger"></i>
-									</a>
-									<a href="https://x.com/findas_india" target="_blank" aria-label="Twitter">
-										<i class="fab fa-twitter fs-5 text-info"></i>
-									</a>
-									<a href="https://www.facebook.com/Financiallybindaas" target="_blank"
-										aria-label="Facebook">
-										<i class="fab fa-facebook-f fs-5 text-primary"></i>
-									</a>
-									<a href="https://www.youtube.com/@FindasMarathi" target="_blank"
-										aria-label="YouTube">
-										<i class="fab fa-youtube fs-5 text-danger"></i>
-									</a>
-
-								</div>
-							</div>
-						</div>
-						<script>
-							document.querySelector('.sidebar-toggle-btn')?.addEventListener('click', function () {
-								document.getElementById('sidebar-panel').style.display = 'block';
-							});
-
-							document.getElementById('close-sidebar')?.addEventListener('click', function () {
-								document.getElementById('sidebar-panel').style.display = 'none';
-							});
-						</script>
-						<!-- Mobile Menu Trigger -->
-						<a class="menu-trigger d-lg-none d-block">
-							<span>Menu</span>
-						</a>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-    <script>
-  // Toggle mobile menu
-  document.querySelector('.menu-trigger')?.addEventListener('click', function () {
-    const navMenu = document.querySelector('.main-nav .nav');
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-    navMenu.style.flexDirection = 'column';
-  });
-
-  // Submenu toggle for mobile
-  document.querySelectorAll('.nav li.submenu > a').forEach(link => {
-    link.addEventListener('click', function (e) {
-      if (window.innerWidth <= 991) {
-        e.preventDefault();
-        const submenu = this.nextElementSibling;
-        submenu.classList.toggle('active');
-        submenu.style.height = submenu.classList.contains('active') ? 'auto' : '0px';
-      }
-    });
-  });
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const trigger = document.querySelector('.menu-trigger');
-    const nav = document.querySelector('.main-nav .nav');
-
-    if (trigger && nav) {
-      trigger.addEventListener('click', function () {
-        nav.classList.toggle('show');
-      });
-    }
-  });
-</script>
-<script>
-  document.querySelector('.sidebar-toggle-btn')?.addEventListener('click', function () {
-    document.getElementById('sidebar-panel').style.display = 'block';
-  });
-
-  document.getElementById('close-sidebar')?.addEventListener('click', function () {
-    document.getElementById('sidebar-panel').style.display = 'none';
-  });
-
-  // Show sidebar when mobile trigger is clicked
-  document.querySelector('.menu-trigger')?.addEventListener('click', function () {
-    document.getElementById('sidebar-panel').style.display = 'block';
-  });
-</script>
-
-
-	<!-- ***** navbar Area End ***** -->
-
-
-
-	<!-- ***** header Area Start ***** -->
-	<div class="welcome-area" id="welcome">
-		<!-- ***** Header Background Image Start ***** -->
-		<div class="right-bg">
-			<img src="assets/images/index/banner2.png" class="img-fluid" alt="" style="filter: blur(3px);">
-
-		</div>
-		<!-- ***** Header Background Image End ***** -->
-
-		<div class="header-bg">
-			<img src="assets/images/header-bg.svg" class="img-fluid" alt="">
-		</div>
-
-		<!-- ***** Header Text Start ***** -->
-		<div class="header-text">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-12 col-sm-12">
-						<h1>Empowering Financial Confidence Through <span>Expert Guidance</span></h1>
-						<p>FINDAS simplifies investing and insurance through transparency, ethics, and financial
-							education—empowering you to take control of your financial future.</p>
-						<a href="#" class="btn-primary-line" data-bs-toggle="modal"
-							data-bs-target="#appointmentModal">Book An Appointment</a>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-		<!-- ***** Header Text End ***** -->
-
-		<!-- ***** Play Button Start ***** -->
-		<div class="play-button-wrapper">
-			<a href="https://www.youtube.com/watch?v=x8ZMds7EYLI" class="btn-play">
-				<i class="fa fa-play"></i>
-			</a>
-		</div>
-		<!-- ***** Play Button End ***** -->
-	</div>
-	<!-- ***** Welcome Area End ***** -->
-
-
-
-	<!-- ***** Features section Start ***** -->
-	<section class="section features-home pb-3">
-		<!-- ***** Section Title Start ***** -->
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="row">
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-line-chart"></i>
-								</div>
-								<h5 class="features-title">Wealth Planning</h5>
-								<p>Customized investment strategies designed to help you reach your financial goals
-									confidently.</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-university"></i>
-								</div>
-								<h5 class="features-title">Investment Advisory</h5>
-								<p>Receive expert financial advice tailored to your risk profile and future aspirations.
-								</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-graduation-cap"></i>
-								</div>
-								<h5 class="features-title">Investor Education</h5>
-								<p>Stay updated with valuable insights, resources, and guidance to grow your knowledge.
-								</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-handshake-o"></i>
-								</div>
-								<h5 class="features-title">Trusted Partnership</h5>
-								<p>We build lasting relationships through transparency, integrity, and exceptional
-									service.</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Features section End ***** -->
-
-
-	<!-- ***** about section Start ***** -->
-	<section class="section padding-bottom-80 colored" id="about-us" style="padding-top: 40px; ">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-					<div class="left-heading">
-						<h2 class="section-title">About Us</h2>
-					</div>
-					<div class="left-text">
-						<p>At Findas, we help clients achieve financial goals with customized investment strategies
-							based on their unique needs and risk tolerance. Education is important, so we offer regular
-							updates and resources to help clients become more informed investors. Our commitment to
-							transparency and exceptional service builds trust and long-lasting relationships with our
-							clients. </p>
-
-						<p>Our commitment to transparency, integrity, and exceptional service forms the foundation of
-							the long-lasting relationships we build with each client. We take the time to understand
-							your financial journey, offering guidance every step of the way—whether you're planning for
-							retirement, securing your family's future.</p>
-						<a href="about.html" class="btn-primary-line">LEARN MORE</a>
-					</div>
-				</div>
-
-				<style>
-					.btn-home.small-btn {
-						padding: 6px 12px;
-						font-size: 12px;
-					}
-				</style>
-
-				<div class="col-lg-1"></div>
-				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix"
-					data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-					<img src="assets/images/index/header-index.png" class="img-fluid d-block mx-auto" alt="About Us"
-						style="border-radius: 3%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 150%; width: auto;">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** about section End ***** -->
-
-
-	<!-- Partners with Start -->
-<div class="brand__area section-padding pt-0" style="margin-top: 4%;">
-  <div class="container">
-    <div class="row brand__area-border">
-      <div class="col-xl-12">
-        <div class="left-heading text-center">
-          <h2 class="section-title underline">Partners With</h2>
-        </div>
-
-        <!-- Styling -->
-        <style>
-          .underline {
-            position: relative;
-            display: inline-block;
-            font-weight: 600;
-            color: #2c3e50;
-          }
-
-          .underline::after {
-            content: "";
-            display: block;
-            width: 40px;
-            height: 2px;
-            background-color: #2c3e50;
-            margin: 8px auto 0;
-          }
-
-          .brand__area-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-          }
-
-          .brand__area-item img {
-            max-height: 80px;
-            object-fit: contain;
-            width: auto;
-            max-width: 100%;
-            filter: grayscale(100%);
-            transition: filter 0.3s;
-          }
-
-          .brand__area-item img:hover {
-            filter: grayscale(0%);
-          }
-        </style>
-
-        <!-- Swiper Container -->
-        <div class="swiper brand__slider mt-4">
-          <div class="swiper-wrapper">
-            <!-- Repeatable Partner Logos -->
-            <div class="brand__area-item swiper-slide">
+    <!-- Swiper Slider -->
+    <div class="swiper partner-slider">
+      <div class="swiper-wrapper">
+        <!-- Partner Logos -->
+        <!-- Add all your 60 slides here as you already have done -->
+        <!-- Example: -->
+        <div class="swiper-slide partner-card">
               <img src="assets/images/partner slider/partners_01.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_02.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_03.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_04.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_05.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_06.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_07.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_08.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_09.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_10.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_11.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_12.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_13.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_14.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_15.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_16.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_17.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_18.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_19.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_20.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_21.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_22.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_23.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_24.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_25.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_26.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_27.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_28.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_29.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_30.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_31.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_32.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_33.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_34.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_35.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_36.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_37.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_38.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_39.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_40.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_41.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_42.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_43.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_44.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_45.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_46.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_47.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_48.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_49.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_50.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_51.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_52.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_53.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_54.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_55.jpg" alt="Partner 1">
-            </div>
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_56.jpg" alt="Partner 1">
-            </div>            
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_57.jpg" alt="Partner 1">
-            </div>            
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_58.jpg" alt="Partner 1">
-            </div>            
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_59.jpg" alt="Partner 1">
-            </div>            
-            <div class="brand__area-item swiper-slide">
-              <img src="assets/images/partner slider/partners_60.jpg" alt="Partner 1">
-            </div>            
-          </div>
         </div>
-        <!-- Swiper Container End -->
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_02.jpg" alt="Partner 2">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_03.jpg" alt="Partner 3">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_04.jpg" alt="Partner 4">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_05.jpg" alt="Partner 5">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_06.jpg" alt="Partner 6">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_07.jpg" alt="Partner 7">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_08.jpg" alt="Partner 8">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_09.jpg" alt="Partner 9">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_10.jpg" alt="Partner 10">
+        </div>
+		<!-- set2 -->
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_11.jpg" alt="Partner 11">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_12.jpg" alt="Partner 12">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_13.jpg" alt="Partner 13">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_14.jpg" alt="Partner 14">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_15.jpg" alt="Partner 15">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_16.jpg" alt="Partner 16">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_17.jpg" alt="Partner 17">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_18.jpg" alt="Partner 18">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_19.jpg" alt="Partner 19">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_20.jpg" alt="Partner 20">
+        </div>
+		<!-- set3 -->
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_21.jpg" alt="Partner 21">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_22.jpg" alt="Partner 22">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_23.jpg" alt="Partner 23">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_24.jpg" alt="Partner 24">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_25.jpg" alt="Partner 25">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_26.jpg" alt="Partner 26">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_27.jpg" alt="Partner 27">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_28.jpg" alt="Partner 28">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_29.jpg" alt="Partner 29">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_30.jpg" alt="Partner 30">
+        </div>
+		<!-- set4 -->
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_31.jpg" alt="Partner 31">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_32.jpg" alt="Partner 32">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_33.jpg" alt="Partner 33">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_34.jpg" alt="Partner 34">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_35.jpg" alt="Partner 35">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_36.jpg" alt="Partner 36">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_37.jpg" alt="Partner 37">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_38.jpg" alt="Partner 38">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_39.jpg" alt="Partner 39">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_40.jpg" alt="Partner 40">
+        </div>
+		<!-- set5 -->
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_41.jpg" alt="Partner 41">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_42.jpg" alt="Partner 42">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_43.jpg" alt="Partner 43">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_44.jpg" alt="Partner 44">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_45.jpg" alt="Partner 45">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_46.jpg" alt="Partner 46">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_47.jpg" alt="Partner 47">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_48.jpg" alt="Partner 48">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_49.jpg" alt="Partner 49">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_50.jpg" alt="Partner 50">
+        </div>
+		<!-- set6 -->
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_51.jpg" alt="Partner 51">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_52.jpg" alt="Partner 52">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_53.jpg" alt="Partner 53">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_54.jpg" alt="Partner 54">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_55.jpg" alt="Partner 55">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_56.jpg" alt="Partner 56">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_57.jpg" alt="Partner 57">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_58.jpg" alt="Partner 58">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_59.jpg" alt="Partner 59">
+        </div>
+        <div class="swiper-slide partner-card">
+              <img src="assets/images/partner slider/partners_60.jpg" alt="Partner 60">
+        </div>
+
+
+        <!-- Repeat for partners_02.jpg to partners_60.jpg -->
+        <!-- ... -->
       </div>
     </div>
   </div>
-</div>
-<!-- Partners with End -->
+
+  <!-- Bottom Wave -->
+  <div style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 0;">
+    <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,64L80,64C160,64,320,64,480,64C640,64,800,64,960,64C1120,64,1280,64,1360,64L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"></path>
+    </svg>
+  </div>
+</section>
+<!-- Partners With Section End -->
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const partnerSwiper = new Swiper(".partner-slider", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: { slidesPerView: 2 },
+      576: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      992: { slidesPerView: 5 },
+    },
+  });
+</script>
+
+<!-- Custom Styling -->
+<style>
+  .underline {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  .underline::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #2c3e50;
+    margin: 8px auto 0;
+  }
+
+  .partner-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .partner-subtitle {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 30px;
+  }
+
+  .partner-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .partner-card:hover {
+    transform: translateY(-6px) scale(1.06);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
+    background: #fdfdfd;
+  }
+
+  .partner-card img {
+    max-height: 80px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .partner-card img:hover {
+    transform: scale(1.05);
+  }
+
+  .swiper-slide:nth-child(1) { animation-delay: 0.1s; }
+  .swiper-slide:nth-child(2) { animation-delay: 0.2s; }
+  .swiper-slide:nth-child(3) { animation-delay: 0.3s; }
+  .swiper-slide:nth-child(4) { animation-delay: 0.4s; }
+  .swiper-slide:nth-child(5) { animation-delay: 0.5s; }
+
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .partner-title {
+      font-size: 28px;
+    }
+
+    .partner-card {
+      padding: 15px;
+    }
+
+    .partner-card img {
+      max-height: 60px;
+    }
+  }
+</style>
 
 
 
-
-	<!-- ***** Why Choose Us Start ***** -->
-	<section class="section" id="why-choose-us" style="padding-bottom: 40px;">
-
-		<div class="container">
-			<!-- ***** Section Title Start ***** -->
-			<div class="row">
-				<div class="col-lg-12 ">
-					<div class="left-heading  text-center">
-						<h2 class="section-title underline">Why Choose Us</h2>
-					</div>
-				</div>
-				<style>
-					.underline {
-						position: relative;
-						display: inline-block;
-						font-weight: 600;
-						color: #2c3e50;
-						/* Adjust the color to match your theme */
-					}
-
-					.underline::after {
-						content: "";
-						display: block;
-						width: 40px;
-						/* Length of the line */
-						height: 2px;
-						/* Thickness */
-						background-color: #2c3e50;
-						/* Line color */
-						margin: 8px auto 0;
-						/* Space between text and line */
-					}
-				</style>
-
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>At Findas, we help you make informed financial decisions with confidence, trust, and
-							personalized strategies that put your goals first.</p>
-					</div>
-				</div>
-			</div>
-			<!-- ***** Section Title End ***** -->
-
-			<div class="row">
-				<!-- ***** Choose1 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychoseus1.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Expertise You Trust</h3>
-								<span>Financial Excellence</span>
-							</div>
-							<p>Our experienced professionals craft tailored investment strategies that align with your
-								unique goals.</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose1 Item End ***** -->
-				<!-- ***** Choose2 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychoseus2.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Transparency & Trust</h3>
-								<span>Clear Communication</span>
-							</div>
-							<p>We value honesty and provide complete transparency in every step of your financial
-								journey.</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose2 Item End ***** -->
-				<!-- ***** Choose3 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychooseus3.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Investor Education</h3>
-								<span>Knowledge Sharing</span>
-							</div>
-							<p>We empower you with updates, insights, and resources to make informed financial
-								decisions.</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose3 Item End ***** -->
-				<!-- ***** Choose4 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychooseus4.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Dedicated Support</h3>
-								<span>Client First</span>
-							</div>
-							<p>Our commitment to service ensures you always have expert guidance when you need it most.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose4 Item End ***** -->
-			</div>
-		</div>
-	</section>
-	<!-- ***** Why Choose Us End ***** -->
-
-
-
-	<!-- ***** Our Services Start ***** -->
-	<section class="section colored" id="our-services" style="padding-top: 40px;">
-
-		<div class="container">
-			<!-- ***** Section Title Start ***** -->
-			<div class="row">
-				<div class="col-lg-12 ">
-					<div class="left-heading  text-center">
-						<h2 class="section-title underline">Our Services</h2>
-					</div>
-				</div>
-				<style>
-					.underline {
-						position: relative;
-						display: inline-block;
-						font-weight: 600;
-						color: #2c3e50;
-						/* Adjust the color to match your theme */
-					}
-
-					.underline::after {
-						content: "";
-						display: block;
-						width: 40px;
-						/* Length of the line */
-						height: 2px;
-						/* Thickness */
-						background-color: #2c3e50;
-						/* Line color */
-						margin: 8px auto 0;
-						/* Space between text and line */
-					}
-				</style>
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>At Findas, we offer a comprehensive range of financial services designed to help individuals
-							and businesses grow, protect, and manage their wealth with confidence and clarity.</p>
-					</div>
-				</div>
-			</div>
-			<!-- ***** Section Title End ***** -->
-
-			<div class="row">
-				<!-- ***** Service1 Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12"
-					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<div class="pricing-item active">
-						<div class="pricing-header">
-							<h3 class="pricing-title">Investment Planning</h3>
-						</div>
-						<div class="pricing-body" style="color: #333;justify-content: center;">
-							<p>Strategic investment solutions tailored to your financial goals, risk appetite, and time
-								horizon to help you build long-term wealth.</p>
-						</div>
-						<div class="pricing-footer">
-							<a href="services.html">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Service Item End ***** -->
-
-				<!-- ***** Service Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12"
-					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<div class="pricing-item active">
-						<div class="pricing-header">
-							<h3 class="pricing-title">Insurance Planning</h3>
-						</div>
-						<div class="pricing-body" style="color: #333; justify-content: center;">
-							<p>Protect what matters most with our all-inclusive insurance plans—designed to secure your
-								family, safeguard your assets, and ensure lifelong financial peace of mind.</p>
-						</div>
-
-						<div class="pricing-footer">
-							<a href="services.html">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Service Item End ***** -->
-
-				<!-- ***** Service Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12"
-					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<div class="pricing-item active">
-						<div class="pricing-header">
-							<h3 class="pricing-title">Corporate Solutions</h3>
-						</div>
-						<div class="pricing-body" style="color: #333;justify-content: center;">
-							<p>Tailored financial strategies and insurance solutions for businesses, helping you manage
-								risk, optimize benefits, and support long-term growth.</p>
-
-						</div>
-						<div class="pricing-footer">
-							<a href="services.html">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Service Item End ***** -->
-			</div>
-		</div>
-	</section>
-	<!-- ***** Our Services End ***** -->
-
-
-	<!-- ***** Parallax Section Start ***** -->
-	<div class="parallax" id="parallax-text"
-		style="background-image: url('assets/images/parallex/parallex.png'); background-size: cover; background-position: center; margin-bottom: 30px;">
-
-		<div class="parallax-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="info">
-							<p class="fade-in-text"><span>FINDAS</span> offers transparent, ethical guidance to
-								simplify your insurance and investment decisions confidently.</p>
-							<a class="btn-white-line" href="contact.html">Contact Us</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<style>
-		.fade-in-text {
-			opacity: 0;
-			animation: fadeInUp 1.2s ease forwards;
-			animation-delay: 0.4s;
-		}
-
-		@keyframes fadeInUp {
-			from {
-				transform: translateY(20px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateY(0px);
-				opacity: 1;
-			}
-		}
-	</style>
-	<!-- ***** Parallax Section End ***** -->
-
-
-	<!-- ***** Blog Start ***** -->
-	<section class="section white padding-bottom-80" id="blog">
-		<div class="container">
-			<!-- ***** Section Title Start ***** -->
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="center-heading">
-						<h2 class="section-title">Latest Blog Posts</h2>
-					</div>
-				</div>
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>Donec vulputate urna sed rutrum venenatis. Cras consequat magna quis arcu elementum, quis
-							congue risus volutpat.</p>
-					</div>
-				</div>
-			</div>
-			<!-- ***** Section Title End ***** -->
-
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-post-thumb">
-						<div class="img">
-							<img src="assets/images/photos/blog/1.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<h3>
-								<a href="dark-blog-single.html">Turing Expands the Leadership Team with David Lin,
-									Controller</a>
-							</h3>
-							<div class="text">
-								Mauris tellus sem, ultrices varius nisl at, convallis iaculis mauris. Sed eget sem vitae
-								purus tempus dignissim.
-							</div>
-							<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-post-thumb">
-						<div class="img">
-							<img src="assets/images/photos/blog/2.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<h3>
-								<a href="dark-blog-single.html">Turing Partners with Velocloud to Deliver Managed
-									SD-WAN</a>
-							</h3>
-							<div class="text">
-								Cras imperdiet faucibus sem, a dignissim urna feugiat sed. Interdum et malesuada fames
-								ac ante ipsum.
-							</div>
-							<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-post-thumb">
-						<div class="img">
-							<img src="assets/images/photos/blog/3.jpg" alt="">
-						</div>
-						<div class="blog-content">
-							<h3>
-								<a href="dark-blog-single.html">Corporate IT Solutions Adds Neva as Senior Account
-									Executive</a>
-							</h3>
-							<div class="text">
-								Quisque euismod nec lacus sit amet maximus. Ut convallis sagittis lorem auctor
-								malesuada. Morbi auctor tortor eu.
-							</div>
-							<a href="dark-blog-single.html" class="btn-primary-line">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Blog End ***** -->
-
-
-	<!-- ***** Footer Start ***** -->
-	<footer style="
-	background: linear-gradient(to right, #bfbfbf, #cfcece, #e6e6e6);
-	padding: 80px 0 40px 0;
-	font-family: 'Segoe UI', sans-serif;
-	border-top-left-radius: 90px;
-	border-top-right-radius: 90px;
-	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.1);
-	transition: background 0.5s ease, box-shadow 0.3s ease;
-">
-		<div class="container">
-			<div class="row gy-5">
-				<!-- Logo & About -->
-				<div class="col-lg-5 col-md-12 text-center text-lg-start">
-					<img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
-						style="max-width: 150px;">
-					<p class="text-dark" style="font-size: 15px; line-height: 1.8;">
-						Empowering clients in investments and insurance since 1999, we prioritize transparency, trust,
-						and personalized guidance, with a mission to help you become a confident, knowledgeable, and
-						financially informed investor.
-					</p>
-				</div>
-
-				<!-- Helpful Links -->
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
-					<ul class="list-unstyled footer-nav">
-						<li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
-						<li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
-						<li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
-						<li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
-						<li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
-					</ul>
-				</div>
-
-				<!-- Support -->
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
-					<ul class="list-unstyled footer-nav">
-						<li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a></li>
-						<li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a></li>
-						<li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
-						<li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
-					</ul>
-				</div>
-
-				<!-- Contact Info & Social -->
-				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
-					<p class="small mb-1 text-dark">
-						Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
-					</p>
-					<p class="small mb-1 text-dark">
-						Mon – Fri<br>11:00 AM – 05:00 PM</p>
-					<p class="mb-1"><a href="https://wa.me/918888830440"
-							class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
-					<p><a href="mailto:support@findas.in"
-							class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
-
-					<div class="d-flex gap-3 mt-3">
-						<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
-							class="footer-icon" aria-label="LinkedIn">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon"
-							aria-label="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="https://x.com/findas_india" target="_blank" class="footer-icon" aria-label="Twitter">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon"
-							aria-label="Facebook">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon"
-							aria-label="YouTube">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-
-			<!-- Copyright -->
-			<div class="row mt-4">
-				<div class="col-lg-12 text-center">
-					<hr class="my-3" style="border-color: #999;">
-					<p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- ***** Footer End ***** -->
-
-	<!-- Footer Styles -->
-	<style>
-		.footer-nav li {
-			margin-bottom: 10px;
-		}
-
-		.footer-nav li a {
-			color: #333;
-			font-size: 14px;
-			text-decoration: none;
-			transition: all 0.3s ease;
-		}
-
-		.footer-nav li a:hover {
-			color: #000;
-			font-weight: 500;
-			text-decoration: underline;
-		}
-
-		.footer-icon {
-			font-size: 18px;
-			color: #444;
-			transition: transform 0.3s ease, color 0.3s ease;
-		}
-
-		.footer-icon:hover {
-			color: #000;
-			transform: scale(1.2);
-		}
-	</style>
-
-	<!-- Back to Top Button -->
-	<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-		<i class="fas fa-arrow-up"></i>
-	</a>
-
-	<style>
-		.back-to-top {
-			position: fixed;
-			bottom: 30px;
-			right: 30px;
-			width: 55px;
-			height: 55px;
-			background: rgba(0, 0, 0, 0.6);
-			backdrop-filter: blur(8px);
-			color: #ffffff;
-			border-radius: 50%;
-			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-			z-index: 9999;
-			display: none;
-			transition: all 0.4s ease;
-			border: 1px solid rgba(255, 255, 255, 0.1);
-		}
-
-		.back-to-top i {
-			font-size: 22px;
-			transition: transform 0.4s ease, color 0.4s ease;
-		}
-
-		.back-to-top:hover {
-			transform: scale(1.2) rotate(15deg);
-			background: rgba(255, 255, 255, 0.15);
-			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-			border: 1px solid rgba(255, 255, 255, 0.3);
-		}
-
-		.back-to-top:hover i {
-			transform: translateY(-4px);
-			color: #000000;
-			/* Gold accent on hover */
-		}
-	</style>
-
-	<script>
-		const backToTop = document.querySelector('.back-to-top');
-
-		window.addEventListener('scroll', () => {
-			if (window.scrollY > 300) {
-				backToTop.style.display = 'flex';
-			} else {
-				backToTop.style.display = 'none';
-			}
-		});
-
-		backToTop.addEventListener('click', (e) => {
-			e.preventDefault();
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-		});
-	</script>
-
+	
+	
 
 
 
@@ -1479,7 +459,7 @@
 
     <!-- Swiper Initialization -->
     <script>
-        const swiper = new Swiper(".brand__slider", {
+        const brandSwiper = new Swiper(".brand__slider", {
             slidesPerView: 5,
             spaceBetween: 20,
             loop: true,
