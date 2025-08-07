@@ -6,6 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Findas-India</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f9ff;
+        }
+
+        section {
+            background: #eaf6ff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            color: #1a1a1a;
+        }
+
+        h2 span {
+            color: #0066ff;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .swiper {
+            margin-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .life-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .life-img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .life-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
     <meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
     <meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
     <meta name="author" content="tempload" />
@@ -27,21 +91,26 @@
         </div>
     </div>
     <!-- ***** Preloader End ***** -->
-     
     <!-- Topbar Start -->
     <div class="topbar">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
             <!-- Left: Social Icons -->
             <div class="social-icons d-flex flex-wrap align-items-center mb-2 mb-md-0">
-                <a href="https://www.youtube.com/@FindasMarathi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/Financiallybindaas" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/findas_india" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/findasindia/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@FindasMarathi" target="_blank" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/Financiallybindaas" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/findas_india" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/findasindia/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
             <!-- Right: Contact Info -->
             <div class="contact-info d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=918888830440&text&type=phone_number&app_absent=0">
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=918888830440&text&type=phone_number&app_absent=0">
                     <i class="fas fa-phone-alt"></i> <span>+91 88888 30440</span>
                 </a>
                 <a href="mailto:support@findas.in" class="text-light d-flex align-items-center gap-2">
@@ -111,8 +180,6 @@
         }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    
     <!-- ***** navbar Area Start ***** -->
     <header class="header-area">
         <div class="container">
@@ -173,12 +240,13 @@
                                 margin-top: 5px;
                                 /* Adjust to height of topbar */
                             }
-                            
+
                             @media (max-width: 768px) {
                                 .header-area .container {
                                     margin-bottom: 10px;
                                 }
                             }
+
                             /* nav responsive */
                         </style>
 
@@ -194,7 +262,7 @@
     </div>
 
     <!-- ***** navbar Area End ***** -->
-   <!-- ***** Header Area start ***** -->
+    <!-- ***** Header Area start ***** -->
     <section class="page">
         <!-- ***** Page Top Start ***** -->
         <div class="cover"
@@ -224,6 +292,28 @@
                         <div class="left-heading">
                             <h2 class="section-title">About Us</h2>
                         </div>
+                        <style>
+                            .section-title {
+                                position: relative;
+                                display: inline-block;
+                                font-weight: 600;
+                                color: #2c3e50;
+                            }
+
+                            .section-title::after {
+                                content: "";
+                                display: block;
+                                width: 40px;
+                                /* Length of the line */
+                                height: 2px;
+                                /* Thickness */
+                                background-color: #2c3e50;
+                                /* Line color */
+                                margin: 8px auto 0;
+                                /* Space between text and line */
+                            }
+                        </style>
+
                         <div class="left-text">
                             <p>Investing and insurance can be complex and overwhelming for many people, and that's where
                                 FINDAS comes in. With over two decades of experience in the field, we have a deep
@@ -264,42 +354,109 @@
         <!-- ***** about section End ***** -->
 
         <!-- ***** Parallax Section Start ***** -->
-        <div class="parallax" id="parallax-text"
-            style="background-image: url('assets/images/parallex/parallex.png'); background-size: cover; background-position: center; margin-bottom: 30px;">
-
-            <div class="parallax-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="info">
-                                <p class="fade-in-text"><span>FINDAS</span> offers transparent, ethical guidance to
-                                    simplify your insurance and investment decisions confidently.</p>
-                                <a class="btn-white-line" href="contact.html">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
+        <section style="background:linear-gradient(to bottom, #e7e7e7, #acaaaa , #000000); text-align: center; padding: 60px 20px;">
+            <div class="col-lg-12 ">
+                <div class="left-heading  text-center">
+                    <h2 class="section-title line" >Where Moments Become Memories</h2>
                 </div>
             </div>
-        </div>
-        <style>
-            .fade-in-text {
-                opacity: 0;
-                animation: fadeInUp 1.2s ease forwards;
-                animation-delay: 0.4s;
-            }
-
-            @keyframes fadeInUp {
-                from {
-                    transform: translateY(20px);
-                    opacity: 0;
+            <style>
+                .line {
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    /* Adjust the color to match your theme */
                 }
 
-                to {
-                    transform: translateY(0px);
-                    opacity: 1;
+                .line::after {
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    /* Length of the line */
+                    height: 2px;
+                    /* Thickness */
+                    background-color: #2c3e50;
+                    /* Line color */
+                    margin: 8px auto 0;
+                    /* Space between text and line */
                 }
-            }
-        </style>
+            </style>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Celebrating the highlights and moments that shaped our journey together.</p>
+                </div>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper mySwiper" style="margin-top: 30px; padding-bottom: 10px;">
+
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/1.jpg" alt="Life Absys 1" class="life-img" />
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/2.jpg" alt="Life Absys 2" class="life-img" />
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/3.jpg" alt="Life Absys 3" class="life-img" />
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/4.jpg" alt="Life Absys 4" class="life-img" />
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/5.jpg" alt="Life Absys 5" class="life-img" />
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/6.jpg" alt="Life Absys 6" class="life-img" />
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/7.jpg" alt="Life Absys 7" class="life-img" />
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/8.jpg" alt="Life Absys 8" class="life-img" />
+                    </div>
+                    <!-- Slide 9 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/9.jpg" alt="Life Absys 9" class="life-img" />
+                    </div>
+                    <!-- Slide 10 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/10.jpg" alt="Life Absys 10" class="life-img" />
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    0: { slidesPerView: 2 },
+                    576: { slidesPerView: 3 },
+                    768: { slidesPerView: 4 },
+                    992: { slidesPerView: 5 }
+                }
+            });
+        </script>
         <!-- ***** Parallax Section End ***** -->
 
         <!-- mision, vision & values start -->
@@ -616,8 +773,8 @@
 
 
 
-       <!-- ***** Footer Start ***** -->
-	<footer style="
+        <!-- ***** Footer Start ***** -->
+        <footer style="
 	background: linear-gradient(to right, #bfbfbf, #cfcece, #e6e6e6);
 	padding: 80px 0 40px 0;
 	font-family: 'Segoe UI', sans-serif;
@@ -626,120 +783,124 @@
 	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.1);
 	transition: background 0.5s ease, box-shadow 0.3s ease;
 ">
-		<div class="container">
-			<div class="row gy-5">
-				<!-- Logo & About -->
-				<div class="col-lg-5 col-md-12 text-center text-lg-start">
-					<img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
-						style="max-width: 150px;">
-					<p class="text-dark" style="font-size: 15px; line-height: 1.8;">
-						Empowering clients in investments and insurance since 1999, we prioritize transparency, trust,
-						and personalized guidance, with a mission to help you become a confident, knowledgeable, and
-						financially informed investor.
-					</p>
-				</div>
+            <div class="container">
+                <div class="row gy-5">
+                    <!-- Logo & About -->
+                    <div class="col-lg-5 col-md-12 text-center text-lg-start">
+                        <img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
+                            style="max-width: 150px;">
+                        <p class="text-dark" style="font-size: 15px; line-height: 1.8;">
+                            Empowering clients in investments and insurance since 1999, we prioritize transparency,
+                            trust,
+                            and personalized guidance, with a mission to help you become a confident, knowledgeable, and
+                            financially informed investor.
+                        </p>
+                    </div>
 
-				<!-- Helpful Links -->
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
-					<ul class="list-unstyled footer-nav">
-						<li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
-						<li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
-						<li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
-						<li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
-						<li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
-					</ul>
-				</div>
+                    <!-- Helpful Links -->
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+                            <li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
+                            <li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
+                            <li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
+                            <li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
+                        </ul>
+                    </div>
 
-				<!-- Support -->
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
-					<ul class="list-unstyled footer-nav">
-						<li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a></li>
-						<li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a></li>
-						<li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
-						<li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
-					</ul>
-				</div>
+                    <!-- Support -->
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a>
+                            </li>
+                            <li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a>
+                            </li>
+                            <li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
+                            <li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
+                        </ul>
+                    </div>
 
-				<!-- Contact Info & Social -->
-				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
-					<p class="small mb-1 text-dark">
-						Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
-					</p>
-					<p class="small mb-1 text-dark">
-						Mon – Fri<br>11:00 AM – 05:00 PM</p>
-					<p class="mb-1"><a href="https://wa.me/918888830440"
-							class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
-					<p><a href="mailto:support@findas.in"
-							class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
+                    <!-- Contact Info & Social -->
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
+                        <p class="small mb-1 text-dark">
+                            Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
+                        </p>
+                        <p class="small mb-1 text-dark">
+                            Mon – Fri<br>11:00 AM – 05:00 PM</p>
+                        <p class="mb-1"><a href="https://wa.me/918888830440"
+                                class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
+                        <p><a href="mailto:support@findas.in"
+                                class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
 
-					<div class="d-flex gap-3 mt-3">
-						<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
-							class="footer-icon" aria-label="LinkedIn">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon"
-							aria-label="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="https://x.com/findas_india" target="_blank" class="footer-icon" aria-label="Twitter">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon"
-							aria-label="Facebook">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon"
-							aria-label="YouTube">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</div>
-				</div>
-			</div>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
+                                class="footer-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/findas_india" target="_blank" class="footer-icon"
+                                aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon"
+                                aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-			<!-- Copyright -->
-			<div class="row mt-4">
-				<div class="col-lg-12 text-center">
-					<hr class="my-3" style="border-color: #999;">
-					<p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- ***** Footer End ***** -->
+                <!-- Copyright -->
+                <div class="row mt-4">
+                    <div class="col-lg-12 text-center">
+                        <hr class="my-3" style="border-color: #999;">
+                        <p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ***** Footer End ***** -->
 
-	<!-- Footer Styles -->
-	<style>
-		.footer-nav li {
-			margin-bottom: 10px;
-		}
+        <!-- Footer Styles -->
+        <style>
+            .footer-nav li {
+                margin-bottom: 10px;
+            }
 
-		.footer-nav li a {
-			color: #333;
-			font-size: 14px;
-			text-decoration: none;
-			transition: all 0.3s ease;
-		}
+            .footer-nav li a {
+                color: #333;
+                font-size: 14px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
 
-		.footer-nav li a:hover {
-			color: #000;
-			font-weight: 500;
-			text-decoration: underline;
-		}
+            .footer-nav li a:hover {
+                color: #000;
+                font-weight: 500;
+                text-decoration: underline;
+            }
 
-		.footer-icon {
-			font-size: 18px;
-			color: #444;
-			transition: transform 0.3s ease, color 0.3s ease;
-		}
+            .footer-icon {
+                font-size: 18px;
+                color: #444;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
 
-		.footer-icon:hover {
-			color: #000;
-			transform: scale(1.2);
-		}
-	</style>
+            .footer-icon:hover {
+                color: #000;
+                transform: scale(1.2);
+            }
+        </style>
 
         <!-- Back to Top Button -->
         <a href="#" class="back-to-top d-flex align-items-center justify-content-center">

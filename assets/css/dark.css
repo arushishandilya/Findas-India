@@ -517,7 +517,7 @@ header
   display: block;
   font-weight: 600;
   font-size: 14px;
-  color: #010102;
+  color: #6F8BA4;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -538,7 +538,7 @@ header
   font-family: FontAwesome;
   content: "\f107";
   font-size: 12px;
-  color: #000000;
+  color: #6F8BA4;
   position: absolute;
   right: 18px;
   top: 12px;
@@ -991,103 +991,6 @@ header
 }
 
 
-/* add some css  in header navigation */
-@media (max-width: 991.98px) {
-  .header-area .main-nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .main-nav .nav {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    padding: 10px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    top: 70px;
-    left: 0;
-    z-index: 999;
-  }
-
-  .main-nav .nav.show {
-    display: flex;
-  }
-
-  .main-nav .nav li {
-    padding: 10px 20px;
-  }
-
-  .main-nav .submenu ul {
-    position: static;
-    box-shadow: none;
-    background: transparent;
-    display: none;
-    padding-left: 15px;
-  }
-
-  .main-nav .submenu:hover ul {
-    display: block;
-  }
-
-  .header-buttons {
-    display: none;
-  }
-
-  .menu-trigger {
-    display: block !important;
-    cursor: pointer;
-    font-weight: bold;
-    color: #707070;
-    padding: 10px 0;
-  }
-
-  .menu-trigger span {
-    font-size: 18px;
-  }
-}
-
-
-  /* Hide main nav and header buttons on mobile */
-  @media (max-width: 991px) {
-    .main-nav .nav,
-    .header-buttons,
-    .sidebar-toggle-btn {
-      display: none !important;
-    }
-
-    /* Show mobile menu trigger */
-    .menu-trigger {
-      display: block !important;
-      cursor: pointer;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .menu-trigger span {
-      background: #333;
-      padding: 8px 12px;
-      border-radius: 5px;
-      color: #fff;
-    }
-
-    /* Show the sidebar in full width for mobile */
-    #sidebar-panel {
-      width: 100% !important;
-      max-width: 100%;
-      border-radius: 0 !important;
-      right: 0;
-      left: auto;
-    }
-  }
-
-  /* Hide mobile trigger on desktop */
-  @media (min-width: 992px) {
-    .menu-trigger {
-      display: none !important;
-    }
-  }
 
 
 /* 
@@ -1101,13 +1004,17 @@ welcome
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-}
-.welcome-area {
   position: relative;
   width: 100%;
-  height: 100vh; /* adjust as needed */
+  height: 100vh; 
   overflow: hidden;
 }
+/* .welcome-area {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+} */
 
 .right-bg,
 .header-bg {

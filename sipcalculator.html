@@ -163,21 +163,27 @@
     </div>
     <!-- ***** Preloader End ***** -->
 
-      
+
     <!-- Topbar Start -->
     <div class="topbar">
         <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
             <!-- Left: Social Icons -->
             <div class="social-icons d-flex flex-wrap align-items-center mb-2 mb-md-0">
-                <a href="https://www.youtube.com/@FindasMarathi" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/Financiallybindaas" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/findas_india" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/findasindia/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@FindasMarathi" target="_blank" aria-label="YouTube"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/Financiallybindaas" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/findas_india" target="_blank" aria-label="Twitter"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/findasindia/" target="_blank" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
             </div>
             <!-- Right: Contact Info -->
             <div class="contact-info d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-                <a target="_blank" href="https://api.whatsapp.com/send/?phone=918888830440&text&type=phone_number&app_absent=0">
+                <a target="_blank"
+                    href="https://api.whatsapp.com/send/?phone=918888830440&text&type=phone_number&app_absent=0">
                     <i class="fas fa-phone-alt"></i> <span>+91 88888 30440</span>
                 </a>
                 <a href="mailto:support@findas.in" class="text-light d-flex align-items-center gap-2">
@@ -385,20 +391,22 @@
             <div class="tab-pane fade show active" id="sip">
                 <h4 class="text-center fc-title">SIP Calculator</h4>
                 <div class="fc-section">
-                    <div class="fc-img-container"><img src="assets/images/sip/1.png" alt="SIP" style="height: 430px;">
+                    <div class="fc-img-container"><img src="assets/images/sip/1.png" alt="SIP" style="height: 520px;">
                     </div>
                     <div class="fc-form">
                         <div class="mb-3">
                             <label class="me-3"><input type="radio" name="mode" checked> SIP</label>
                             <label><input type="radio" name="mode"> LumpSum</label>
                         </div>
-                        <input type="text" placeholder="Total Investment" class="form-control mb-3">
-                        <input type="text" placeholder="Expected return rate (p.a)" class="form-control mb-3">
-                        <input type="text" placeholder="Time period (years)" class="form-control mb-3">
+                        <h6>Total Investment</h6>
+                        <input type="text" placeholder="₹ 500" class="form-control mb-3">
+                        <h6>Expected return rate (p.a)</h6>
+                        <input type="text" placeholder="10%" class="form-control mb-3">
+                        <h6>Time period</h6>
+                        <input type="text" placeholder="10 Years" class="form-control mb-3">
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
                         </div>
-
                         <div class="mt-4">
                             <p class="fc-result">Invested Amount: ₹</p>
                             <p class="fc-result">Estimated Returns: ₹</p>
@@ -407,40 +415,126 @@
                     </div>
                 </div>
             </div>
+            <script>
+                document.getElementById("stepup-calc-btn").addEventListener("click", function () {
+                    const mode = document.querySelector('input[name="mode"]:checked').nextSibling.textContent.trim();
+                    const inputs = document.querySelectorAll('.fc-form input[type="text"]');
+
+                    const investmentInput = inputs[0].value.replace(/[^\d.]/g, '');
+                    const rateInput = inputs[1].value.replace(/[^\d.]/g, '');
+                    const timeInput = inputs[2].value.replace(/[^\d.]/g, '');
+
+                    const investment = parseFloat(investmentInput);
+                    const rate = parseFloat(rateInput) / 100;
+                    const time = parseFloat(timeInput);
+
+                    if (isNaN(investment) || isNaN(rate) || isNaN(time)) {
+                        alert("Please enter valid numeric values.");
+                        return;
+                    }
+
+                    let investedAmount, estimatedReturns, totalValue;
+
+                    if (mode === "SIP") {
+                        // SIP formula: FV = P × [ (1 + r)^n - 1 ] × (1 + r) / r
+                        const monthlyRate = rate / 12;
+                        const months = time * 12;
+                        totalValue = investment * (((Math.pow(1 + monthlyRate, months) - 1) * (1 + monthlyRate)) / monthlyRate);
+                        investedAmount = investment * months;
+                    } else {
+                        // LumpSum formula: FV = P × (1 + r)^n
+                        totalValue = investment * Math.pow(1 + rate, time);
+                        investedAmount = investment;
+                    }
+
+                    estimatedReturns = totalValue - investedAmount;
+
+                    // Show results
+                    const resultEls = document.querySelectorAll(".fc-result");
+                    resultEls[0].textContent = `Invested Amount: ₹ ${investedAmount.toFixed(2)}`;
+                    resultEls[1].textContent = `Estimated Returns: ₹ ${estimatedReturns.toFixed(2)}`;
+                    resultEls[2].textContent = `Total Value: ₹ ${totalValue.toFixed(2)}`;
+                });
+            </script>
 
             <!-- Retirement Corpus -->
             <div class="tab-pane fade" id="retirement">
                 <h4 class="text-center fc-title">Retirement Corpus</h4>
                 <div class="fc-section">
                     <div class="fc-img-container"><img src="assets/images/sip/2.png" alt="Retirement"
-                            style="height: 690px;">
+                            style="height: 600px;">
                     </div>
                     <div class="fc-form">
-                        <input type="text" placeholder="Initial Savings" class="form-control mb-3">
-                        <input type="text" placeholder="Investment Period Before Retirement (Years)"
-                            class="form-control mb-3">
-                        <input type="text" placeholder="New Savings Per Period" class="form-control mb-3">
-                        <input type="text" placeholder="Investment Period After Retirement (Years)"
-                            class="form-control mb-3">
-                        <input type="text" placeholder="Retirement Income Desired per Period" class="form-control mb-3">
+                        <h6>Initial Savings</h6>
+                        <input type="text" id="initialSavings" placeholder="0" class="form-control mb-3">
 
-                        <!-- Additional Inputs -->
-                        <input type="text" placeholder="Expected Return Rate Before Retirement (%)"
-                            class="form-control mb-3">
-                        <input type="text" placeholder="Expected Return Rate After Retirement (%)"
-                            class="form-control mb-3">
-                        <input type="text" placeholder="Inflation Rate (%)" class="form-control mb-3">
-                        <input type="text" placeholder="Current Age" class="form-control mb-3">
-                        <input type="text" placeholder="Retirement Age" class="form-control mb-3">
-                        <input type="text" placeholder="Life Expectancy (Years)" class="form-control mb-3">
+                        <h6>Investment Period Before Retirement (Years)</h6>
+                        <input type="text" id="yearsBeforeRetirement" placeholder="1" class="form-control mb-3">
+
+                        <h6>New Savings Per Period</h6>
+                        <input type="text" id="savingsPerPeriod" placeholder="5" class="form-control mb-3">
+
+                        <h6>Investment Period After Retirement (Years)</h6>
+                        <input type="text" id="yearsAfterRetirement" placeholder="5" class="form-control mb-3">
+
+                        <h6>Retirement Income Desired per Period</h6>
+                        <input type="text" id="retirementIncomePerPeriod" placeholder="5" class="form-control mb-3">
 
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
+                        </div>
 
+                        <div class="mt-4">
+                            <p class="fc-result" id="savingsResult">Savings at Retirement: ₹</p>
+                            <p class="fc-result" id="periodsResult">Periods Required: ₹</p>
                         </div>
                     </div>
+
                 </div>
             </div>
+            <script>
+  document.getElementById("stepup-calc-btn").addEventListener("click", function () {
+    const inputs = document.querySelectorAll('.fc-form input[type="text"]');
+
+    const initialSavings = parseFloat(inputs[0].value.replace(/[^\d.]/g, ''));
+    const yearsBeforeRetirement = parseFloat(inputs[1].value.replace(/[^\d.]/g, ''));
+    const newSavingsPerPeriod = parseFloat(inputs[2].value.replace(/[^\d.]/g, ''));
+    const yearsAfterRetirement = parseFloat(inputs[3].value.replace(/[^\d.]/g, ''));
+    const desiredIncomePerPeriod = parseFloat(inputs[4].value.replace(/[^\d.]/g, ''));
+
+    if (
+      isNaN(initialSavings) ||
+      isNaN(yearsBeforeRetirement) ||
+      isNaN(newSavingsPerPeriod) ||
+      isNaN(yearsAfterRetirement) ||
+      isNaN(desiredIncomePerPeriod)
+    ) {
+      alert("Please enter valid numeric values in all fields.");
+      return;
+    }
+
+    // For demo: use assumed fixed rate of return (e.g., 8% annual)
+    const annualRate = 0.08;
+
+    // Future value of new savings (SIP-like): FV = P × [ (1 + r)^n - 1 ] / r
+    const fvSavings = newSavingsPerPeriod * ((Math.pow(1 + annualRate, yearsBeforeRetirement) - 1) / annualRate);
+    
+    // Future value of initial savings: FV = P × (1 + r)^n
+    const fvInitial = initialSavings * Math.pow(1 + annualRate, yearsBeforeRetirement);
+
+    const totalRetirementCorpus = fvInitial + fvSavings;
+
+    // Periods the retirement corpus can sustain the income
+    // Assuming income is withdrawn annually without growth
+    const periodsSupported = Math.floor(totalRetirementCorpus / desiredIncomePerPeriod);
+
+    // Show results
+    const resultEls = document.querySelectorAll(".fc-result");
+    resultEls[0].textContent = `Savings at Retirement: ₹ ${totalRetirementCorpus.toFixed(2)}`;
+    resultEls[1].textContent = `Periods Supported: ${periodsSupported} years`;
+  });
+</script>
+
 
             <!-- Car Purchase -->
             <div class="tab-pane fade" id="car">
@@ -564,10 +658,7 @@
             const returnRate = parseFloat(document.querySelector('#stepup input[placeholder="Expected Rate of Return (%)"]').value);
             const annualIncrease = parseFloat(document.querySelector('#stepup input[placeholder="Annual SIP Increase (%)"]').value);
 
-            if (isNaN(sipAmount) || isNaN(duration) || isNaN(returnRate) || isNaN(annualIncrease)) {
-                alert("Please fill in all fields with valid numbers.");
-                return;
-            }
+
 
             const r = returnRate / 12 / 100;
             let totalValue = 0;
