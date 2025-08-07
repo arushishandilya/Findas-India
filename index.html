@@ -40,26 +40,24 @@
 
 
 
-	<!-- ***** navbar Area Start ***** -->
+	<!-- ***** Header Area Start ***** -->
 	<header class="header-area">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row">
 				<div class="col-12">
-					<nav class="main-nav d-flex justify-content-between align-items-center">
+					<nav class="main-nav">
 						<!-- ***** Logo Start ***** -->
-						<a href="index.html" class="logo me-4">
-							<img src="assets/images/logo/logo-removebg-preview.png" alt="Logo"
-								style="max-height: 50px;">
+						<a href="dark-index.html" class="logo">
+							<img src="logo_navbar-removebg-preview.png" alt="Turing"/>
 						</a>
 						<!-- ***** Logo End ***** -->
 
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav d-flex align-items-center mb-0" style="margin-left: -10px;">
-							<li style="margin-left: -10px;"><a href="index.html"
-									style="color: #707070; font-weight: bold;">Home</a></li>
 
-							<li class="submenu" style="color: #707070;">
-								<a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
+						<!-- ***** Menu Start ***** -->
+						<ul class="nav">
+							<li><a href="dark-index.html#welcome">Home</a></li>
+							<li class="submenu">
+								<a href="javascript:;">Discover</a>
 								<ul>
 									<li><a href="about.html">About Us</a></li>
 									<li><a href="blog.html">Blog</a></li>
@@ -67,164 +65,33 @@
 								</ul>
 							</li>
 
-							<li class="submenu" style="margin-left: -10px;">
-								<a href="javascript:;" style="color: #707070; font-weight: bold;">Services</a>
+
+							<li class="submenu">
+								<a href="javascript:;">Services</a>
 								<ul>
 									<li><a href="services.html">Our Services</a></li>
 									<li><a href="sipcalculator.html">SIP Calculator</a></li>
 									<li><a href="courses.html">Our Courses</a></li>
 								</ul>
-							</li>
-
-
-							<li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
+							</li>                            
 						</ul>
-
+						<a class="menu-trigger">
+							<span>Menu</span>
+						</a>
 						<!-- ***** Menu End ***** -->
 
 						<!-- ***** Header Buttons Start ***** -->
-						<ul class="header-buttons d-flex mb-0">
+						<ul class="header-buttons">
 							<li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
 							<li><a class="btn-nav-primary" href="contact.html">Support</a></li>
 						</ul>
 						<!-- ***** Header Buttons End ***** -->
-						<!-- Sidebar Toggle Button -->
-						<a href="javascript:void(0);" class="sidebar-toggle-btn d-none d-lg-block ms-3">
-							<i class="fas fa-bars fs-4 " style="margin-top: 22px; color: #707070;"></i>
-						</a>
-
-						<!-- Sidebar Panel -->
-						<div id="sidebar-panel"
-							class="position-fixed top-0 end-0 bg-white shadow-lg px-4 pt-4 pb-5 rounded-start"
-							style="width: 320px; height: 100vh; z-index: 1050; display: none; overflow-y: auto;">
-
-							<!-- Header: Logo + Close -->
-							<div class="d-flex justify-content-between align-items-center mb-4 border-bottom pb-3">
-								<a href="index.html">
-									<img src="assets/images/logo/logo-removebg-preview.png" alt="Company Logo"
-										style="height: 48px; object-fit: contain;">
-								</a>
-								<button id="close-sidebar"
-									class="btn btn-sm rounded-circle d-flex align-items-center justify-content-center shadow"
-									style="	width: 32px; height: 32px; font-size: 20px; color: #fff; background: linear-gradient(135deg, #000000, #333333); transition: transform 0.3s ease, background 0.3s ease;">
-									&times;
-								</button>
-							</div>
-
-							<!-- Add this CSS (inline or in your stylesheet) -->
-							<style>
-								#close-sidebar:hover {
-									transform: scale(1.1) rotate(90deg);
-									background: linear-gradient(135deg);
-								}
-							</style>
-
-							<!-- About Section -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i
-										class="fas fa-building me-2 text-secondary"></i>About FINDAS</h6>
-								<p class="text-muted small">
-									We’ve been empowering clients in investments and insurance since 1999. We believe in
-									transparency and
-									trust. Our mission is to help you become a financially literate investor.
-								</p>
-							</div>
-
-							<!-- Office Address -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i
-										class="fas fa-map-marker-alt me-2 text-secondary"></i>Nashik Office</h6>
-								<p class="small text-muted mb-0">
-									Flat C-301, 3rd Floor,<br>Ishwar Pratishta 3,<br>Ravi Shankar Marg,<br>Nashik -
-									422009
-								</p>
-							</div>
-
-							<!-- Timings -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i class="fas fa-clock me-2 text-secondary"></i>We
-									Are Open</h6>
-								<p class="small text-muted mb-0">Mon – Sat<br>11:00 AM – 05:00 PM</p>
-							</div>
-
-							<!-- Contact -->
-
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mb-2"><i
-										class="fas fa-phone-alt me-2 text-secondary"></i>Get In Touch</h6>
-								<p class="small text-muted mb-1">
-									<a href="https://wa.me/918888830440" target="_blank"
-										class="text-muted text-decoration-none">
-										+91 88888 30440
-									</a>
-								</p>
-							</div>
-							<!-- email -->
-							<div class="mb-4 border-bottom pb-3">
-								<h6 class="fw-bold text-dark mt-3 mb-2"><i
-										class="fas fa-envelope me-2 text-secondary"></i>Quick Email</h6>
-								<p class="small text-muted">
-									<a href="mailto:support@findas.in"
-										class="text-muted text-decoration-none">support@findas.in</a>
-								</p>
-							</div>
-
-							<!-- Social Media -->
-							<div class="mt-4">
-								<h6 class="fw-bold text-dark mb-3"><i
-										class="fas fa-share-alt me-2 text-secondary"></i>Follow Us</h6>
-								<div class="d-flex gap-3">
-									<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
-										aria-label="LinkedIn">
-										<i class="fab fa-linkedin fs-5 text-primary"></i>
-									</a>
-									<a href="https://www.instagram.com/findasindia/" target="_blank"
-										aria-label="Instagram">
-										<i class="fab fa-instagram fs-5 text-danger"></i>
-									</a>
-									<a href="https://x.com/findas_india" target="_blank" aria-label="Twitter">
-										<i class="fab fa-twitter fs-5 text-info"></i>
-									</a>
-									<a href="https://www.facebook.com/Financiallybindaas" target="_blank"
-										aria-label="Facebook">
-										<i class="fab fa-facebook-f fs-5 text-primary"></i>
-									</a>
-									<a href="https://www.youtube.com/@FindasMarathi" target="_blank"
-										aria-label="YouTube">
-										<i class="fab fa-youtube fs-5 text-danger"></i>
-									</a>
-
-								</div>
-							</div>
-						</div>
-						<script>
-							document.querySelector('.sidebar-toggle-btn')?.addEventListener('click', function () {
-								document.getElementById('sidebar-panel').style.display = 'block';
-							});
-
-							document.getElementById('close-sidebar')?.addEventListener('click', function () {
-								document.getElementById('sidebar-panel').style.display = 'none';
-							});
-						</script>
-						<!-- Mobile Menu Trigger -->
-						<a class="menu-trigger d-lg-none d-block">
-							<span>Menu</span>
-						</a>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
-	<style>
-		@media only screen and (max-width: 600px){
-			.header-area {
-				width: 100px;
-			}
-		}
-		
-
-	</style>
-	<!-- ***** navbar Area End ***** -->
+	<!-- ***** Header Area End ***** -->
 
 
 
@@ -683,7 +550,6 @@
 			align-items: center;
 			justify-content: center;
 			text-align: center;
-			/* ✅ Ensures image is horizontally centered if inline-block or smaller */
 			padding: 25px;
 			background: #ffffff;
 			border-radius: 16px;
@@ -775,20 +641,15 @@
 						display: inline-block;
 						font-weight: 600;
 						color: #2c3e50;
-						/* Adjust the color to match your theme */
 					}
 
 					.underline::after {
 						content: "";
 						display: block;
 						width: 40px;
-						/* Length of the line */
 						height: 2px;
-						/* Thickness */
 						background-color: #2c3e50;
-						/* Line color */
 						margin: 8px auto 0;
-						/* Space between text and line */
 					}
 				</style>
 
@@ -898,22 +759,18 @@
 						display: inline-block;
 						font-weight: 600;
 						color: #2c3e50;
-						/* Adjust the color to match your theme */
 					}
 
 					.underline::after {
 						content: "";
 						display: block;
 						width: 40px;
-						/* Length of the line */
 						height: 2px;
-						/* Thickness */
 						background-color: #2c3e50;
-						/* Line color */
 						margin: 8px auto 0;
-						/* Space between text and line */
 					}
 				</style>
+
 				<div class="offset-lg-3 col-lg-6">
 					<div class="center-text">
 						<p>At Findas, we offer a comprehensive range of financial services designed to help individuals
@@ -1042,20 +899,15 @@
 						display: inline-block;
 						font-weight: 600;
 						color: #2c3e50;
-						/* Adjust the color to match your theme */
 					}
 
 					.underline::after {
 						content: "";
 						display: block;
 						width: 40px;
-						/* Length of the line */
 						height: 2px;
-						/* Thickness */
 						background-color: #2c3e50;
-						/* Line color */
 						margin: 8px auto 0;
-						/* Space between text and line */
 					}
 				</style>
 
@@ -1354,7 +1206,7 @@
 
 	<!-- ***** Footer Start ***** -->
 	<footer style="
-	background: linear-gradient(to right, #bfbfbf, #cfcece, #e6e6e6);
+	background: linear-gradient(to right, #a8a8a8, #bbbbbb, #d4d4d4);
 	padding: 80px 0 40px 0;
 	font-family: 'Segoe UI', sans-serif;
 	border-top-left-radius: 90px;
@@ -1515,7 +1367,6 @@
 		.back-to-top:hover i {
 			transform: translateY(-4px);
 			color: #000000;
-			/* Gold accent on hover */
 		}
 	</style>
 
