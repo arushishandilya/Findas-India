@@ -91,115 +91,24 @@
         </div>
     </div>
     <!-- ***** Preloader End ***** -->
-    <!-- Topbar Start -->
-    <div class="topbar">
-        <div class="container-fluid d-flex flex-wrap justify-content-between align-items-center">
-            <!-- Left: Social Icons -->
-            <div class="social-icons d-flex flex-wrap align-items-center mb-2 mb-md-0">
-                <a href="https://www.youtube.com/@FindasMarathi" target="_blank" aria-label="YouTube"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://www.facebook.com/Financiallybindaas" target="_blank" aria-label="Facebook"><i
-                        class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/findas_india" target="_blank" aria-label="Twitter"><i
-                        class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/findasindia/" target="_blank" aria-label="Instagram"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank" aria-label="LinkedIn"><i
-                        class="fab fa-linkedin-in"></i></a>
-            </div>
-            <!-- Right: Contact Info -->
-            <div class="contact-info d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2">
-                <a target="_blank"
-                    href="https://api.whatsapp.com/send/?phone=918888830440&text&type=phone_number&app_absent=0">
-                    <i class="fas fa-phone-alt"></i> <span>+91 88888 30440</span>
-                </a>
-                <a href="mailto:support@findas.in" class="text-light d-flex align-items-center gap-2">
-                    <i class="fas fa-envelope"></i> <span>support@findas.in</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <style>
-        .topbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1050;
-            background-color: #1f1f1f;
-            padding: 10px 20px;
-            font-family: 'Segoe UI', sans-serif;
-            font-size: 14px;
-        }
-
-        .topbar .social-icons a {
-            color: #ffffff;
-            margin-right: 15px;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 16px;
-        }
-
-        .topbar .social-icons a:hover {
-            color: #00bcd4;
-        }
-
-        .topbar .contact-info a {
-            color: #ffffff;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-size: 14px;
-        }
-
-        .topbar .contact-info a:hover {
-            color: #00bcd4;
-        }
-
-        /* Responsive Spacing */
-        @media (max-width: 576px) {
-            .topbar {
-                text-align: center;
-                padding: 12px;
-            }
-
-            .topbar .social-icons {
-                justify-content: center;
-                margin-bottom: 8px;
-                width: 100%;
-            }
-
-            .topbar .contact-info {
-                justify-content: center;
-                text-align: center;
-                width: 100%;
-            }
-
-            .topbar .contact-info a {
-                justify-content: center;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!-- ***** navbar Area Start ***** -->
-    <header class="header-area">
+     <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-white">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav d-flex justify-content-between align-items-center">
+                    <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo me-4">
-                            <img src="assets/images/logo/logo-removebg-preview.png" alt="Logo"
-                                style="max-height: 40px;">
+                        <a href="dark-index.html" class="logo">
+                            <img src="logo_navbar-removebg-preview.png" alt="Turing" />
                         </a>
                         <!-- ***** Logo End ***** -->
 
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav d-flex align-items-center mb-0" style="margin-left: -10px;">
-                            <li style="margin-left: -10px;"><a href="index.html"
-                                    style="color: #707070; font-weight: bold;">Home</a></li>
 
-                            <li class="submenu" style="color: #707070;">
-                                <a href="javascript:;" style="color: #707070; font-weight: bold;">Discover</a>
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Discover</a>
                                 <ul>
                                     <li><a href="about.html">About Us</a></li>
                                     <li><a href="blog.html">Blog</a></li>
@@ -207,61 +116,34 @@
 
                                 </ul>
                             </li>
-                            <li class="submenu" style="margin-left: -10px;">
-                                <a href="javascript:;" style="color: #707070; font-weight: bold;">Solution</a>
+                            <li class="submenu">
+                                <a href="javascript:;">Solution</a>
                                 <ul>
                                     <li><a href="services.html">Our Services</a></li>
                                     <li><a href="sipcalculator.html">SIP Calculator</a></li>
                                     <li><a href="courses.html">Our Courses</a></li>
+
                                 </ul>
                             </li>
-                            <li><a href="bookanAppoinment.html" style=" color: #707070;"></a></li>
+                            <li><a href="faq.html">KnowMore</a></li>
                         </ul>
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
                         <!-- ***** Menu End ***** -->
 
                         <!-- ***** Header Buttons Start ***** -->
-                        <ul class="header-buttons d-flex mb-0">
-                            <li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
-                            <li><a class="btn-nav-primary" href="contact.html">Support</a></li>
+                        <ul class="header-buttons">
+                            <li><a class="btn-nav-primary" href="dark-features.html">Client Login</a></li>
+                            <li><a class="btn-nav-primary" href="contact.html">Contact Us</a></li>
                         </ul>
-                        <style>
-                            .header-area .main-nav .header-buttons li .btn-nav-primary {
-                                border: 1.2px solid #3c3c3c;
-                                border-radius: 100px 0px 100px 100px;
-                                padding: 0% 20px;
-                            }
-
-                            .header-area {
-                                margin-top: 25px;
-                                /* Adjust the value as needed */
-                            }
-
-                            .main-nav {
-                                margin-top: 5px;
-                                /* Adjust to height of topbar */
-                            }
-
-                            @media (max-width: 768px) {
-                                .header-area .container {
-                                    margin-bottom: 10px;
-                                }
-                            }
-
-                            /* nav responsive */
-                        </style>
-
                         <!-- ***** Header Buttons End ***** -->
-
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <div class="content">
-        <p style="padding-top: 25px;"></p>
-    </div>
-
-    <!-- ***** navbar Area End ***** -->
+    <!-- ***** Header Area End ***** -->
     <!-- ***** Header Area start ***** -->
     <section class="page">
         <!-- ***** Page Top Start ***** -->

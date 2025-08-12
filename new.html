@@ -2,1210 +2,668 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Findas India</title>
-	<meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
-	<meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
-	<meta name="author" content="tempload" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Findas-India</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f9ff;
+        }
 
-	<!-- Bootstrap & Plugins CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-	<!-- Font Awesome (for icons) -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-	<!-- Custom CSS -->
-	<link href="assets/css/dark.css" rel="stylesheet" type="text/css">
-	<!-- Swiper CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        section {
+            background: #eaf6ff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-weight: 700;
+            font-size: 32px;
+            color: #1a1a1a;
+        }
+
+        h2 span {
+            color: #0066ff;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .swiper {
+            margin-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .life-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .life-img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .life-img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+    <meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
+    <meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
+    <meta name="author" content="tempload" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png" />
+    <!-- Bootstrap & Plugins CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="assets/css/dark.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
-
-	<!-- ***** Preloader Start ***** -->
-	<div id="preloader">
-		<div id="loader" class="spinner">
-		
-			<div id="shadow"></div>
-			<div id="box"></div>
-		</div>
-	</div>
-	<!-- ***** Preloader End ***** -->
-
-
-
-	<!-- ***** Header Area Start ***** -->
-	<header class="header-area">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="main-nav">
-						<!-- ***** Logo Start ***** -->
-						<a href="dark-index.html" class="logo">
-							<img src="logo_navbar-removebg-preview.png" alt="Turing"/>
-						</a>
-						<!-- ***** Logo End ***** -->
-
-
-						<!-- ***** Menu Start ***** -->
-						<ul class="nav">
-							<li><a href="dark-index.html#welcome">Home</a></li>
-							<li class="submenu">
-								<a href="javascript:;">Discover</a>
-								<ul>
-									<li><a href="about.html">About Us</a></li>
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="podcast.html">Podcast</a></li>
-								</ul>
-							</li>
-
-
-							<li class="submenu">
-								<a href="javascript:;">Services</a>
-								<ul>
-									<li><a href="services.html">Our Services</a></li>
-									<li><a href="sipcalculator.html">SIP Calculator</a></li>
-									<li><a href="courses.html">Our Courses</a></li>
-								</ul>
-							</li>                            
-						</ul>
-						<a class="menu-trigger">
-							<span>Menu</span>
-						</a>
-						<!-- ***** Menu End ***** -->
-
-						<!-- ***** Header Buttons Start ***** -->
-						<ul class="header-buttons">
-							<li><a class="btn-nav-primary" href="clientlogin.html">Client Login</a></li>
-							<li><a class="btn-nav-primary" href="contact.html">Support</a></li>
-						</ul>
-						<!-- ***** Header Buttons End ***** -->
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- ***** Header Area End ***** -->
-
-
-
-	<!-- ***** header Area Start ***** -->
-	<div class="welcome-area" id="welcome">
-		<!-- ***** Header Background Image Start ***** -->
-		<div class="right-bg">
-			<img src="assets/images/banner/Google_AI_Studio_2025-07-31T06_23_41.466Z.png" class="img-fluid" alt="" style="filter: blur(0px);">
-
-		</div>
-		<!-- ***** Header Background Image End ***** -->
-
-		<div class="header-bg">
-			<img src="assets/images/header-bg.svg" class="img-fluid" alt="">
-		</div>
-
-		<!-- ***** Header Text Start ***** -->
-		<div class="header-text">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-5 col-md-12 col-sm-12">
-						<h1>Empowering Financial Confidence Through <span>Expert Guidance</span></h1>
-						<p>FINDAS simplifies investing and insurance through transparency, ethics, and financial
-							education—empowering you to take control of your financial future.</p>
-						<a href="#" class="btn-primary-line" data-bs-toggle="modal"
-							data-bs-target="#appointmentModal">Book An Appointment</a>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-		<script>
-			AOS.init();
-		</script>
-		<!-- ***** Header Text End ***** -->
-
-		<!-- ***** Play Button Start ***** -->
-		<div class="play-button-wrapper">
-			<a href="https://www.youtube.com/watch?v=x8ZMds7EYLI" class="btn-play">
-				<i class="fa fa-play"></i>
-			</a>
-		</div>
-		<!-- ***** Play Button End ***** -->
-	</div>
-	<!-- ***** Welcome Area End ***** -->
-
-
-
-	<!-- ***** Features section Start ***** -->
-	<section class="section features-home pb-3">
-		<!-- ***** Section Title Start ***** -->
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="row">
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s" style="border: #000;">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-line-chart"></i>
-								</div>
-								<h5 class="features-title">Wealth Planning</h5>
-								<p>Customized investment strategies designed to help you reach your financial goals
-									confidently.</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-university"></i>
-								</div>
-								<h5 class="features-title">Investment Advisory</h5>
-								<p>Receive expert financial advice tailored to your risk profile and future aspirations.
-								</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-graduation-cap"></i>
-								</div>
-								<h5 class="features-title">Investor Education</h5>
-								<p>Stay updated with valuable insights, resources, and guidance to grow your knowledge.
-								</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
-							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
-							<a href="dark-features-single.html" class="features-small-item">
-								<div class="icon">
-									<i class="fa fa-handshake-o"></i>
-								</div>
-								<h5 class="features-title">Trusted Partnership</h5>
-								<p>We build lasting relationships through transparency, integrity, and exceptional
-									service.</p>
-							</a>
-						</div>
-						<!-- ***** Features Small Item End ***** -->
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Features section End ***** -->
-
-
-	<!-- ***** about section Start ***** -->
-	<section class="section padding-bottom-0 colored" id="about-us" style="padding-top: 40px; margin-bottom: 0;">
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
-					<div class="left-heading">
-						<h2 class="section-title">About Us</h2>
-					</div>
-					<div class="left-text">
-						<p>At Findas, we help clients achieve financial goals with customized investment strategies
-							based on their unique needs and risk tolerance. Education is important, so we offer regular
-							updates and resources to help clients become more informed investors. Our commitment to
-							transparency and exceptional service builds trust and long-lasting relationships with our
-							clients. </p>
-
-						<p>Our commitment to transparency, integrity, and exceptional service forms the foundation of
-							the long-lasting relationships we build with each client. We take the time to understand
-							your financial journey, offering guidance every step of the way—whether you're planning for
-							retirement, securing your family's future.</p>
-						<a href="about.html" class="btn-primary-line">LEARN MORE</a>
-					</div>
-				</div>
-
-				<style>
-					.btn-home.small-btn {
-						padding: 6px 12px;
-						font-size: 12px;
-					}
-				</style>
-
-				<div class="col-lg-1"></div>
-				<div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix"
-					data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-					<img src="assets/images/index/header-index.png" class="img-fluid d-block mx-auto" alt="About Us"
-						style="border-radius: 3%; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); height: 150%; width: auto;">
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** about section End ***** -->
-
-
-
-
-	<!-- slider section start -->
-	<!-- Include Swiper CSS -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-	<!-- Partners With Section Start -->
-	<section class="partner-section"
-		style="position: relative; overflow: hidden; background: linear-gradient(to bottom, #ced3d6, #e6e6e6, #0e0d0d); padding-top: 120px; padding-bottom: 70px; margin-top: 0;">
-
-
-		<!-- Top Wave -->
-		<div style="position: absolute; top: 0; left: 0; width: 100%; z-index: 0;">
-			<svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-				<path fill="#ffffff"
-					d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-				</path>
-			</svg>
-		</div>
-		<!-- Content Container -->
-		<div class="container position-relative" style="z-index: 2;">
-			<div class="left-heading text-center">
-				<h2 class="section-title underline">Our Trusted Partners</h2>
-				<p class="partner-subtitle" style="font-weight: 400; color: #918d8d;">We proudly collaborate with
-					industry leaders</p>
-			</div>
-			<!-- Swiper Slider -->
-			<div class="swiper partner-slider">
-				<div class="swiper-wrapper">
-					<!-- Partner Logos -->
-					<!-- Add all your 60 slides here as you already have done -->
-					<!-- Example: -->
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_01.jpg" alt="Partner 1">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_02.jpg" alt="Partner 2">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_03.jpg" alt="Partner 3">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_04.jpg" alt="Partner 4">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_05.jpg" alt="Partner 5">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_06.jpg" alt="Partner 6">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_07.jpg" alt="Partner 7">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_08.jpg" alt="Partner 8">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_09.jpg" alt="Partner 9">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_10.jpg" alt="Partner 10">
-					</div>
-					<!-- set2 -->
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_11.jpg" alt="Partner 11">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_12.jpg" alt="Partner 12">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_13.jpg" alt="Partner 13">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_14.jpg" alt="Partner 14">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_15.jpg" alt="Partner 15">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_16.jpg" alt="Partner 16">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_17.jpg" alt="Partner 17">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_18.jpg" alt="Partner 18">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_19.jpg" alt="Partner 19">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_20.jpg" alt="Partner 20">
-					</div>
-					<!-- set3 -->
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_21.jpg" alt="Partner 21">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_22.jpg" alt="Partner 22">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_23.jpg" alt="Partner 23">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_24.jpg" alt="Partner 24">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_25.jpg" alt="Partner 25">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_26.jpg" alt="Partner 26">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_27.jpg" alt="Partner 27">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_28.jpg" alt="Partner 28">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_29.jpg" alt="Partner 29">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_30.jpg" alt="Partner 30">
-					</div>
-					<!-- set4 -->
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_31.jpg" alt="Partner 31">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_32.jpg" alt="Partner 32">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_33.jpg" alt="Partner 33">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_34.jpg" alt="Partner 34">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_35.jpg" alt="Partner 35">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_36.jpg" alt="Partner 36">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_37.jpg" alt="Partner 37">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_38.jpg" alt="Partner 38">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_39.jpg" alt="Partner 39">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_40.jpg" alt="Partner 40">
-					</div>
-					<!-- set5 -->
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_41.jpg" alt="Partner 41">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_42.jpg" alt="Partner 42">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_43.jpg" alt="Partner 43">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_44.jpg" alt="Partner 44">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_45.jpg" alt="Partner 45">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_46.jpg" alt="Partner 46">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_47.jpg" alt="Partner 47">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_48.jpg" alt="Partner 48">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_49.jpg" alt="Partner 49">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_50.jpg" alt="Partner 50">
-					</div>
-					<!-- set6 -->
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_51.jpg" alt="Partner 51">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_52.jpg" alt="Partner 52">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_53.jpg" alt="Partner 53">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_54.jpg" alt="Partner 54">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_55.jpg" alt="Partner 55">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_56.jpg" alt="Partner 56">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_57.jpg" alt="Partner 57">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_58.jpg" alt="Partner 58">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_59.jpg" alt="Partner 59">
-					</div>
-					<div class="swiper-slide partner-card">
-						<img src="assets/images/partner slider/partners_60.jpg" alt="Partner 60">
-					</div>
-
-
-					<!-- Repeat for partners_02.jpg to partners_60.jpg -->
-					<!-- ... -->
-				</div>
-			</div>
-		</div>
-
-		<!-- Bottom Wave -->
-		<!-- <div style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 0;">
-			<svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-				<path fill="#ffffff"
-					d="M0,64L80,64C160,64,320,64,480,64C640,64,800,64,960,64C1120,64,1280,64,1360,64L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z">
-				</path>
-			</svg>
-		</div> -->
-	</section>
-	<!-- Partners With Section End -->
-
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-	<script>
-		const partnerSwiper = new Swiper(".partner-slider", {
-			slidesPerView: 5,
-			spaceBetween: 30,
-			loop: true,
-			autoplay: {
-				delay: 2500,
-				disableOnInteraction: false,
-			},
-			breakpoints: {
-				0: { slidesPerView: 2 },
-				576: { slidesPerView: 3 },
-				768: { slidesPerView: 4 },
-				992: { slidesPerView: 5 },
-			},
-		});
-	</script>
-
-	<!-- Custom Styling -->
-	<style>
-		.underline {
-			position: relative;
-			display: inline-block;
-			font-weight: 600;
-			color: #2c3e50;
-		}
-
-		.underline::after {
-			content: "";
-			display: block;
-			width: 40px;
-			height: 2px;
-			background-color: #2c3e50;
-			margin: 8px auto 0;
-		}
-
-		.partner-title {
-			font-size: 36px;
-			font-weight: 700;
-			color: #1a202c;
-			margin-bottom: 10px;
-			text-transform: uppercase;
-			letter-spacing: 1px;
-		}
-
-		.partner-subtitle {
-			font-size: 18px;
-			color: #6b7280;
-			margin-bottom: 30px;
-		}
-
-		.partner-card {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			padding: 25px;
-			background: #ffffff;
-			border-radius: 16px;
-			box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
-			transition: transform 0.4s ease, box-shadow 0.4s ease;
-			opacity: 0;
-			animation: fadeInUp 0.8s ease forwards;
-		}
-
-
-		.partner-card:hover {
-			transform: translateY(-6px) scale(1.06);
-			box-shadow: 0 16px 36px rgba(0, 0, 0, 0.1);
-			background: #fdfdfd;
-		}
-
-		.partner-card img {
-			max-height: 80px;
-			width: auto;
-			transition: transform 0.3s ease;
-		}
-
-		.partner-card img:hover {
-			transform: scale(1.05);
-		}
-
-		.swiper-slide:nth-child(1) {
-			animation-delay: 0.1s;
-		}
-
-		.swiper-slide:nth-child(2) {
-			animation-delay: 0.2s;
-		}
-
-		.swiper-slide:nth-child(3) {
-			animation-delay: 0.3s;
-		}
-
-		.swiper-slide:nth-child(4) {
-			animation-delay: 0.4s;
-		}
-
-		.swiper-slide:nth-child(5) {
-			animation-delay: 0.5s;
-		}
-
-		@keyframes fadeInUp {
-			from {
-				transform: translateY(40px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-
-		@media (max-width: 768px) {
-			.partner-title {
-				font-size: 28px;
-			}
-
-			.partner-card {
-				padding: 15px;
-			}
-
-			.partner-card img {
-				max-height: 60px;
-			}
-		}
-	</style>
-	<!-- slider section end -->
-
-	<!-- ***** Why Choose Us Start ***** -->
-	<section class="section" id="why-choose-us"
-		style="padding-bottom: 40px;  background-color: #fcfcfc; padding-top: 50px;margin-top: 0px;">
-		<div class="container">
-			<!-- ***** Section Title Start ***** -->
-			<div class="row">
-				<div class="col-lg-12 ">
-					<div class="left-heading  text-center">
-						<h2 class="section-title underline">Why Choose Us</h2>
-					</div>
-				</div>
-				<style>
-					.underline {
-						position: relative;
-						display: inline-block;
-						font-weight: 600;
-						color: #2c3e50;
-					}
-
-					.underline::after {
-						content: "";
-						display: block;
-						width: 40px;
-						height: 2px;
-						background-color: #2c3e50;
-						margin: 8px auto 0;
-					}
-				</style>
-
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>At Findas, we help you make informed financial decisions with confidence, trust, and
-							personalized strategies that put your goals first.</p>
-					</div>
-				</div>
-			</div>
-			<!-- ***** Section Title End ***** -->
-
-			<div class="row">
-				<!-- ***** Choose1 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychoseus1.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Expertise You Trust</h3>
-								<span>Financial Excellence</span>
-							</div>
-							<p>Our experienced professionals craft tailored investment strategies that align with your
-								unique goals.</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose1 Item End ***** -->
-				<!-- ***** Choose2 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychoseus2.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Transparency & Trust</h3>
-								<span>Clear Communication</span>
-							</div>
-							<p>We value honesty and ensure complete transparency at every stage of your financial
-								planning and journey.</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose2 Item End ***** -->
-				<!-- ***** Choose3 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychooseus3.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Investor Education</h3>
-								<span>Knowledge Sharing</span>
-							</div>
-							<p>We empower you with updates, insights, and resources to make informed financial
-								decisions.</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose3 Item End ***** -->
-				<!-- ***** Choose4 Item Start ***** -->
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<div class="team-item text-center">
-						<div class="user-image mb-3">
-							<img src="assets/images/index/whychooseus4.png" alt=""
-								style="width: 100px; height: 100px; object-fit: contain;">
-						</div>
-						<div class="team-content">
-							<div class="team-info">
-								<h3 class="user-name">Dedicated Support</h3>
-								<span>Client First</span>
-							</div>
-							<p>Our commitment to service ensures you always have expert guidance when you need it most.
-							</p>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Choose4 Item End ***** -->
-			</div>
-		</div>
-	</section>
-	<!-- ***** Why Choose Us End ***** -->
-
-
-
-	<!-- ***** Our Services Start ***** -->
-	<section class="section colored" id="our-services" style="padding-top: 40px; background-color: #e6e7e7;">
-
-		<div class="container">
-			<!-- ***** Section Title Start ***** -->
-			<div class="row">
-				<div class="col-lg-12 ">
-					<div class="left-heading  text-center">
-						<h2 class="section-title underline">Our Services</h2>
-					</div>
-				</div>
-				<style>
-					.underline {
-						position: relative;
-						display: inline-block;
-						font-weight: 600;
-						color: #2c3e50;
-					}
-
-					.underline::after {
-						content: "";
-						display: block;
-						width: 40px;
-						height: 2px;
-						background-color: #2c3e50;
-						margin: 8px auto 0;
-					}
-				</style>
-
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>At Findas, we offer a comprehensive range of financial services designed to help individuals
-							and businesses grow, protect, and manage their wealth with confidence and clarity.</p>
-					</div>
-				</div>
-			</div>
-			<!-- ***** Section Title End ***** -->
-
-			<div class="row">
-				<!-- ***** Service1 Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12"
-					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<div class="pricing-item active">
-						<div class="pricing-header">
-							<h3 class="pricing-title">Investment Planning</h3>
-						</div>
-
-						<div class="center-text" style="margin-top: 12%;">
-							<p>We offer investment solutions tailored to your financial goals, risk tolerance, and
-								timeline to help build long-term wealth confidently.</p>
-						</div>
-						<div class="pricing-footer" style="margin-top: 0%;">
-							<a href="services.html">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Service Item End ***** -->
-
-				<!-- ***** Service Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12"
-					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<div class="pricing-item active">
-						<div class="pricing-header">
-							<h3 class="pricing-title">Insurance Planning</h3>
-						</div>
-						<div class="center-text" style="margin-top: 12%;">
-							<p>Protect what matters most with our all-inclusive insurance plans—designed to secure your
-								family, safeguard your assets, and ensure lifelong financial peace of mind.</p>
-						</div>
-
-						<div class="pricing-footer">
-							<a href="services.html">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Service Item End ***** -->
-
-				<!-- ***** Service Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12"
-					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-					<div class="pricing-item active">
-						<div class="pricing-header">
-							<h3 class="pricing-title">Corporate Solutions</h3>
-						</div>
-						<div class="center-text" style="margin-top: 12%;">
-							<p>Tailored financial strategies and insurance solutions for businesses, helping you manage
-								risk, optimize benefits, and support long-term growth.</p>
-
-						</div>
-						<div class="pricing-footer">
-							<a href="services.html">Learn More</a>
-						</div>
-					</div>
-				</div>
-				<!-- ***** Service Item End ***** -->
-			</div>
-		</div>
-	</section>
-	<!-- ***** Our Services End ***** -->
-
-
-	<!-- ***** Parallax Section Start ***** -->
-	<div class="parallax" id="parallax-text"
-		style="background-image: url('assets/images/parallex/parallex.png'); background-size: cover; background-position: center; margin-bottom: 30px;">
-
-		<div class="parallax-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="info">
-							<p class="fade-in-text"><span>FINDAS</span> offers transparent, ethical guidance to
-								simplify your insurance and investment decisions confidently.</p>
-							<a class="btn-white-line" href="contact.html">Contact Us</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<style>
-		.fade-in-text {
-			opacity: 0;
-			animation: fadeInUp 1.2s ease forwards;
-			animation-delay: 0.4s;
-		}
-
-		@keyframes fadeInUp {
-			from {
-				transform: translateY(20px);
-				opacity: 0;
-			}
-
-			to {
-				transform: translateY(0px);
-				opacity: 1;
-			}
-		}
-	</style>
-	<!-- ***** Parallax Section End ***** -->
-
-
-	<!-- ***** Blog Start ***** -->
-	<section class="section white padding-bottom-80" id="blog" style="padding-top: 50px;margin-bottom: 0%;">
-		<div class="container">
-			<!-- ***** Section Title Start ***** -->
-			<div class="row">
-				<div class="col-lg-12 ">
-					<div class="left-heading  text-center">
-						<h2 class="section-title underline">Insights & Ideas</h2>
-					</div>
-				</div>
-				<style>
-					.underline {
-						position: relative;
-						display: inline-block;
-						font-weight: 600;
-						color: #2c3e50;
-					}
-
-					.underline::after {
-						content: "";
-						display: block;
-						width: 40px;
-						height: 2px;
-						background-color: #2c3e50;
-						margin: 8px auto 0;
-					}
-				</style>
-
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>Explore expert insights, financial tips, and the latest trends to help you make informed
-							decisions and grow with confidence.</p>
-
-					</div>
-				</div>
-			</div>
-			<!-- ***** Section Title End ***** -->
-
-			<div class="row">
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-post-thumb">
-						<div class="img">
-							<img src="assets/images/blog/1.png" alt="">
-						</div>
-						<div class="blog-content">
-							<h3>
-								<a href="">Achieve Financial Freedom</a>
-							</h3>
-							<div class="text">
-								Financial freedom is a goal that many people strive for, and for good reason. Achieving
-								financial freedom means having the ability to live the life you want without worrying
-								about money.
-							</div>
-							<a href="blog.html" class="btn-primary-line">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-post-thumb">
-						<div class="img">
-							<img src="assets/images/blog/2.png" alt="">
-						</div>
-						<div class="blog-content">
-							<h3>
-								<a href="">ELSS Vs PPF</a>
-							</h3>
-							<div class="text">
-								When it comes to tax saving investments in India, two
-								popular options are Public Provident Fund (PPF) and Equity-Linked Saving Scheme (ELSS)
-								mutual funds.
-							</div>
-							<a href="blog.html" class="btn-primary-line">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-12">
-					<div class="blog-post-thumb">
-						<div class="img">
-							<img src="assets/images/blog/3.png" alt="">
-						</div>
-						<div class="blog-content">
-							<h3>
-								<a href="">Easiest Asset to Invest your money</a>
-							</h3>
-							<div class="text">
-								Investing in mutual funds is an easy and effective way
-								to grow your wealth. Mutual funds have been gaining popularity in India over the past
-								decade
-								due to their simplicity, flexibility.
-							</div>
-							<a href="blog.html" class="btn-primary-line">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ***** Blog End ***** -->
-
-	<style>
-		#blog {
-			margin-bottom: 20px;
-		}
-
-		#testimonials {
-			margin-top: 0;
-		}
-	</style>
-	<!-- ***** Testimonial Start ***** -->
-	<!-- Include Swiper CSS in your <head> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-	<section class="section white " id="testimonials" style="background-color: #f0eded; padding-top: 50px;margin-top: 0%;">
-		<div class="container">
-			<!-- Section Title -->
-			<div class="row" style="margin-bottom: 1%;">
-				<div class="col-lg-12 text-center">
-					<div class="left-heading">
-						<h2 class="section-title underline">What Our Customers Say</h2>
-					</div>
-				</div>
-				<div class="offset-lg-3 col-lg-6">
-					<div class="center-text">
-						<p>Hear from our satisfied clients about how Findas has empowered their financial journey with
-							trust, expertise, and personalized support.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Swiper Slider -->
-			<div class="swiper testimonial-slider mt-5">
-				<div class="swiper-wrapper">
-
-					<!-- Testimonial 1 -->
-					<div class="swiper-slide">
-						<div class="testimonial-box text-center p-4 shadow rounded">
-							<img src="assets/images/Testimonial/testimonial_1.jpg" alt="Client"
-								class="rounded-circle mb-3" width="80" height="80">
-							<p class="mb-3">“Financial Freedom Company helped me take control of my finances and achieve
-								my goals. Their expert advice gave me confidence and clarity. I highly recommend their
-								services for anyone seeking financial stability.”</p>
-							<h5 class="mb-0">CEO and Founder</h5>
-							<small>Engeniuspark Tech</small>
-						</div>
-					</div>
-
-					<!-- Testimonial 2 -->
-					<div class="swiper-slide">
-						<div class="testimonial-box text-center p-4 shadow rounded">
-							<img src="assets/images/Testimonial/testimonial_2.jpg" alt="Client"
-								class="rounded-circle mb-3" width="80" height="80">
-							<p class="mb-3">“I highly recommend Findas. They’ve helped me with everything from
-								retirement planning to investments. The team is always available, supportive, and clear,
-								making me feel confident and informed about my financial future every step of the way.”
-							</p>
-							<h5 class="mb-0">Prajakta Kulkarni</h5>
-						</div>
-					</div>
-
-					<!-- Testimonial 3 -->
-					<div class="swiper-slide">
-						<div class="testimonial-box text-center p-4 shadow rounded">
-							<img src="assets/images/Testimonial/testimonial_3.jpg" alt="Client"
-								class="rounded-circle mb-3" width="80" height="80">
-							<p class="mb-3">“Thanks to Findas, I consolidated my debt and got my finances back on track.
-								Their clear guidance and support helped me become debt-free and gain a stronger
-								understanding of how to manage my money confidently.”</p>
-							<h5 class="mb-0">Prajakt Mehta</h5>
-							<small>Director: Metaforge</small>
-						</div>
-					</div>
-
-					<!-- Testimonial 4 -->
-					<div class="swiper-slide">
-						<div class="testimonial-box text-center p-4 shadow rounded">
-							<img src="assets/images/Testimonial/testimonial_4.jpg" alt="Client"
-								class="rounded-circle mb-3" width="80" height="80">
-							<p class="mb-3">“I have been a loyal customer of Findas for several years now and I have
-								always been impressed with their commitment to providing excellent service. They are
-								always responsive, knowledgeable, and helpful, and I trust them with all of my financial
-								needs.”</p>
-							<h5 class="mb-0">Milind Khambete</h5>
-						</div>
-					</div>
-
-					<!-- Testimonial 5-->
-					<div class="swiper-slide">
-						<div class="testimonial-box text-center p-4 shadow rounded">
-							<img src="assets/images/Testimonial/testimonial_5.jpg" alt="Client"
-								class="rounded-circle mb-3" width="80" height="80">
-							<p class="mb-3">“Findas has been instrumental in helping me achieve my financial goals.
-								Their team of experts provided me with customized solutions that were tailored to my
-								specific needs. They truly go above and beyond to ensure that their customers are
-								satisfied and successful”</p>
-							<h5 class="mb-0">Meenakshi Kulkarni</h5>
-						</div>
-					</div>
-
-				</div>
-
-
-			</div>
-		</div>
-	</section>
-
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-	<script>
-		const swiper = new Swiper('.testimonial-slider', {
-			loop: true,
-			grabCursor: true,
-			slidesPerView: 1,
-			spaceBetween: 30,
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			autoplay: {
-				delay: 5000,
-			},
-			breakpoints: {
-				768: {
-					slidesPerView: 2
-				},
-				992: {
-					slidesPerView: 3
-				}
-			}
-		});
-	</script>
-
-	<style>
-		.testimonial-box {
-			background-color: #dad8d8;
-			min-height: 300px;
-		}
-
-		.swiper-pagination-bullet-active {
-			background-color: #2c3e50;
-		}
-
-		.underline {
-			position: relative;
-			display: inline-block;
-			font-weight: 600;
-			color: #2c3e50;
-		}
-
-		.underline::after {
-			content: "";
-			display: block;
-			width: 40px;
-			height: 2px;
-			background-color: #2c3e50;
-			margin: 8px auto 0;
-		}
-	</style>
-
-	<!-- **** End ***** -->
-
-	<!-- appointment section start -->
-	<!-- Include Bootstrap CSS (if not already) -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-	<section class="appointment-section py-5" style="background-color: #ffffff;">
-		<div class="container">
-			<div class="row align-items-center">
-
-				<!-- Form Section -->
-				<div class="col-lg-6 mb-4 mb-lg-0">
-					<div class="left-heading">
-						<h2 class="section-title">Book An Appointment</h2>
-					</div>
-
-					<form>
-						<div class="row g-3">
-							<div class="col-md-6">
-								<input type="text" class="form-control" placeholder="Enter Full Name..." required>
-							</div>
-							<div class="col-md-6">
-								<input type="email" class="form-control" placeholder="Enter Email Id..." required>
-							</div>
-							<div class="col-md-6">
-								<div class="input-group">
-									<select class="form-select" style="max-width: 80px;">
-										<option value="+91">+91</option>
-										<option value="+1">+1</option>
-										<option value="+44">+44</option>
-									</select>
-									<input type="tel" class="form-control" placeholder="Enter Phone No..." required>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<input type="text" class="form-control" placeholder="Enter City Name..." required>
-							</div>
-							<div class="col-12">
-								<input type="text" class="form-control" placeholder="Enter Subject..." required>
-							</div>
-							<div class="col-12">
-								<textarea class="form-control" rows="4" placeholder="Write message" required></textarea>
-							</div>
-							<div class="col-12">
-								<a href="blog.html" class="btn-primary-line">Submit</a>
-
-							</div>
-						</div>
-					</form>
-				</div>
-
-				<!-- Image Section -->
-				<div class="col-lg-6 text-center">
-					<img src="assets/images/index/bookAnAppointment.png" alt="Appointment Call"
-						class="img-fluid rounded">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- appointment section end -->
-
-
-	<!-- ***** Footer Start ***** -->
-	<footer style="
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div id="loader" class="spinner">
+            <div id="shadow"></div>
+            <div id="box"></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="dark-index.html" class="logo">
+                            <img src="logo_navbar-removebg-preview.png" alt="Turing" />
+                        </a>
+                        <!-- ***** Logo End ***** -->
+
+
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="submenu">
+                                <a href="javascript:;">Discover</a>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="podcast.html">Podcast</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="submenu">
+                                <a href="javascript:;">Solution</a>
+                                <ul>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="sipcalculator.html">SIP Calculator</a></li>
+                                    <li><a href="courses.html">Our Courses</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="faq.html">KnowMore</a></li>
+                        </ul>
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+
+                        <!-- ***** Header Buttons Start ***** -->
+                        <ul class="header-buttons">
+                            <li><a class="btn-nav-primary" href="dark-features.html">Client Login</a></li>
+                            <li><a class="btn-nav-primary" href="contact.html">Contact Us</a></li>
+                        </ul>
+                        <!-- ***** Header Buttons End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+    <section class="page">
+        <!-- ***** Page Top Start ***** -->
+        <div class="cover"
+            style="background: url('assets/images/banner/banner5.png') no-repeat center center / cover; padding: 100px 0; color: #fff;">
+            <div class="page-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1>About Findas</h1>
+                        </div>
+                        <div class="col-lg-12">
+                            <ol class="breadcrumb">
+                                <li><a href="dark-index.html">Home</a></li>
+                                <li class="active">About Us</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Page Top End ***** -->
+        <!-- ***** about section Start ***** -->
+        <section class="section padding-bottom-80 colored" id="about-us" style="padding-top: 40px; ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
+                        <div class="left-heading">
+                            <h2 class="section-title">About Us</h2>
+                        </div>
+                        <style>
+                            .section-title {
+                                position: relative;
+                                display: inline-block;
+                                font-weight: 600;
+                                color: #2c3e50;
+                            }
+
+                            .section-title::after {
+                                content: "";
+                                display: block;
+                                width: 40px;
+                                /* Length of the line */
+                                height: 2px;
+                                /* Thickness */
+                                background-color: #2c3e50;
+                                /* Line color */
+                                margin: 8px auto 0;
+                                /* Space between text and line */
+                            }
+                        </style>
+
+                        <div class="left-text">
+                            <p>Investing and insurance can be complex and overwhelming for many people, and that's where
+                                FINDAS comes in. With over two decades of experience in the field, we have a deep
+                                understanding of the various financial products and investment options available to our
+                                clients. At FINDAS, we believe in transparency and ethical business practices. We value
+                                knowledge sharing with our clients, empowering them to become financially literate
+                                investors. We want our clients to feel confident and in control of their finances, and
+                                we strive to provide them with a holistic view of their financial lives. Our approach to
+                                investing involves a judicious blend of multiple assets and financial products, tailored
+                                to each client's unique needs and goals. We understand that implementing an investment
+                                plan can be daunting, which is why we provide personalized support and guidance
+                                throughout the process.</p>
+                            <p></p>
+
+                        </div>
+                    </div>
+
+                    <style>
+                        .btn-home.small-btn {
+                            padding: 6px 12px;
+                            font-size: 12px;
+                        }
+                    </style>
+
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 align-self-center mobile-bottom-fix"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <img src="assets/images/about/about-findas.jpg" class="img-fluid d-block mx-auto"
+                            alt="About Us">
+                        <p class="text-center mt-2 fw-semibold" style="color: #2c2c2c;">Our founder and source of
+                            inspiration</p>
+                        <p class="text-center mt-2 fw-semibold" style="color: #2c2c2c;">Late Smt. Aparna Samir Machawe
+                            (1974-2021)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ***** about section End ***** -->
+
+        <!-- ***** Parallax Section Start ***** -->
+        <section
+            style="background:linear-gradient(to bottom, #e7e7e7, #acaaaa , #000000); text-align: center; padding: 60px 20px;">
+            <div class="col-lg-12 ">
+                <div class="left-heading  text-center">
+                    <h2 class="section-title line">Where Moments Become Memories</h2>
+                </div>
+            </div>
+            <style>
+                .line {
+                    position: relative;
+                    display: inline-block;
+                    font-weight: 600;
+                    color: #2c3e50;
+                    /* Adjust the color to match your theme */
+                }
+
+                .line::after {
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    /* Length of the line */
+                    height: 2px;
+                    /* Thickness */
+                    background-color: #2c3e50;
+                    /* Line color */
+                    margin: 8px auto 0;
+                    /* Space between text and line */
+                }
+            </style>
+            <div class="offset-lg-3 col-lg-6">
+                <div class="center-text">
+                    <p>Celebrating the highlights and moments that shaped our journey together.</p>
+                </div>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper mySwiper" style="margin-top: 30px; padding-bottom: 10px;">
+
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/1.jpg" alt="Life Absys 1" class="life-img" />
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/2.jpg" alt="Life Absys 2" class="life-img" />
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/3.jpg" alt="Life Absys 3" class="life-img" />
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/4.jpg" alt="Life Absys 4" class="life-img" />
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/5.jpg" alt="Life Absys 5" class="life-img" />
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/6.jpg" alt="Life Absys 6" class="life-img" />
+                    </div>
+                    <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/7.jpg" alt="Life Absys 7" class="life-img" />
+                    </div>
+                    <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/8.jpg" alt="Life Absys 8" class="life-img" />
+                    </div>
+                    <!-- Slide 9 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/9.jpg" alt="Life Absys 9" class="life-img" />
+                    </div>
+                    <!-- Slide 10 -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/events slider/10.jpg" alt="Life Absys 10" class="life-img" />
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 5,
+                spaceBetween: 10,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+                breakpoints: {
+                    0: { slidesPerView: 2 },
+                    576: { slidesPerView: 3 },
+                    768: { slidesPerView: 4 },
+                    992: { slidesPerView: 5 }
+                }
+            });
+        </script>
+        <!-- ***** Parallax Section End ***** -->
+
+        <!-- mision, vision & values start -->
+        <section id="mission-vision-values" class="py-5" style="background-color: #f9f9f9; margin-top: 0px;">
+            <div class="container">
+                <div class="row text-center mb-4">
+                    <div class="col">
+                        <div class="left-heading  text-center">
+                            <h2 class="section-title underline">Our Mission, Vision & Values</h2>
+                        </div>
+                        <p class="text-muted">What drives FINDAS forward every day</p>
+                    </div>
+                </div>
+                <style>
+                    .underline {
+                        position: relative;
+                        display: inline-block;
+                        font-weight: 600;
+                        color: #2c3e50;
+                        /* Adjust the color to match your theme */
+                    }
+
+                    .underline::after {
+                        content: "";
+                        display: block;
+                        width: 40px;
+                        /* Length of the line */
+                        height: 2px;
+                        /* Thickness */
+                        background-color: #2c3e50;
+                        /* Line color */
+                        margin: 8px auto 0;
+                        /* Space between text and line */
+                    }
+                </style>
+                <div class="row g-4">
+                    <!-- Mission -->
+                    <div class="col-md-4 text-center">
+                        <div class="p-4 bg-white shadow rounded h-100 fade-in-up fade-delay-1">
+                            <i class="fas fa-bullseye fa-2x mb-3 " style="color: #000;"></i>
+                            <div class="left-heading  text-center">
+                                <h2 class="section-title underline">Our Mission</h2>
+                            </div>
+                            <h5 class="fw-semibold"></h5>
+                            <p class="text-muted">We craft impactful financial strategies to ensure lasting value and
+                                long-term abundance for all stakeholders.</p>
+                        </div>
+                    </div>
+                    <!-- Vision -->
+                    <div class="col-md-4 text-center">
+                        <div class="p-4 bg-white shadow rounded h-100 fade-in-up fade-delay-2">
+                            <i class="fas fa-eye fa-2x mb-3 " style="color: #000;"></i>
+                            <div class="left-heading  text-center">
+                                <h2 class="section-title underline">Our Vision</h2>
+                            </div>
+                            <p class="text-muted">We create access for people to live abundantly and build the life they
+                                truly love.</p>
+                        </div>
+                    </div>
+                    <!-- Values -->
+                    <div class="col-md-4 text-center">
+                        <div class="p-4 bg-white shadow rounded h-100 fade-in-up fade-delay-3">
+                            <i class="fas fa-heart fa-2x mb-3 " style="color: #000;"></i>
+                            <div class="left-heading  text-center">
+                                <h2 class="section-title underline">Our Values</h2>
+                            </div>
+                            <p class="text-muted">We uphold integrity, trust, transparency, client-first focus,
+                                accountability, innovation, and lifelong learning in everything.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            .fade-in-up {
+                opacity: 0;
+                transform: translateY(30px);
+                animation: fadeInUp 1s ease forwards;
+            }
+
+            .fade-delay-1 {
+                animation-delay: 0.3s;
+            }
+
+            .fade-delay-2 {
+                animation-delay: 0.6s;
+            }
+
+            .fade-delay-3 {
+                animation-delay: 0.9s;
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        </style>
+        <!-- mision, vision & values end -->
+
+
+        <!-- About Samir Machawe Section -->
+        <section class="py-5 bg-light" id="about-samir">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Image -->
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <img src="assets/images/about/samirSir.jpg" alt="Samir Machawe" class="img-fluid rounded shadow"
+                            style="max-height: 500px;">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-7">
+                        <div class="left-heading  text-center">
+                            <h2 class="section-title underline">About Samir Machawe</h2>
+                        </div>
+
+                        <p class="text-muted">Samir Machawe is a Author, TLC Certified Financial Freedom Coach,
+                            Investor, YouTuber, Podcaster, Avid reader, World Traveller and Financially free. He is also
+                            a member of BNI Alpha Nashik and TLC Sirius. With a passion for helping people achieve
+                            financial independence and live their dream life, Samir Machawe has dedicated his career to
+                            sharing his expertise and insights with others.</p>
+                        <p class="text-muted">As a financial freedom coach, Samir works with individuals and businesses
+                            to help them develop a comprehensive investment strategies that aligns with their goals and
+                            values. His coaching programs cover a wide range of topics, from budgeting and saving to
+                            investing and retirement planning. Samir's goal is to help his clients achieve financial
+                            freedom and build wealth for themselves and their families.</p>
+                        <p class="text-muted">In addition to his coaching work, Samir Machawe is also a successful
+                            author. His book, "25 Habits That Make You Rich," is a comprehensive guide to building
+                            wealth and achieving financial independence. In the book, Samir Machawe shares his personal
+                            journey to financial freedom and provides readers with 25 practical tips and strategies for
+                            achieving their own financial goals.</p>
+                        <p class="text-muted"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #about-samir h2 {
+                letter-spacing: 1px;
+            }
+
+            #about-samir img {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            #about-samir img:hover {
+                transform: scale(1.03);
+            }
+        </style>
+        <!-- about SAMIR MACHAWE section end -->
+        <hr class="my-5" style="color: #000000;">
+
+        <!-- About youtube Section start-->
+        <section class="py-5 bg-light" id="about-samir">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Content -->
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="left-heading text-center">
+                            <h2 class="section-title underline">Knowledge Builds Wealth</h2>
+                        </div>
+
+                        <p class="text-muted"><strong style="color: #3d3d3d;">Findas Marathi - </strong> At FINDAS, we
+                            believe that financial literacy is the key to success in investing. That's why we are
+                            committed to providing educational resources and tools to help you become a financially
+                            literate investor. Through our YouTube channel, we will provide valuable insights and expert
+                            advice to help you make informed investment decisions. </p>
+                        <p class="text-muted">Our YouTube channel is designed to be accessible and engaging, with a
+                            focus on practical tips and strategies that you can apply to your own financial situation.
+                            Whether you're just starting out or looking to take your investing to the next level, our
+                            channel has something for everyone.</p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-5 text-center text-lg-start order-1 order-lg-2">
+                        <div class="position-relative d-inline-block">
+                            <img src="assets/images/about/FindasVid1.jpg" alt="Samir Machawe"
+                                class="img-fluid rounded shadow" style="max-height: 300px; width: 100%;">
+                            <a href="https://www.youtube.com/@FindasMarathi" target="_blank"
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                                <img src="https://img.icons8.com/ios-filled/50/fa314a/youtube-play.png" alt="YouTube"
+                                    style="width: 40px; height: 40px;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #about-samir h2 {
+                letter-spacing: 1px;
+            }
+
+            #about-samir img {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            #about-samir img:hover {
+                transform: scale(1.03);
+            }
+        </style>
+        <!-- about youtube section end -->
+
+        <hr class="my-5" style="color: #000000;">
+
+        <!-- About Samir Machawe Section -->
+        <section class="py-5 bg-light" id="about-samir">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Image -->
+                    <div class="col-lg-5 text-center text-lg-start position-relative">
+                        <img src="assets/images/about/FindasVid2.jpg" alt="Samir Machawe"
+                            class="img-fluid rounded shadow" style="max-height: 500px; filter: blur(0.9px);">
+
+                        <!-- Link Icon -->
+                        <a href="podcast.html" target="_blank"
+                            class="position-absolute top-50 start-50 translate-middle ">
+                            <i class="fa fa-link fa-2x playvid"></i>
+                        </a>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-lg-7">
+                        <div class="left-heading  text-center">
+                            <h2 class="section-title underline">Fintalk Podcast</h2>
+                        </div>
+                        <p class="text-muted">
+                            Welcome to <strong>FINTALK</strong>, the podcast dedicated to helping you achieve true
+                            financial freedom.
+                            Join us as we dive deep into the world of personal finance, smart investing, and
+                            wealth-building strategies.
+                            Whether you're just starting your financial journey or looking to optimize your current
+                            plan, each episode brings
+                            expert interviews, practical tips, and real-life stories to empower you with the knowledge
+                            and confidence to make informed decisions.
+                            Discover how to manage your money wisely, grow your assets, and design a future of financial
+                            independence—one episode at a time.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #about-samir h2 {
+                letter-spacing: 1px;
+            }
+
+            #about-samir img {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            #about-samir img:hover {
+                transform: scale(1.03);
+            }
+        </style>
+        <!-- about SAMIR MACHAWE section end -->
+        <hr class="my-5" style="color: #000000;">
+
+        <!-- About youtube Section start-->
+        <section class="py-5 bg-light" id="about-samir">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Content -->
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="left-heading text-center">
+                            <h2 class="section-title underline">Our Courses</h2>
+                        </div>
+
+                        <p class="text-muted">
+                            <strong style="color: #3d3d3d;">At FINDAS,</strong> we offer a range of comprehensive
+                            finance courses designed to help you build wealth and achieve your financial goals.
+                            Our courses are taught by industry experts with years of hands-on experience in banking,
+                            investing, taxation, and financial planning.
+                            Whether you're a student, working professional, entrepreneur, or someone looking to better
+                            manage your personal finances, we have something for you.
+                            Learn at your own pace with interactive content, real-world case studies, and actionable
+                            strategies that empower you to make informed financial decisions.
+                            Take control of your financial future with FINDAS — because financial literacy is the first
+                            step toward financial freedom...
+                        </p>
+                    </div>
+
+                    <!-- Image -->
+                    <div class="col-lg-5 text-center text-lg-start order-1 order-lg-2">
+                        <div class="position-relative d-inline-block">
+                            <img src="assets/images/about/FindasVid3.jpg" alt="Samir Machawe"
+                                class="img-fluid rounded shadow" style="max-height: 500px; filter: blur(0.9px);">
+                            <!-- Link Icon -->
+                            <a href="courses.html" target="_blank"
+                                class="position-absolute top-50 start-50 translate-middle ">
+                                <i class="fa fa-link fa-2x playvid"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #about-samir h2 {
+                letter-spacing: 1px;
+            }
+
+            #about-samir img {
+                transition: transform 0.3s ease-in-out;
+            }
+
+            #about-samir img:hover {
+                transform: scale(1.03);
+            }
+        </style>
+        <!-- about youtube section end -->
+
+
+
+        <!-- ***** Footer Start ***** -->
+        <footer style="
 	background: linear-gradient(to right, #a8a8a8, #bbbbbb, #d4d4d4);
 	padding: 80px 0 40px 0;
 	font-family: 'Segoe UI', sans-serif;
@@ -1214,283 +672,202 @@
 	box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.1);
 	transition: background 0.5s ease, box-shadow 0.3s ease;
 ">
-		<div class="container">
-			<div class="row gy-5">
-				<!-- Logo & About -->
-				<div class="col-lg-5 col-md-12 text-center text-lg-start">
-					<img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
-						style="max-width: 150px;">
-					<p class="text-dark" style="font-size: 15px; line-height: 1.8;">
-						Empowering clients in investments and insurance since 1999, we prioritize transparency, trust,
-						and personalized guidance, with a mission to help you become a confident, knowledgeable, and
-						financially informed investor.
-					</p>
-				</div>
+            <div class="container">
+                <div class="row gy-5">
+                    <!-- Logo & About -->
+                    <div class="col-lg-5 col-md-12 text-center text-lg-start">
+                        <img src="assets/images/logo/footer-removebg-preview.png" class="logo mb-3" alt="Findas Logo"
+                            style="max-width: 150px;">
+                        <p class="text-dark" style="font-size: 15px; line-height: 1.8;">
+                            Empowering clients in investments and insurance since 1999, we prioritize transparency,
+                            trust,
+                            and personalized guidance, with a mission to help you become a confident, knowledgeable, and
+                            financially informed investor.
+                        </p>
+                    </div>
 
-				<!-- Helpful Links -->
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
-					<ul class="list-unstyled footer-nav">
-						<li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
-						<li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
-						<li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
-						<li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
-						<li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
-					</ul>
-				</div>
+                    <!-- Helpful Links -->
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <h6 class="mb-3 text-dark fw-semibold text-uppercase">Helpful Links</h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="about.html"><i class="fa fa-angle-right me-2"></i>About Us</a></li>
+                            <li><a href="services.html"><i class="fa fa-angle-right me-2"></i>Services</a></li>
+                            <li><a href="courses.html"><i class="fa fa-angle-right me-2"></i>Courses</a></li>
+                            <li><a href="blog.html"><i class="fa fa-angle-right me-2"></i>Blogs</a></li>
+                            <li><a href="podcast.html"><i class="fa fa-angle-right me-2"></i>Podcast</a></li>
+                        </ul>
+                    </div>
 
-				<!-- Support -->
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
-					<ul class="list-unstyled footer-nav">
-						<li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a></li>
-						<li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a></li>
-						<li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
-						<li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
-					</ul>
-				</div>
+                    <!-- Support -->
+                    <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                        <h6 class="mb-3 text-dark fw-semibold text-uppercase">Support</h6>
+                        <ul class="list-unstyled footer-nav">
+                            <li><a href="terms&conditions.html"><i class="fa fa-angle-right me-2"></i>Terms of Use</a>
+                            </li>
+                            <li><a href="privacypolicy.html"><i class="fa fa-angle-right me-2"></i>Privacy Policy</a>
+                            </li>
+                            <li><a href="cancellation.html"><i class="fa fa-angle-right me-2"></i>CancelEase</a></li>
+                            <li><a href="contact.html"><i class="fa fa-angle-right me-2"></i>Contact</a></li>
+                        </ul>
+                    </div>
 
-				<!-- Contact Info & Social -->
-				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
-					<p class="small mb-1 text-dark">
-						Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
-					</p>
-					<p class="small mb-1 text-dark">
-						Mon – Fri<br>11:00 AM – 05:00 PM</p>
-					<p class="mb-1"><a href="https://wa.me/918888830440"
-							class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
-					<p><a href="mailto:support@findas.in"
-							class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
+                    <!-- Contact Info & Social -->
+                    <div class="col-lg-3 col-md-4 col-sm-12">
+                        <h6 class="mb-3 text-dark fw-semibold text-uppercase">Get In Touch</h6>
+                        <p class="small mb-1 text-dark">
+                            Flat C-301, 3rd Floor, Ishwar Pratishta 3,<br>Ravi Shankar Marg, Nashik - 422009
+                        </p>
+                        <p class="small mb-1 text-dark">
+                            Mon – Fri<br>11:00 AM – 05:00 PM</p>
+                        <p class="mb-1"><a href="https://wa.me/918888830440"
+                                class="text-dark text-decoration-none fw-semibold">+91 88888 30440</a></p>
+                        <p><a href="mailto:support@findas.in"
+                                class="text-dark text-decoration-none fw-semibold">support@findas.in</a></p>
 
-					<div class="d-flex gap-3 mt-3">
-						<a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
-							class="footer-icon" aria-label="LinkedIn">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon"
-							aria-label="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="https://x.com/findas_india" target="_blank" class="footer-icon" aria-label="Twitter">
-							<i class="fab fa-twitter"></i>
-						</a>
-						<a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon"
-							aria-label="Facebook">
-							<i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon"
-							aria-label="YouTube">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</div>
-				</div>
-			</div>
+                        <div class="d-flex gap-3 mt-3">
+                            <a href="https://www.linkedin.com/company/findas-consulting/" target="_blank"
+                                class="footer-icon" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/findasindia/" target="_blank" class="footer-icon"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/findas_india" target="_blank" class="footer-icon"
+                                aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.facebook.com/Financiallybindaas" target="_blank" class="footer-icon"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@FindasMarathi" target="_blank" class="footer-icon"
+                                aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-			<!-- Copyright -->
-			<div class="row mt-4">
-				<div class="col-lg-12 text-center">
-					<hr class="my-3" style="border-color: #999;">
-					<p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- ***** Footer End ***** -->
+                <!-- Copyright -->
+                <div class="row mt-4">
+                    <div class="col-lg-12 text-center">
+                        <hr class="my-3" style="border-color: #999;">
+                        <p class="small text-dark mb-0">© 2025 <strong>Findas</strong>. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ***** Footer End ***** -->
 
-	<!-- Footer Styles -->
-	<style>
-		.footer-nav li {
-			margin-bottom: 10px;
-		}
+        <!-- Footer Styles -->
+        <style>
+            .footer-nav li {
+                margin-bottom: 10px;
+            }
 
-		.footer-nav li a {
-			color: #333;
-			font-size: 14px;
-			text-decoration: none;
-			transition: all 0.3s ease;
-		}
+            .footer-nav li a {
+                color: #333;
+                font-size: 14px;
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
 
-		.footer-nav li a:hover {
-			color: #000;
-			font-weight: 500;
-			text-decoration: underline;
-		}
+            .footer-nav li a:hover {
+                color: #000;
+                font-weight: 500;
+                text-decoration: underline;
+            }
 
-		.footer-icon {
-			font-size: 18px;
-			color: #444;
-			transition: transform 0.3s ease, color 0.3s ease;
-		}
+            .footer-icon {
+                font-size: 18px;
+                color: #444;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
 
-		.footer-icon:hover {
-			color: #000;
-			transform: scale(1.2);
-		}
-	</style>
+            .footer-icon:hover {
+                color: #000;
+                transform: scale(1.2);
+            }
+        </style>
 
-	<!-- Back to Top Button -->
-	<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
-		<i class="fas fa-arrow-up"></i>
-	</a>
+        <!-- Back to Top Button -->
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+            <i class="fas fa-arrow-up"></i>
+        </a>
 
-	<style>
-		.back-to-top {
-			position: fixed;
-			bottom: 30px;
-			right: 30px;
-			width: 55px;
-			height: 55px;
-			background: rgba(0, 0, 0, 0.6);
-			backdrop-filter: blur(8px);
-			color: #ffffff;
-			border-radius: 50%;
-			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-			z-index: 9999;
-			display: none;
-			transition: all 0.4s ease;
-			border: 1px solid rgba(255, 255, 255, 0.1);
-		}
+        <style>
+            .back-to-top {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                width: 55px;
+                height: 55px;
+                background: rgba(0, 0, 0, 0.6);
+                backdrop-filter: blur(8px);
+                color: #ffffff;
+                border-radius: 50%;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+                z-index: 9999;
+                display: none;
+                transition: all 0.4s ease;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+            }
 
-		.back-to-top i {
-			font-size: 22px;
-			transition: transform 0.4s ease, color 0.4s ease;
-		}
+            .back-to-top i {
+                font-size: 22px;
+                transition: transform 0.4s ease, color 0.4s ease;
+            }
 
-		.back-to-top:hover {
-			transform: scale(1.2) rotate(15deg);
-			background: rgba(255, 255, 255, 0.15);
-			box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
-			border: 1px solid rgba(255, 255, 255, 0.3);
-		}
+            .back-to-top:hover {
+                transform: scale(1.2) rotate(15deg);
+                background: rgba(255, 255, 255, 0.15);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+            }
 
-		.back-to-top:hover i {
-			transform: translateY(-4px);
-			color: #000000;
-		}
-	</style>
+            .back-to-top:hover i {
+                transform: translateY(-4px);
+                color: #000000;
+            }
+        </style>
 
-	<script>
-		const backToTop = document.querySelector('.back-to-top');
+        <script>
+            const backToTop = document.querySelector('.back-to-top');
 
-		window.addEventListener('scroll', () => {
-			if (window.scrollY > 300) {
-				backToTop.style.display = 'flex';
-			} else {
-				backToTop.style.display = 'none';
-			}
-		});
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.style.display = 'flex';
+                } else {
+                    backToTop.style.display = 'none';
+                }
+            });
 
-		backToTop.addEventListener('click', (e) => {
-			e.preventDefault();
-			window.scrollTo({ top: 0, behavior: 'smooth' });
-		});
-	</script>
-
-
-
-
-	<!-- jQuery -->
-	<script src="assets/js/jquery-3.6.0.min.js"></script>
-
-	<!-- Bootstrap -->
-	<script src="assets/js/popper.js"></script>
-	<script src="assets/js/bootstrap.min.js"></script>
-
-	<!-- Plugins -->
-	<script src="assets/js/scrollreveal.min.js"></script>
-	<script src="assets/js/parallax.min.js"></script>
-	<script src="assets/js/waypoints.min.js"></script>
-	<script src="assets/js/jquery.counterup.min.js"></script>
-	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/imgfix.min.js"></script>
-
-	<!-- Global Init -->
-	<script src="assets/js/custom.js"></script>
-	<!-- Book An Appointment Modal -->
-	<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
-		aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content rounded-4 shadow">
-
-				<div class="modal-header border-0 pb-0">
-					<h5 class="modal-title fw-bold" id="appointmentModalLabel">Book An Appointment</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-
-				<div class="modal-body pt-2">
-					<form>
-						<div class="mb-3">
-							<label for="name" class="form-label fw-semibold">Full Name</label>
-							<input type="text" class="form-control rounded-pill px-3 py-2 shadow-sm border-0" id="name"
-								placeholder="Enter your full name" required>
-						</div>
-
-						<div class="mb-3">
-							<label for="email" class="form-label fw-semibold">Email Address</label>
-							<input type="email" class="form-control rounded-pill px-3 py-2 shadow-sm border-0"
-								id="email" placeholder="Enter your email" required>
-						</div>
-
-						<div class="mb-3">
-							<label for="phone" class="form-label fw-semibold">Phone Number</label>
-							<input type="tel" class="form-control rounded-pill px-3 py-2 shadow-sm border-0" id="phone"
-								placeholder="Enter your phone number" required>
-						</div>
-
-						<div class="mb-3">
-							<label for="date" class="form-label fw-semibold">Preferred Date</label>
-							<input type="date" class="form-control rounded-pill px-3 py-2 shadow-sm border-0" id="date"
-								required>
-						</div>
-
-						<div class="mb-3">
-							<label for="message" class="form-label fw-semibold">Message (Optional)</label>
-							<textarea class="form-control rounded-4 px-3 py-2 shadow-sm border-0" id="message" rows="3"
-								placeholder="Additional details..."></textarea>
-						</div>
+            backToTop.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
 
 
+        <!-- jQuery -->
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
 
-						<a href="clientlogin.html" class="btn-primary-line">SUBMIT</a>
-					</form>
-				</div>
+        <!-- Bootstrap -->
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
 
-			</div>
-		</div>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Plugins -->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/parallax.min.js"></script>
+        <script src="assets/js/waypoints.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="assets/js/imgfix.min.js"></script>
 
-	<!-- Swiper Initialization -->
-	<script>
-		const brandSwiper = new Swiper(".brand__slider", {
-			slidesPerView: 5,
-			spaceBetween: 20,
-			loop: true,
-			autoplay: {
-				delay: 2000,
-				disableOnInteraction: false,
-			},
-			breakpoints: {
-				320: { slidesPerView: 2 },
-				576: { slidesPerView: 3 },
-				768: { slidesPerView: 4 },
-				992: { slidesPerView: 5 },
-			},
-		});
-
-
-
-
-		//navigation 
-
-	</script>
-
-
-
+        <!-- Global Init -->
+        <script src="assets/js/custom.js"></script>
 </body>
 
 </html>
+<!-- code of about us section -->
