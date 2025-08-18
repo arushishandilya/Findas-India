@@ -1,199 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Findas India</title>
-	<style>
-/* Base styles */
-* {
-  box-sizing: border-box;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Findas India</title>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #ced3d6, #e6e6e6, #fffefe);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png">
 
-.container {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-              0 10px 10px rgba(0,0,0,0.22);
-  position: relative;
-  overflow: hidden;
-  width: 768px;
-  max-width: 100%;
-  min-height: 480px;
-  display: flex;
-  flex-direction: row;
-}
+  <!-- External Styles -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-/* Form containers */
-.form-container {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  transition: all 0.6s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 50px;
-  width: 50%;
-}
-
-.sign-in-container {
-  left: 0;
-  z-index: 2;
-}
-
-.sign-up-container {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.container.right-panel-active .sign-up-container {
-  transform: translateX(100%);
-  opacity: 1;
-  z-index: 5;
-}
-
-.container.right-panel-active .sign-in-container {
-  transform: translateX(100%);
-}
-
-/* Overlay styles */
-.overlay-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  transition: transform 0.6s ease-in-out;
-  z-index: 100;
-}
-
-.overlay {
-  background: linear-gradient(to right, #4a90e2, #007aff);
-  color: #fff;
-  position: relative;
-  left: -100%;
-  height: 100%;
-  width: 200%;
-  transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
-}
-
-.container.right-panel-active .overlay-container {
-  transform: translateX(-100%);
-}
-
-.container.right-panel-active .overlay {
-  transform: translateX(50%);
-}
-
-.overlay-panel {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 40px;
-  text-align: center;
-  height: 100%;
-  width: 50%;
-  top: 0;
-  transform: translateX(0);
-  transition: transform 0.6s ease-in-out;
-}
-
-.overlay-left {
-  transform: translateX(-20%);
-}
-
-.container.right-panel-active .overlay-left {
-  transform: translateX(0);
-}
-
-.overlay-right {
-  right: 0;
-  transform: translateX(0);
-}
-
-.container.right-panel-active .overlay-right {
-  transform: translateX(20%);
-}
-
-/* Form & Button */
-form {
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
-  text-align: center;
-}
-
-input {
-  background-color: #eee;
-  border: none;
-  padding: 12px 15px;
-  margin: 8px 0;
-  width: 100%;
-}
-
-button {
-  border-radius: 20px;
-  border: 1px solid #007aff;
-  background-color: #007aff;
-  color: #fff;
-  font-size: 14px;
-  padding: 12px 45px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: transform 80ms ease-in;
-  cursor: pointer;
-}
-
-button.ghost {
-  background-color: transparent;
-  border-color: #fff;
-}
-
-.social-container {
-  margin: 20px 0;
-}
-
-.social-container a {
-  border: 1px solid #ddd;
-  border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 5px;
-  height: 40px;
-  width: 40px;
-  color: #333;
-  text-decoration: none;
-}
-
-/* Responsive styles */
+  <style>
+    /* Responsive styles */
 @media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px 0;
+  }
+
   .container {
     flex-direction: column;
-    width: 100%;
-    height: auto;
-    border-radius: 0;
-    box-shadow: none;
+    width: 90%;
+    min-height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
   }
 
   .form-container,
@@ -201,129 +33,337 @@ button.ghost {
     position: relative;
     width: 100%;
     height: auto;
-    padding: 30px 20px;
+    padding: 20px;
   }
 
-  .overlay {
-    display: none;
+  form {
+    padding: 20px 10px;
   }
+
+  input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  button {
+    padding: 10px 30px;
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p, span, a {
+    font-size: 14px;
+  }
+
+  .overlay { display: none; }
 
   .sign-up-container,
   .sign-in-container {
     transform: none !important;
     opacity: 1 !important;
     z-index: 1 !important;
+    position: relative;
+    padding: 25px 15px;
   }
 
-  .container.right-panel-active .sign-in-container,
-  .container.right-panel-active .sign-up-container {
-    transform: none;
+  /* Footer fix */
+  .custom-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .custom-footer a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .footer-right {
+    margin-top: 10px;
   }
 }
-</style>
-<!-- Removed duplicate script block to prevent redeclaration of 'container' -->
 
-	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="assets/images/logo/favicon-removebg-preview.png">
+    /* Base styles */
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ced3d6, #e6e6e6, #fffefe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    .container {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                  0 10px 10px rgba(0,0,0,0.22);
+      position: relative;
+      overflow: hidden;
+      width: 768px;
+      max-width: 100%;
+      min-height: 480px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    /* Form containers */
+    .form-container {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      transition: all 0.6s ease-in-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 50px;
+      width: 50%;
+    }
+
+    .sign-in-container { left: 0; z-index: 2; }
+    .sign-up-container { left: 0; opacity: 0; z-index: 1; }
+
+    .container.right-panel-active .sign-up-container {
+      transform: translateX(100%);
+      opacity: 1;
+      z-index: 5;
+    }
+
+    .container.right-panel-active .sign-in-container {
+      transform: translateX(100%);
+    }
+
+    /* Overlay styles */
+    .overlay-container {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      transition: transform 0.6s ease-in-out;
+      z-index: 100;
+    }
+
+    .overlay {
+      background: linear-gradient(to right, #000000, #000000);
+      color: #fff;
+      position: relative;
+      left: -100%;
+      height: 100%;
+      width: 200%;
+      transform: translateX(0);
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .container.right-panel-active .overlay-container {
+      transform: translateX(-100%);
+    }
+
+    .container.right-panel-active .overlay {
+      transform: translateX(50%);
+    }
+
+    .overlay-panel {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 40px;
+      text-align: center;
+      height: 100%;
+      width: 50%;
+      top: 0;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .overlay-left { transform: translateX(-20%); }
+    .container.right-panel-active .overlay-left { transform: translateX(0); }
+    .overlay-right { right: 0; }
+
+    /* Form & Button */
+    form {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    input {
+      background-color: #eee;
+      border: none;
+      padding: 12px 15px;
+      margin: 8px 0;
+      width: 100%;
+    }
+
+    button {
+      border-radius: 20px;
+      border: 1px solid #0c0c0c;
+      background-color: #0f0f0f;
+      color: #fff;
+      font-size: 14px;
+      padding: 12px 45px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 80ms ease-in;
+    }
+
+    button.ghost {
+      background-color: transparent;
+      border-color: #fff;
+    }
+
+    .social-container { margin: 20px 0; }
+
+    .social-container a {
+      border: 1px solid #ddd;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 5px;
+      height: 40px;
+      width: 40px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Footer */
+    .custom-footer {
+      width: 100%;
+      padding: 15px 20px;
+      background: #505050;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .custom-footer a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: #f4f5f7;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .form-container,
+      .overlay-container {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+      }
+
+      .overlay { display: none; }
+
+      .sign-up-container,
+      .sign-in-container {
+        transform: none !important;
+        opacity: 1 !important;
+        z-index: 1 !important;
+      }
+    }
+  </style>
 </head>
-<link rel="stylesheet" href="">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
 <body>
-	<div class="container" id="container">
-		<div class="form-container sign-up-container">
-			<form action="#">
-				<h1>Create Account</h1>
-				<div class="social-container">
-					<a href="https://www.facebook.com" target="_blank" class="social">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="https://plus.google.com" target="_blank" class="social">
-						<i class="fab fa-google-plus-g"></i>
-					</a>
-					<a href="https://www.linkedin.com" target="_blank" class="social">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-					<a href="https://mail.google.com" target="_blank" class="social envelope">
-						<i class="fas fa-envelope"></i>
-					</a>
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h1>Create Account</h1>
+        <div class="social-container">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://accounts.google.com" target="_blank"><i class="fab fa-google"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:someone@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <span>Or use your email for registration</span>
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
 
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h1>Sign in</h1>
+        <div class="social-container">
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://accounts.google.com" target="_blank"><i class="fab fa-google"></i></a>
+          <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:someone@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <a href="#">Forgot your password?</a>
+        <button type="submit">Sign In</button>
+      </form>
+    </div>
 
-				</div>
-				<span>Or use your email for registration</span>
-				<input type="text" placeholder="Name" />
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<button>Sign Up</button>
-			</form>
-		</div>
-		<div class="form-container sign-in-container">
-			<form action="#">
-				<h1>Sign in</h1>
-				<div class="social-container">
-					<a href="https://www.facebook.com" target="_blank" class="social">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="https://plus.google.com" target="_blank" class="social">
-						<i class="fab fa-google-plus-g"></i>
-					</a>
-					<a href="https://www.linkedin.com" target="_blank" class="social">
-						<i class="fab fa-linkedin-in"></i>
-					</a>
-					<a href="https://mail.google.com" target="_blank" class="social envelope">
-						<i class="fas fa-envelope"></i>
-					</a>
-				</div>
-				<span>or use your account</span>
-				<input type="email" placeholder="Email" />
-				<input type="password" placeholder="Password" />
-				<a href="#">Forgot your password?</a>
-				<button>Sign In</button>
-			</form>
-		</div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h1>Welcome Back!</h1>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start your journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		<div class="overlay-container">
-			<div class="overlay">
-				<div class="overlay-panel overlay-left">
-					<h1>Welcome Back!</h1>
-					<p>To keep connected with us please login with your personal info</p>
-					<button class="ghost" id="signIn">Sign In</button>
-				</div>
-				<div class="overlay-panel overlay-right">
-					<h1>Hello, Friend!</h1>
-					<p>Enter your personal details and start journey with us</p>
-					<button class="ghost" id="signUp">Sign Up</button>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- footer start -->
-	<footer class="custom-footer">
-		<div class="footer-left">
-			<a href="contactus.html">Contact </a>
-			<a href="about.html">About</a>
-			<a href="privacypolicy.html">Privacy Policy</a>
-		</div>
-		<div class="footer-right">
-			<span>Powered by Absys Security Verify</span>
-		</div>
-	</footer>
-	<script>
-		const signUpButton = document.getElementById('signUp');
-		const signInButton = document.getElementById('signIn');
-		const container = document.getElementById('container');
+  <!-- footer start -->
+  <footer class="custom-footer">
+    <div class="footer-left">
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+      <a href="privacypolicy.html">Privacy Policy</a>
+    </div>
+    <div class="footer-right">
+      <span style="color: white;font-size: small;">Powered by Findas Security Verify</span>
+    </div>
+  </footer>
 
-		signUpButton.addEventListener('click', () => {
-			container.classList.add("right-panel-active");
-		});
+  <script>
+    const signUpButton = document.getElementById('signUp');
+    const signInButton = document.getElementById('signIn');
+    const container = document.getElementById('container');
 
-		signInButton.addEventListener('click', () => {
-			container.classList.remove("right-panel-active");
-		});
-	</script>
+    signUpButton.addEventListener('click', () => {
+      container.classList.add("right-panel-active");
+    });
 
+    signInButton.addEventListener('click', () => {
+      container.classList.remove("right-panel-active");
+    });
+  </script>
 </body>
-
 </html>
