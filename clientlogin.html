@@ -343,6 +343,7 @@
   <!-- footer start -->
   <footer class="custom-footer">
     <div class="footer-left">
+      <a href="index.html">Home</a>
       <a href="contact.html">Contact</a>
       <a href="about.html">About</a>
       <a href="privacypolicy.html">Privacy Policy</a>
@@ -365,5 +366,52 @@
       container.classList.remove("right-panel-active");
     });
   </script>
+ <!-- Cross Button (Top Right Corner) -->
+<a href="index.html" class="close-btn">
+    <i class="fas fa-times"></i>
+</a>
+
+<style>
+    .close-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(6px);
+        color: #ffffff;
+        border-radius: 50%;
+        box-shadow: 0 6px 16px rgba(153, 153, 153, 0.25);
+        z-index: 9999;
+        transition: all 0.4s ease;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+
+        /* Center the icon properly */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+
+    .close-btn i {
+        font-size: 24px;   /* Bigger cross */
+        line-height: 1;    /* Prevent shifting */
+        transition: transform 0.4s ease, color 0.4s ease;
+    }
+
+    .close-btn:hover {
+        transform: scale(1.15) rotate(90deg);
+        background: rgba(0, 0, 0, 0.747);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .close-btn:hover i {
+        color: #fdfafa;
+    }
+</style>
+
+
 </body>
 </html>
