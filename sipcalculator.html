@@ -481,13 +481,13 @@
                     </div>
                     <div class="fc-form">
                         <h6>Monthly SIP Amount</h6>
-                        <input type="text" id="stepup-sip" class="form-control mb-3">
-                        <h6>SIP Duration (months)</h6>
-                        <input type="text" id="stepup-time" class="form-control mb-3">
+                        <input type="text" id="stepup-sip" placeholder="Monthly SIP (₹)" class="form-control mb-3">
+                        <h6>SIP Duration (years)</h6>
+                        <input type="text" id="stepup-time" placeholder="Time Period (Years)" class="form-control mb-3">
                         <h6>Expected Rate of Return (% p.a)</h6>
-                        <input type="text" id="stepup-rate" class="form-control mb-3">
+                        <input type="text" id="stepup-rate" placeholder="Expected Return % (p.a)" class="form-control mb-3">
                         <h6>Annual SIP Increase (%)</h6>
-                        <input type="text" id="stepup-inc" class="form-control mb-3">
+                        <input type="text" id="stepup-inc" placeholder="Annual Step-up %" class="form-control mb-3">
                         <div class="col-12">
                             <button type="button" id="stepup-calc-btn" class="btn fc-btn w-100">Calculate</button>
                         </div>
@@ -841,20 +841,31 @@ document.getElementById("marriage-calc-btn").addEventListener("click",()=>{
 });
 
 // --- Step Up SIP ---
-document.getElementById("stepup-calc-btn").addEventListener("click",()=>{
-  const sip = parseFloat(document.getElementById("stepup-sip").value)||0;
-  const months = parseFloat(document.getElementById("stepup-time").value)||0;
-  const rate = (parseFloat(document.getElementById("stepup-rate").value)||0)/100/12;
-  const inc = (parseFloat(document.getElementById("stepup-inc").value)||0)/100;
+document.getElementById("stepup-calc-btn").addEventListener("click", () => {
+  const sip = parseFloat(document.getElementById("stepup-sip").value) || 0;
+  const years = parseFloat(document.getElementById("stepup-time").value) || 0;
+  const months = years * 12;
+  const rate = (parseFloat(document.getElementById("stepup-rate").value) || 0) / 100 / 12;
+  const inc = (parseFloat(document.getElementById("stepup-inc").value) || 0) / 100;
 
-  let total=0, currSIP=sip;
-  for(let y=1;y<=months/12;y++){
-    for(let m=1;m<=12;m++){
-      total += currSIP*Math.pow(1+rate,months-((y-1)*12+m-1));
+  let total = 0;
+  let currSIP = sip;
+
+  for (let y = 1; y <= years; y++) {
+    for (let m = 1; m <= 12; m++) {
+      // Remaining months = totalMonths - elapsedMonths
+      const elapsedMonths = (y - 1) * 12 + (m - 1);
+      const remainingMonths = months - elapsedMonths;
+
+      // Each SIP installment grows till end
+      total += currSIP * Math.pow(1 + rate, remainingMonths);
     }
-    currSIP*=(1+inc);
+    // Increase SIP every year
+    currSIP *= (1 + inc);
   }
-  document.getElementById("stepup-result").textContent = `Future Value: ₹ ${total.toFixed(2)}`;
+
+  document.getElementById("stepup-result").textContent = 
+      `Future Value: ₹ ${total.toFixed(2)}`;
 });
 </script>
 </body>
